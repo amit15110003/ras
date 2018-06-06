@@ -210,7 +210,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		 data-menu-scrollable="false" data-menu-dropdown-timeout="500"  
 		>		
 		<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
-			<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" ><a  href="<?php echo base_url();?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title">  <span class="m-menu__link-wrap">      <span class="m-menu__link-text">Dashboard</span>      <span class="m-menu__link-badge"><span class="m-badge m-badge--danger">2</span></span>  </span></span></a></li>
+			<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" ><a  href="<?php echo base_url();?>" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-title">  <span class="m-menu__link-wrap">      <span class="m-menu__link-text">Dashboard</span>       </span></span></a></li>
 
 			<li class="m-menu__section">
                 <h4 class="m-menu__section-text">Settings</h4>
@@ -218,7 +218,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </li>
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
             	<a  href="#" class="m-menu__link m-menu__toggle">
-            		<i class="m-menu__link-icon fa fa-image"></i>
+            		<i class="m-menu__link-icon fa fa-group"></i>
             		<span class="m-menu__link-text">Student Details</span>
             		<i class="m-menu__ver-arrow la la-angle-right"></i>
             	</a>

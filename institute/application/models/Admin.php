@@ -48,9 +48,8 @@ class admin extends CI_Model
 		return $query->result();
 	}
 
-	function get_members($id)
+	function get_members()
 	{
-		$this->db->where('a_id', $id);
         $query = $this->db->get('admin_login');
 		return $query->result();
 	}

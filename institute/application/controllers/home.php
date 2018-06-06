@@ -57,7 +57,7 @@ class home extends CI_Controller {
 
 	public function members()
 	{
-		$data['query']=$this->admin->get_members($this->session->userdata('a_id'));
+		$data['query']=$this->admin->get_members();
 		$this->load->view('header');
 		$this->load->view('members', $data);
 		$this->load->view('footer');		
@@ -65,13 +65,24 @@ class home extends CI_Controller {
 
 	public function add_member()
 	{
-            $id=$this->session->userdata('a_id');
-			$data = array
+		$this->form_validation->set_rules('a_mail', 'Email ID', 'trim|required|valid_email|is_unique[admin_login.u_mail]');
+		$this->form_validation->set_rules('a_pass', 'Password', 'trim|required|md5');
+		if ($this->form_validation->run() == FALSE)
+        {
+			$data['query']=$this->admin->get_members();
+				$this->load->view('header');
+				$this->load->view('members', $data);
+				$this->load->view('footer');
+
+        }
+		else
+		{	$data = array
 			(
-				'a_id'=> $id,
-				'm_name' => $this->input->post('m_name'),
-				'm_dscr' => $this->input->post('m_dscr'),
-				'm_status' => $this->input->post('m_status')
+				'a_username' => $this->input->post('a_name'),
+				'a_mail' => $this->input->post('a_mail'),
+				'a_design' => $this->input->post('a_design'),
+				'a_pass' => $this->input->post('a_pass'),
+				'status' => $this->input->post('status')
 			);
 			
 			if ($this->admin->add_member($data))
@@ -85,7 +96,7 @@ class home extends CI_Controller {
 				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
-
+		}
 	}
 	public function user_id($a_id)
 	{   $details=$this->admin->adminbyid($a_id);
