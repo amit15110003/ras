@@ -36,6 +36,13 @@ class ras extends CI_Controller {
 		$this->load->view('contact');
 		$this->load->view('footer');
 	}
+	public function courses()
+	{
+		$this->load->view('header');
+		$this->load->view('courses');
+		$this->load->view('footer');
+	}
+	
 	public function subscribe()
     {
     	$email = $this->input->post("email");

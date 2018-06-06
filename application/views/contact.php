@@ -1,131 +1,114 @@
-				<div class="section pt-10 pb-10">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="text-center mb-1 section-pretitle">Get in touch</div>
-								<h2 class="text-center section-title mtn-2">HEALTHY ORGANIC FARM</h2>
-								<div class="organik-seperator mb-6 center">
-									<span class="sep-holder"><span class="sep-line"></span></span>
-									<div class="sep-icon"><i class="organik-flower"></i></div>
-									<span class="sep-holder"><span class="sep-line"></span></span>
-								</div>
+<div class="banner-2 yellow">
+		
+		<div class="banner-text">
+			<h2>contact</h2>
+			<ul class="breadcrumb yellow">
+				<li><a href="#">home</a></li>
+				<li>contact</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="page-section white">
+		<div class="container">
+			<div class="row">
+				<div class="location yellow">
+					<div class="col-sm-4 col-xs-12">
+						<div class="location-holder animate animated fadeUp">
+							<span class="heading">new york</span>
+							<div class="address">
+								<span class="title">address</span>
+								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
+							</div>
+							<div class="tel">
+								<span class="title">phone number</span>
+								<a href="#">+01 123 456 7899</a>
+								<br>
+								<a href="#">+01 123 456 7856</a>
+							</div>
+							<div class="email">
+								<span class="title">email address</span>
+								<a href="#">nfo@discipline.com</a>
+								<a href="#">support@discipline.com</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div id="googleMap" class="mb-6" data-icon="images/icon_location.png" data-lat="37.789133" data-lon="-122.402158"></div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="location-holder">
+							<span class="heading">sydney</span>
+							<div class="address">
+								<span class="title">address</span>
+								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
+							</div>
+							<div class="tel">
+								<span class="title">phone number</span>
+								<a href="#">+01 123 456 7899</a>
+								<br>AZ
+								<a href="#">+01 123 456 7856</a>
+							</div>
+							<div class="email">
+								<span class="title">email address</span>
+								<a href="#">nfo@discipline.com</a>
+								<br>
+								<a href="#">support@discipline.com</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="contact-info">
-									<div class="contact-icon">
-										<i class="fa fa-map-marker"></i>
-									</div>
-									<div class="contact-inner">
-										<h6 class="contact-title"> Address</h6>
-										<div class="contact-content">
-											1800 Abbot Kinney Blvd. Unit D &amp; E
-											<br />
-											Venice, CA 90291
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="location-holder">
+							<span class="heading">united kingdom</span>
+							<div class="address">
+								<span class="title">address</span>
+								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
 							</div>
-							<div class="col-sm-3">
-								<div class="contact-info">
-									<div class="contact-icon">
-										<i class="fa fa-phone"></i>
-									</div>
-									<div class="contact-inner">
-										<h6 class="contact-title"> Hotline</h6>
-										<div class="contact-content">
-											0122 333 8889
-										</div>
-									</div>
-								</div>
+							<div class="tel">
+								<span class="title">phone number</span>
+								<a href="#">+01 123 456 7899</a>
+								<br>
+								<a href="#">+01 123 456 7856</a>
 							</div>
-							<div class="col-sm-3">
-								<div class="contact-info">
-									<div class="contact-icon">
-										<i class="fa fa-envelope"></i>
-									</div>
-									<div class="contact-inner">
-										<h6 class="contact-title"> Email Contact</h6>
-										<div class="contact-content">
-											organik@gmail.com
-											<br />
-											contact@organikstore.com
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="contact-info">
-									<div class="contact-icon">
-										<i class="fa fa-globe"></i>
-									</div>
-									<div class="contact-inner">
-										<h6 class="contact-title"> Website</h6>
-										<div class="contact-content">
-											www.organikstore.com
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<hr class="mt-4 mb-7" />
-								<div class="text-center mb-1 section-pretitle">Leave us a message!</div>
-								<div class="organik-seperator mb-6 center">
-									<span class="sep-holder"><span class="sep-line"></span></span>
-									<div class="sep-icon"><i class="organik-flower"></i></div>
-									<span class="sep-holder"><span class="sep-line"></span></span>
-								</div>
-								<div class="contact-form-wrapper">
-									<form class="contact-form">
-										<div class="row">
-											<div class="col-md-6">
-												<label>your name <span class="required">*</span></label>
-												<div class="form-wrap">
-													<input type="text" name="your-name" value="" size="40" />
-												</div>
-											</div>
-											<div class="col-md-6">
-												<label>your email <span class="required">*</span></label>
-												<div class="form-wrap">
-													<input type="email" name="your-email" value="" size="40" />
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<label>subject</label>
-												<div class="form-wrap">
-													<input type="text" name="your-subject" value="" size="40" />
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<label>message</label>
-												<div class="form-wrap">
-													<textarea name="your-message" cols="40" rows="10"></textarea>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-wrap text-center">
-													<input type="submit" value="SEND US NOW" />
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
+							<div class="email">
+								<span class="title">email address</span>
+								<a href="#">nfo@discipline.com</a>
+								<a href="#">support@discipline.com</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="page-section white">
+		<div class="container">
+			<div class="row">
+				<div class="contactus-form yellow">
+					<form action="#">
+						<div class="form-row">
+							<div class="left-row">
+								<input type="text" placeholder="Name*">
+							</div>
+							<div class="right-row">
+								<input type="email" placeholder="Email*">
+							</div>
+						</div>
+						<div class="form-row">
+							<input type="text" placeholder="Subject">
+						</div>
+						<textarea placeholder="Message"></textarea>
+						<button type="submit">send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-section">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.153590044365!2d151.2283635148165!3d-33.88569802736661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae064d4035c7%3A0xafd8ab9b32253d24!2sUnderwood+St%2C+Paddington+NSW+2021%2C+Australia!5e0!3m2!1sen!2s!4v1489007994183"></iframe>
+		</div>
+	</div>
