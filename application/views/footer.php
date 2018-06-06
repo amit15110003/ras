@@ -1,110 +1,418 @@
-			<footer class="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-5">
-							<img src="<?php echo base_url();?>media/img/logow.png" class="footer-logo" alt="" />
-							<p>
-								Welcome to Pay & Earn. Our products hhave wide brand range, quantity ready for box and finally delivered from our warehouse  right to your doorstep.
-							</p>
-							<div class="footer-social">
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
-								<a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class="widget">
-								<h3 class="widget-title">Infomation</h3>
-								<ul>
-									<li><a href="#">New Products</a></li>
-									<li><a href="#">Top Sellers</a></li>
-									<li><a href="#">Our Blog</a></li>
-									<li><a href="#">About Our Shop</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class="widget">
-								<h3 class="widget-title">Useful Link</h3>
-								<ul>
-									<li><a href="#">Our Team</a></li>
-									<li><a href="#">Our Blog</a></li>
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Secure Shopping</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="widget">
-								<h3 class="widget-title">Subscribe</h3>
-								<p>
-									Enter your email address for our mailing list to keep yourself updated.
-								</p>
-								<div class="newsletter" id="subcribed">
-									<input type="email" id="subemail" placeholder="Your email address" required="" />
-									<button onclick="javascript:subscribe('');"><i class="fa fa-paper-plane"></i></button>
-								</div>
-							</div>
-						</div>
+<footer id="footer-2">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="column_1">
+
+						<div class="logo"><a href="#"><img src="images/logo-4.png" width="174" height="19" alt="descipline"></a></div>
+
+						<p>The others comfortable these days are all happy and free listen to a story these men promptly escaped from a maximum security stockade to the it walking on air fortable.</p>
+
+						<ul class="footer-social">
+
+							<li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+
+							<li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+
+							<li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
+
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+							<li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+
+						</ul>
+
 					</div>
-				</div>
-			</footer>
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8">
-							Copyright © 2017 <a href="#">Organic Store</a> - All Rights Reserved.
+
+					<div class="column_2">
+
+						<span class="heading">recent post</span>
+
+						<div class="post-holder">
+
+							<div class="img"></div>
+
+							<div class="post-text">
+
+								<p>The pie and we know flipper lives flying in a old clouds.</p>
+
+								<ul class="post_list">
+
+									<li>Apr 14, 2016</li>
+
+									<li><i aria-hidden="true" class="fa fa-commenting-o"></i>08 Comments</li>
+
+								</ul>
+
+							</div>
+
 						</div>
-						<div class="col-md-4">
-							<img src="images/footer_payment.png" alt="" />
+
+						<div class="post-holder">
+
+							<div class="img"></div>
+
+							<div class="post-text">
+
+								<p>There we know flipper lives flying in a old clouds.</p>
+
+								<ul class="post_list">
+
+									<li>May 03, 2016</li>
+
+									<li><i aria-hidden="true" class="fa fa-commenting-o"></i>12 Comments</li>
+
+								</ul>
+
+							</div>
+
 						</div>
+
 					</div>
+
+					<div class="column_3">
+
+						<span class="heading">contact us</span>
+
+						<span class="address">
+
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+
+							A07 discipline, Down town st, Victory, United States.
+
+						</span>
+
+						<span class="tel">
+
+							<i class="fa fa-phone" aria-hidden="true"></i>
+
+							<a href="#">+01 123 456 7899</a>
+
+							<a href="#">+01 123 456 7856</a>
+
+						</span>
+
+						<span class="mail">
+
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+
+							<a href="#">info@gmail.com</a>
+
+							<a href="#">support@gmail.com</a>
+
+						</span>
+
+					</div>
+
+					<div class="column_4">
+
+						<span class="heading">get in touch</span>
+
+						<form class="touch-form" action="#">
+
+							<input type="text" placeholder="Name">
+
+							<input type="email" placeholder="Email">
+
+							<button type="submit">send message</button>
+
+						</form>
+
+					</div>
+
 				</div>
-				<div class="backtotop" id="backtotop"></div>
+
 			</div>
+
+		</footer>
+
+	
+
+		<div class="bottom-footer inner">
+
+			<span>&copy; Copyrights 2016 Discipline. All Rights Reserved</span>
+
 		</div>
 
 		
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery-migrate.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/modernizr-2.7.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery.countdown.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/imagesloaded.pkgd.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/isotope.pkgd.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery.isotope.init.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/script.js"></script>
 
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.video.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/extensions/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/slider.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/jquery.ui.touch-punch.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>media/js/price-slider.js"></script>
-		<script>
-		         function subscribe() {
-		             var email =document.getElementById("subemail").value;
-		             $.ajax({
-		                 type: 'POST',
-		                 url: '<?php echo base_url(); ?>index.php/shop/subscribe',
-		                 data:'&email='+email,
-		                 beforeSend: function () {
-		                     $('.loading').show();
-		                 },
-		                 success: function (html) {
-		                     $('#subcribed').html(html);
-		                     $('.loading').fadeOut("slow");
-		                 }
-		             });
-		         }
-		</script>
+	</div>
+
+
+
+
+
+	<!-- Modal -->
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+	  <div class="modal-dialog yellow" role="document">
+
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+
+	        <button type="button" class="close yellow" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+	        <h4 class="modal-title form" id="myModalLabel">signin</h4>
+
+	      </div>
+
+	      <div class="modal-body">
+
+	    	<div class="main-login main-center yellow">
+
+
+
+				<form class="" method="post" action="#">
+
+
+
+					<div class="form-group">
+
+						<label for="email" class="cols-sm-2 control-label">Your Email</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+
+								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group">
+
+						<label for="password" class="cols-sm-2 control-label">Password</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group ">
+
+						<a href="#" target="_blank" id="button" class="btn btn-primary btn-lg btn-block login-button">Signin</a>
+
+					</div>
+
+
+
+					<div class="form-group ">
+
+						<p>Already have an account! <a href="#">Sign In Here</a> </p>
+
+					</div>
+
+					
+
+				</form>
+
+			</div>
+
+	      </div>
+
+	      
+
+	    </div>
+
+	  </div>
+
+	</div>
+
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+	  <div class="modal-dialog yellow" role="document">
+
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+
+	        <button type="button" class="close yellow" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+	        <h4 class="modal-title form" id="myModalLabel2">signup</h4>
+
+	      </div>
+
+	      <div class="modal-body">
+
+	    	<div class="main-login main-center yellow">
+
+				<form class="" method="post" action="#">
+
+					
+
+					<div class="form-group">
+
+						<label for="name" class="cols-sm-2 control-label">Your Name</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+
+								<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group">
+
+						<label for="email2" class="cols-sm-2 control-label">Your Email</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+
+								<input type="text" class="form-control" name="email" id="email2"  placeholder="Enter your Email"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group">
+
+						<label for="username" class="cols-sm-2 control-label">Username</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+
+								<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group">
+
+						<label for="password2" class="cols-sm-2 control-label">Password</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+								<input type="password" class="form-control" name="password" id="password2"  placeholder="Enter your Password"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group">
+
+						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+
+						<div class="cols-sm-10">
+
+							<div class="input-group">
+
+								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+					<div class="form-group ">
+
+						<a href="#" target="_blank" id="button2" class="btn btn-primary btn-lg btn-block login-button">Signup</a>
+
+					</div>
+
+
+
+					<div class="form-group ">
+
+						<p>Dont have an account! <a href="#">Sign Up Here</a> </p>
+
+					</div>
+
+					
+
+				</form>
+
+			</div>
+
+	      </div>
+
+	      
+
+	    </div>
+
+	  </div>
+
+	</div>
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+	<script  type="text/javascript" src="<?php echo base_url();?>media/js/jquery.min.js"></script>
+
+	<script  type="text/javascript" src="<?php echo base_url();?>media/js/bootstrap.min.js"></script>
+
+	<script  type="text/javascript" src="<?php echo base_url();?>media/js/owl.carousel.min.js"></script>
+
+	<script  type="text/javascript" src="<?php echo base_url();?>media/js/switcher.js"></script>
+
+	<script  type="text/javascript" src="<?php echo base_url();?>media/js/custom.js"></script>		
+
+
+
+	
+
 	</body>
+
 </html>
+
