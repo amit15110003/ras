@@ -83,13 +83,19 @@
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Name:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="m_name" placeholder="Member name">
+									<input type="text" class="form-control m-input" name="a_name" placeholder="Member name">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label" for="exampleTextarea">Description:</label>
+								<label class="col-lg-2 col-form-label">Email:</label>
 								<div class="col-lg-6">
-									<textarea class="form-control m-input" name="m_dscr" id="exampleTextarea" rows="3"></textarea>
+									<input type="email" class="form-control m-input" name="a_mail" placeholder="Member Email">
+								</div>
+							</div>
+							<div class="m-form__group form-group row">
+								<label class="col-lg-2 col-form-label">Password:</label>
+								<div class="col-lg-6">
+									<input type="password" class="form-control m-input" name="a_pass">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
@@ -147,7 +153,7 @@
 				<td><?php echo $row->a_username;?></td>
 				<td><?php echo $row->a_contact;?></td>
 				<td><?php echo $row->a_mail;?></td>
-				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->a_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							
 							<span>Update</span>
