@@ -24,7 +24,8 @@
 <!-- css style sheet -->
 
 <link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/style.css">
-
+<link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/styledb.css">
+<link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/styledb-mob.css">
 
 
 <link id="colors" rel="stylesheet" href="<?php echo base_url();?>media/css/color.css">
@@ -51,7 +52,7 @@
 
 			<div class="container">
 
-				<div class="logo"><a href="#"><img src="<?php echo base_url();?>media/images/logo4.png" width="182" height="19" alt="descipline"></a></div>
+				<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logo4.png" width="182" height="19" alt="descipline"></a></div>
 
 				<div class="right-panel">
 
@@ -133,11 +134,9 @@
 
 							<li><a href="<?php echo base_url();?>index.php/ras/about">About Us</a></li>
 
-							
+							<li class="mega"><a href="<?php echo base_url();?>index.php/ras/courses">courses</a></li>
 
-							<li class="mega"><a href="<?php echo base_url();?>index.php/ras/courses">courses</a>
-
-							</li>
+							<li class="mega"><a href="<?php echo base_url();?>index.php/ras/student">student</a></li>
 
 
 
