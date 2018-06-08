@@ -42,6 +42,12 @@ class ras extends CI_Controller {
 		$this->load->view('courses');
 		$this->load->view('footer');
 	}
+	public function student()
+	{
+		$this->load->view('header');
+		$this->load->view('student');
+		$this->load->view('footer');
+	}
 	
 	public function subscribe()
     {
