@@ -179,11 +179,9 @@
 
 						<div class="welcome-d col-sm-8 col-xs-12">
 
-							<h1>WELCOME TO DISCIPLINE</h1>
+							<h1>WELCOME TO RAS</h1>
 
-							<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away never thought could feel so free and you know where you were then girls were girls and men were men mister we could use a man like Herbert Hoover.</p>
-
-							<p>The flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away never thought could feel so free and you know where you were then girls were girls and men were men mister we could use a man like Herbert Hoover again and we know Flipper lives in a world full of wonder flying there-under under the sea they are creepy.</p>
+							<p>A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the high quality entrance exams preparation and produces best results year after year. At RAS, we focus on building a strong foundation of knowledge and concepts in students for their success and provide an excellent platform for the preparation of competitive exams and board level education. The best academic support and personal care which we provide to the students helps them meet their career goals and objectives. The core values of Determination, Honesty, Authenticity, Integrity, Devotion, Humanism, Holistic Learning, Social Ethics, and concern for society & environment are all closely interwoven into the fiber of our academic programs. Our highly qualified and most experienced faculties are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to their social, cultural, academic and all-round development.</p>
 
 							<a class="more" href="#">read more</a>
 
