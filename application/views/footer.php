@@ -6,7 +6,7 @@
 
 					<div class="column_1">
 
-						<div class="logo"><a href="#"><img src="<?php echo base_url();?>media/images/logobw.png" width="150" height="80" alt="descipline"></a></div>
+						<div class="logo"><a href="#"><img src="<?php echo base_url();?>media/images/logobwn.png" width="150" height="80" alt="descipline"></a></div>
 
 						<p>A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the best results year after year in jamalpur.</p>
 
