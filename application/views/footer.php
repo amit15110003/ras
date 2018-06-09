@@ -6,7 +6,7 @@
 
 					<div class="column_1">
 
-						<div class="logo"><a href="#"><img src="<?php echo base_url();?>media/images/logo-4.png" width="174" height="19" alt="descipline"></a></div>
+						<div class="logo" style="padding-left: 90px;"><a href="#"><img src="<?php echo base_url();?>media/images/ras.png" width="80" height="" alt="descipline"></a></div>
 
 						<p>The others comfortable these days are all happy and free listen to a story these men promptly escaped from a maximum security stockade to the it walking on air fortable.</p>
 
