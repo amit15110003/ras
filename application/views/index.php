@@ -11,17 +11,15 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/img-54.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/math2.jpg" width="1920" height="1060" alt="image" class="img">
 
 							<div class="justics-text">
 
 								<div class="txt">
 
-									<h1>INTELLIGENCE PLUS CHARACTER THAT IS 
+									<h1></h1>
 
-										THE GOAL OF TRUE EDUCATION</h1>
-
-									<a class="more courses" href="#">view courses</a>
+									
 
 								</div>
 
@@ -35,17 +33,15 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/img-54.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/chem2.jpg" width="1920" height="1060" alt="image" class="img">
 
 							<div class="justics-text">
 
 								<div class="txt">
 
-									<h1>INTELLIGENCE PLUS CHARACTER THAT IS 
+									<h1></h1>
 
-			THE GOAL OF TRUE EDUCATION</h1>
-
-									<a class="more courses" href="#">view courses</a>
+									
 
 								</div>
 
@@ -59,15 +55,35 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/img-54.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/phy2.jpg" width="1920" height="1060" alt="image" class="img">
 
 							<div class="justics-text">
 
 								<div class="txt">
 
-									<h1>INTELLIGENCE PLUS CHARACTER THAT IS 
+									<h1></h1>
 
-										THE GOAL OF TRUE EDUCATION</h1>
+									
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div class="justices-img">
+
+							<img src="<?php echo base_url();?>media/images/bio2.jpg" width="1920" height="1060" alt="image" class="img">
+
+							<div class="justics-text">
+
+								<div class="txt">
+
+									<h1></h1>
 
 									<a class="more courses" href="#">view courses</a>
 
