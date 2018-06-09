@@ -123,11 +123,10 @@
 
 								</div>
 
-								<span class="title">WHO WE ARE</span>
+								<span class="title">OUR VISION</span>
 
-								<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away.</p>
+								<p>Creating Futures, Leading and Learning for all, Excellence in career education </p>
 
-								<a href="#">read more</a>
 
 							</div>
 
@@ -145,9 +144,8 @@
 
 								<span class="title">our mission</span>
 
-								<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away.</p>
+								<p>We prepare all students for a successful life and to achieve their Goals</p>
 
-								<a href="#">read more</a>
 
 							</div>
 
@@ -163,11 +161,10 @@
 
 								</div>
 
-								<span class="title">our vission</span>
+								<span class="title">our VALUES</span>
 
-								<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away.</p>
+								<p>Courage, Fairness, Generosity, Honesty, Perseverance, Respect, Responsibility .</p>
 
-								<a href="#">read more</a>
 
 							</div>
 
