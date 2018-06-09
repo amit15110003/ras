@@ -154,7 +154,7 @@
 
 								<div class="img-holder">
 
-									<i class="icon-hourglass"></i>
+									<i class="icon-rocket"></i>
 
 								</div>
 
@@ -172,8 +172,7 @@
 							<div class="column yellow-3">
 
 								<div class="img-holder">
-
-									<i class="icon-rocket"></i>
+									<i class="icon-hourglass"></i>
 
 								</div>
 
