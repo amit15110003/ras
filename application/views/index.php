@@ -239,7 +239,7 @@
 
 								<li>
 
-									<span class="count-1">20+ UNIVERSITIES</span>
+									<span class="count-1">10 Yrs+ EXPERIENCE</span>
 
 									<em class="one"></em>
 
@@ -277,7 +277,7 @@
 
 				<div class="left-holder">
 
-					<strong class="heading">10+ UPDATED COURSES</strong>
+					<strong class="heading" style="line-height: 40px;">YOUR TRUST AND OUR HARD WORK WILL MAKE IT POSSIBLE IN JAMALPUR</strong>
 
 					<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away never thought could feel so free.</p>
 
@@ -343,11 +343,7 @@
 
 					<span class="tel">
 
-						<a href="#">(+01) 700 345 7890</a>
-
-						<em>or</em>
-
-						<a href="#">displine@domain.com</a>
+						<a href="#">(+91) 079031 35200</a>
 
 					</span>
 
@@ -1503,9 +1499,9 @@
 
 								<div class="text-box">
 
-									<strong>MICHEAL GEORGE </strong>
+									<strong>RAJIV RANJAN </strong>
 
-									<em>Chairman (M.E., Ph.D.,) </em>
+									<em>Director (M.E., Ph.D.,) </em>
 
 									<ul class="f-list">
 
@@ -1537,7 +1533,7 @@
 
 								<div class="text-box">
 
-									<strong>HENRY CHAPHEL </strong>
+									<strong>MANOJ KUMAR</strong>
 
 									<em>Director (M.E., Ph.D.,) </em>
 
@@ -1571,7 +1567,7 @@
 
 								<div class="text-box">
 
-									<strong>GRAME SMITH</strong>
+									<strong>AMAR KUMAR</strong>
 
 									<em>Trustee &amp; Founder</em>
 
