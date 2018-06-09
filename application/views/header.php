@@ -52,7 +52,7 @@
 
 			<div class="container">
 
-				<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logon.png" width="150" height="80" alt="descipline"></a></div>
+				<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logonw.png" width="130" height="70" alt="descipline"></a></div>
 
 				<div class="right-panel">
 
