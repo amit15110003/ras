@@ -181,7 +181,10 @@
 
 							<h1>WELCOME TO RAS</h1>
 
-							<p>A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the high quality entrance exams preparation and produces best results year after year. At RAS, we focus on building a strong foundation of knowledge and concepts in students for their success and provide an excellent platform for the preparation of competitive exams and board level education. The best academic support and personal care which we provide to the students helps them meet their career goals and objectives. The core values of Determination, Honesty, Authenticity, Integrity, Devotion, Humanism, Holistic Learning, Social Ethics, and concern for society & environment are all closely interwoven into the fiber of our academic programs. Our highly qualified and most experienced faculties are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to their social, cultural, academic and all-round development.</p>
+							<p>A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the best results year after year in jamalpur. </p>
+							<p>At RAS, we focus on building a strong foundation of imaginations, knowledge and concepts in students for their success and provide an excellent platform for the preparation of competitive exams and board level education. The best academic support and individual care which we provide to the students helps them meet their career goals and objectives. 
+							Our highly qualified and most experienced faculties are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to their social, cultural, academic and all-round development.
+							</p>
 
 							<a class="more" href="#">read more</a>
 
@@ -207,13 +210,13 @@
 
 									<em class="one"></em>
 
-									<span class="count-2">1989</span>
+									<span class="count-2">2005</span>
 
 								</li>
 
 								<li>
 
-									<span class="count-3">2000</span>
+									<span class="count-3">2010</span>
 
 									<em class="two"></em>
 
@@ -227,17 +230,17 @@
 
 									<em class="one"></em>
 
-									<span class="count-2">2010</span>
+									<span class="count-2">2015</span>
 
 								</li>
 
 								<li>
 
-									<span class="count-3">2016</span>
+									<span class="count-3">2018</span>
 
 									<em class="two"></em>
 
-									<span class="count-4">BEST UNIVERSITY AWARD</span>
+									<span class="count-4">FIRST DIGITAL INSTITUTE WITH ALL SUBJECT UNDER ONE ROOF</span>
 
 								</li>
 

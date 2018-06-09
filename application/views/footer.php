@@ -8,7 +8,7 @@
 
 						<div class="logo" style="padding-left: 90px;"><a href="#"><img src="<?php echo base_url();?>media/images/ras.png" width="80" height="" alt="descipline"></a></div>
 
-						<p>The others comfortable these days are all happy and free listen to a story these men promptly escaped from a maximum security stockade to the it walking on air fortable.</p>
+						<p>A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the best results year after year in jamalpur.</p>
 
 						<ul class="footer-social">
 
@@ -80,7 +80,7 @@
 
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 
-							A07 discipline, Down town st, Victory, United States.
+							Nayagoan, Manaskunj Mandir, Jamalpur-811214
 
 						</span>
 
@@ -132,7 +132,7 @@
 
 		<div class="bottom-footer inner">
 
-			<span>&copy; Copyrights 2016 Discipline. All Rights Reserved</span>
+			<span>&copy;2018 RAS. All Rights Reserved <small>Powered by Trixno</small></span>
 
 		</div>
 
