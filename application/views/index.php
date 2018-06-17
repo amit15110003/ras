@@ -272,13 +272,15 @@
 
 		<div class="page-section">
 
-			<div class="col-sm-6 col-xs-12 left_block">
+			<div class="col-sm-12 col-xs-12 left_block">
 
 				<div class="left-holder">
 
 					<strong class="heading" style="line-height: 40px;">YOUR TRUST AND OUR HARD WORK WILL MAKE IT POSSIBLE IN JAMALPUR</strong>
 
-					<p>The pie and we know flipper lives in a world full of wonder under the clouds away full of wonder under the clouds away never thought could feel so free.</p>
+					<p>In RAS, we lay solid foundation for 11th and 12th on which students can easily crack entrance exams like JEE Mains and NEET.<br><br>
+
+					We teach following subjects For XI & XII Batches:</p>
 
 					<ul class="left-list">
 
@@ -292,6 +294,7 @@
 
 							</div>
 
+							<span>Physics</span>
 						</li>
 
 						<li>
@@ -304,7 +307,7 @@
 
 							</div>
 
-							<span>new!</span>
+							<span>Chemistry</span>
 
 						</li>
 
@@ -318,7 +321,7 @@
 
 							</div>
 
-							<span>new!</span>
+							<span>Maths</span>
 
 						</li>
 
@@ -331,6 +334,8 @@
 								<img src="<?php echo base_url();?>media/images/icon-50.png" width="25" height="23" alt="image" class="hover">
 
 							</div>
+
+							<span>Biology</span>
 
 						</li>
 
@@ -350,77 +355,7 @@
 
 			</div>
 
-			<div class="col-sm-6 col-xs-12 right_block">
-
-				<div class="c_form">
-
-					<strong class="heading">SEARCH FOR THE COURSES</strong>
-
-					<form action="#">
-
-						<div class="name-holder">
-
-						<i class="fa fa-paperclip" aria-hidden="true"></i>
-
-							<input type="text" placeholder="Course Name">
-
-						</div>
-
-						<div class="degree-holder">
-
-						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-
-							<select>
-
-								<option>Select Degree</option>
-
-								<option>Select Degree</option>
-
-								<option>Select Degree</option>
-
-							</select>
-
-						</div>
-
-						<div class="category-holder">
-
-						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-
-							<select>
-
-								<option>Select Category</option>
-
-								<option>Select Category</option>
-
-								<option>Select Category</option>
-
-							</select>
-
-						</div>
-
-						<div class="subject-holder">
-
-						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-
-							<select>
-
-								<option>Select Subject</option>
-
-								<option>Select Subject</option>
-
-								<option>Select Subject</option>
-
-							</select>
-
-						</div>
-
-						<button type="submit">search</button>
-
-					</form>
-
-				</div>
-
-			</div>
+			
 
 		</div>
 
@@ -442,49 +377,26 @@
 
 						</div>
 
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-3 col-xs-12">
 
 							<div class="c_column">
 
 								<div class="img-box">
 
-									<img src="<?php echo base_url();?>media/images/icon-51.png" width="32" height="33" alt="image">
+									<img src="<?php echo base_url();?>media/images/icon-54.png" width="32" height="33" alt="image">
 
 								</div>
 
-								<span class="title">BIOMOLECULAR ENGINEERING</span>
+								<span class="title">PHYSICS</span>
 
 								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full of wonder under the clouds away.</p>
 
-				<a href="#" class="apply">apply now</a>
 
 							</div>
 
 						</div>
 
-						<div class="col-sm-4 col-xs-12">
-
-							<div class="c_column">
-
-								<div class="img-box">
-
-									<img src="<?php echo base_url();?>media/images/icon-52.png" width="36" height="35" alt="image">
-
-								</div>
-
-								<span class="title">MATERIAL ENGINEERING</span>
-
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
-
-			of wonder under the clouds away.</p>
-
-				<a href="#" class="apply">apply now</a>
-
-							</div>
-
-						</div>
-
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-3 col-xs-12">
 
 							<div class="c_column">
 
@@ -494,83 +406,60 @@
 
 								</div>
 
-								<span class="title">CHEMICAL ENGINEERING</span>
+								<span class="title">CHEMISTRY</span>
+
+								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
+
+			of wonder under the clouds away.</p>
+
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-3 col-xs-12">
+
+							<div class="c_column">
+
+								<div class="img-box">
+
+									<img src="<?php echo base_url();?>media/images/icon-52.png" width="36" height="35" alt="image">
+
+								</div>
+
+								<span class="title">MATHEMATICS</span>
 
 								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
 
 				of wonder under the clouds away.</p>
 
-				<a href="#" class="apply">apply now</a>
 
 							</div>
 
 						</div>
 
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-3 col-xs-12">
 
 							<div class="c_column">
 
 								<div class="img-box">
 
-									<img src="<?php echo base_url();?>media/images/icon-54.png" width="36" height="33" alt="image">
+									<img src="<?php echo base_url();?>media/images/icon-55.png" width="36" height="33" alt="image">
 
 								</div>
 
-								<span class="title">PROCESS ENGINEERING</span>
+								<span class="title">BIOLOGY</span>
 
 								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
 
 			of wonder under the clouds away.</p>
 
-			<a href="#" class="apply">apply now</a>
 
 							</div>
 
 						</div>
 
-						<div class="col-sm-4 col-xs-12">
-
-							<div class="c_column">
-
-								<div class="img-box">
-
-									<img src="<?php echo base_url();?>media/images/icon-55.png" width="22" height="33" alt="image">
-
-								</div>
-
-								<span class="title">CORROSION ENGINEERING</span>
-
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
-
-			of wonder under the clouds away.</p>
-
-			<a href="#" class="apply">apply now</a>
-
-							</div>
-
-						</div>
-
-						<div class="col-sm-4 col-xs-12">
-
-							<div class="r-form">
-
-								
-
-								<span class="title">REGISTER FOR NEW UPDATES</span>
-
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds</p>
-
-								<form action="#">
-
-									<input type="email" placeholder="Email id">
-
-									<button type="submit">submit</button>
-
-								</form>
-
-							</div>
-
-						</div>
+						
 
 					</div>
 
@@ -582,888 +471,7 @@
 
 		
 
-		<div class="page-section black">
-
-			<div class="gallery">
-
-				<div class="container">
-
-					<div class="row">
-
-						<div class="gallery-heading">
-
-							 <h1>OUR UNVERSITY GALLERY</h1>
-
-							 <p>The others comfortable these days are all happy and free</p>
-
-						</div>
-
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-							<!-- Wrapper for slides -->
-
-							<div class="carousel-inner" role="listbox">
-
-								<div class="item active">
-
-									<div class="row">
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-164.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-165.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-166.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-167.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-168.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-169.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="item">
-
-									<div class="row">
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-164.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-165.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-166.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-167.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-168.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-169.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="item">
-
-									<div class="row">
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-164.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-165.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-166.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-167.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-168.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-										<div class="col-sm-4 col-xs-12">
-
-											<div class="gallery-img">
-
-												<img src="<?php echo base_url();?>media/images/img-169.jpg" width="360" height="350" alt="image">
-
-												<div class="hover">
-
-													<span>PROCESS DEPT</span>
-
-													<ul>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-56.png" width="16" height="17" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-57.png" width="16" height="17" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<img src="<?php echo base_url();?>media/images/icon-58.png" width="16" height="16" alt="image" class="normal">
-
-																<img src="<?php echo base_url();?>media/images/icon-59.png" width="16" height="16" alt="image" class="hover-img">
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-	
-
-							<!-- Controls -->
-
-							
-
-						</div>
-
-						<div class="control-box">
-
-								<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-
-									<span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-
-									<span class="sr-only">Previous</span>
-
-								</a>
-
-								<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-
-									<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-
-									<span class="sr-only">Next</span>
-
-								</a>
-
-							</div>
-
-						
-
-					</div>
-
-				</div>
-
-				
-
-			</div>
-
-			<div class="view-more padding-bottom-100" ><a href="#"> view more</a></div>
-
-		</div>
-
+		
 		
 
 		<div class="page-section white">
@@ -1492,7 +500,7 @@
 
 									<span>chairman</span>
 
-									<img src="<?php echo base_url();?>media/images/img-61.png" width="253" height="409" alt="image">
+									<img src="<?php echo base_url();?>media/images/rajeev.jpg" alt="image">
 
 								</div>
 
@@ -1500,15 +508,12 @@
 
 									<strong>RAJIV RANJAN </strong>
 
-									<em>Director (M.E., Ph.D.,) </em>
+									<em>(Chem + Maths) </em>
+									<em>Experiance:12yrs </em>
 
 									<ul class="f-list">
 
 										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 
 									</ul>
 
@@ -1526,7 +531,7 @@
 
 									<span>chairman</span>
 
-									<img src="<?php echo base_url();?>media/images/img-62.png" width="253" height="409" alt="image">
+									<img src="<?php echo base_url();?>media/images/manoj.jpg"  alt="image">
 
 								</div>
 
@@ -1534,15 +539,12 @@
 
 									<strong>MANOJ KUMAR</strong>
 
-									<em>Director (M.E., Ph.D.,) </em>
+									<em>(Biology) </em>
+									<em>Experiance:10yrs </em>
 
 									<ul class="f-list">
 
 										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 
 									</ul>
 
@@ -1560,7 +562,7 @@
 
 									<span>chairman</span>
 
-									<img src="<?php echo base_url();?>media/images/img-63.png" width="253" height="409" alt="image">
+									<img src="<?php echo base_url();?>media/images/amar.jpeg" alt="image">
 
 								</div>
 
@@ -1568,15 +570,12 @@
 
 									<strong>AMAR KUMAR</strong>
 
-									<em>Trustee &amp; Founder</em>
+									<em>(Physics) </em>
+									<em>Experiance:03yrs </em>
 
 									<ul class="f-list">
 
 										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
 
 									</ul>
 
@@ -1787,125 +786,123 @@
 						</div>
 
 						<div class="col-md-8 col-sm-12 col-xs-12">
+							<center>
+								<div class="heading-area">
 
-							<div class="heading-area">
+									<h1>WHY CHOOSE US</h1>
+								</div>
+							<center>
 
-								<h1>WHY CHOOSE US</h1>
+							<center><div class="row">
 
-								<p>The others comfortable these days are all happy and free listen to a story now the world do not move to the beat of just one drum with end.</p>
+										<div class="col-md-4 col-sm-6 col-xs-12">
 
-							</div>
+											<div class="w-column">
 
-							<div class="row">
+												<div class="img-box">
 
-								<div class="col-md-4 col-sm-6 col-xs-12">
+													<img src="<?php echo base_url();?>media/images/icon-230.png" width="60" height="67" alt="image">	
 
-									<div class="w-column">
+												</div>
 
-										<div class="img-box">
+												<span>EXPERIENCED FACULTY </span>
 
-											<img src="<?php echo base_url();?>media/images/icon-230.png" width="60" height="67" alt="image">	
+												
+
+											</div>
 
 										</div>
 
-										<span>CERTIFIED COURSES</span>
+										<div class="col-md-4 col-sm-6 col-xs-12">
 
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
+											<div class="w-column">
 
-									</div>
+												<div class="img-box">
 
-								</div>
+													<img src="<?php echo base_url();?>media/images/icon-231.png" width="60" height="67" alt="image">	
 
-								<div class="col-md-4 col-sm-6 col-xs-12">
+												</div>
 
-									<div class="w-column">
+												<span>STRICTLY DESIGNED COURSES FOR JEE & NEET</span>
 
-										<div class="img-box">
+												
 
-											<img src="<?php echo base_url();?>media/images/icon-231.png" width="60" height="67" alt="image">	
+											</div>
+
+										</div>
+										
+
+										<div class="col-md-4 col-sm-6 col-xs-12">
+
+											<div class="w-column">
+
+												<div class="img-box" style="i">
+
+													<img src="<?php echo base_url();?>media/images/icon-232.png" width="60" height="67" alt="image">	
+
+												</div>
+
+												<span>WEEKLY TEST BASED ON JEE & NEET </span>
+
+												
+
+											</div>
+
+										</div>
+										
+
+										<div class="col-md-4 col-sm-6 col-xs-12">
+
+											<div class="w-column">
+
+												<div class="img-box">
+
+													<img src="<?php echo base_url();?>media/images/icon-233.png" width="60" height="67" alt="image">	
+
+												</div>
+
+												<span>TRACK ON ACADEMIC PROGRESS THROUGH RAS WEBSITE </span>
+
+												
+
+											</div>
 
 										</div>
 
-										<span>ONLINE E-BOOKS</span>
+										<div class="col-md-4 col-sm-6 col-xs-12">
 
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
+											<div class="w-column">
 
-									</div>
+												<div class="img-box">
 
-								</div>
+													<img src="<?php echo base_url();?>media/images/icon-234.png" width="60" height="67" alt="image">	
 
-								<div class="col-md-4 col-sm-6 col-xs-12">
+												</div>
 
-									<div class="w-column">
+												<span>JAMALPUR’S FIRST DIGITAL INSTITUTION THAT PROVIDES TRACK TO PARENTS</span>
 
-										<div class="img-box">
-
-											<img src="<?php echo base_url();?>media/images/icon-232.png" width="60" height="67" alt="image">	
-
-										</div>
-
-										<span>FREE UPDATES & SUPPORT</span>
-
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
-
-									</div>
-
-								</div>
-
-								<div class="col-md-4 col-sm-6 col-xs-12">
-
-									<div class="w-column">
-
-										<div class="img-box">
-
-											<img src="<?php echo base_url();?>media/images/icon-233.png" width="60" height="67" alt="image">	
+												
+											</div>
 
 										</div>
 
-										<span>REFUND IF NOT SATISFY</span>
+										<div class="col-md-4 col-sm-6 col-xs-12">
 
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
+											<div class="w-column">
 
-									</div>
+												<div class="img-box">
 
-								</div>
+													<img src="<?php echo base_url();?>media/images/icon-235.png" width="60" height="67" alt="image" >	
+												</div>
 
-								<div class="col-md-4 col-sm-6 col-xs-12">
+												<span>STUDY MATERIALS, DPPs, PRACTICE PAPERS</span>
 
-									<div class="w-column">
-
-										<div class="img-box">
-
-											<img src="<?php echo base_url();?>media/images/icon-234.png" width="60" height="67" alt="image">	
+												
+											</div>
 
 										</div>
 
-										<span>EXPERIENCED FACULTY</span>
-
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
-
-									</div>
-
-								</div>
-
-								<div class="col-md-4 col-sm-6 col-xs-12">
-
-									<div class="w-column">
-
-										<div class="img-box">
-
-											<img src="<?php echo base_url();?>media/images/icon-235.png" width="60" height="67" alt="image">	
-										</div>
-
-										<span>GUARANTEED CAREER</span>
-
-										<p>The pie and we know flipper live in a world full of the clouds.</p>
-
-									</div>
-
-								</div>
-
-							</div>
+									</div></center>
 
 						</div>
 
@@ -1922,47 +919,9 @@
 		
 		
 
-		<div class="page-section form-map">
+		<div class="page-section map">
 
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.153590044365!2d151.2283635148165!3d-33.88569802736661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae064d4035c7%3A0xafd8ab9b32253d24!2sUnderwood+St%2C+Paddington+NSW+2021%2C+Australia!5e0!3m2!1sen!2s!4v1489007994183"></iframe>
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="form-section">
-
-						<div class="col-sm-6 col-xs-12 black pull-right">
-
-							<form class="fill-form" action="#">
-
-								<span>fill the form</span>
-
-								<input type="text" placeholder="Name *">
-
-								<input type="email" placeholder="Email *">
-
-								<input type="text" placeholder="Subject">
-
-								<textarea placeholder="Message"></textarea>
-
-								<div class="fill-row">
-
-									<button type="submit">send</button>
-
-									<em><i>*</i> Please Fill all the Fields</em>
-
-								</div>
-
-							</form>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
 
 		</div>
 

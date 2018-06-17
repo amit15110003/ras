@@ -28,48 +28,15 @@
 
 					<div class="column_2">
 
-						<span class="heading">recent post</span>
+						<span class="heading">Useful Links</span>
 
-						<div class="post-holder">
+						<li><a href="#">About Us</a></li><br>
+						<li><a href="#">Courses</a></li><br>
+						<li><a href="#">Results</a></li><br>
+						<li><a href="#">Contact Us</a></li><br>
+						<li><a href="#">Student Zone</a></li><br>
 
-							<div class="img"></div>
-
-							<div class="post-text">
-
-								<p>The pie and we know flipper lives flying in a old clouds.</p>
-
-								<ul class="post_list">
-
-									<li>Apr 14, 2016</li>
-
-									<li><i aria-hidden="true" class="fa fa-commenting-o"></i>08 Comments</li>
-
-								</ul>
-
-							</div>
-
-						</div>
-
-						<div class="post-holder">
-
-							<div class="img"></div>
-
-							<div class="post-text">
-
-								<p>There we know flipper lives flying in a old clouds.</p>
-
-								<ul class="post_list">
-
-									<li>May 03, 2016</li>
-
-									<li><i aria-hidden="true" class="fa fa-commenting-o"></i>12 Comments</li>
-
-								</ul>
-
-							</div>
-
-						</div>
-
+						
 					</div>
 
 					<div class="column_3">
@@ -116,7 +83,7 @@
 
 							<input type="email" placeholder="Email">
 
-							<button type="submit">send message</button>
+							<button onclick="javascript:subscribe('');">Send Message</button>
 
 						</form>
 
@@ -257,6 +224,23 @@
 
 	<script  type="text/javascript" src="<?php echo base_url();?>media/js/custom.js"></script>		
 
+	<script>
+		         function subscribe() {
+		             var email =document.getElementById("subemail").value;
+		             $.ajax({
+		                 type: 'POST',
+		                 url: '<?php echo base_url(); ?>index.php/ras/subscribe',
+		                 data:'&email='+email,
+		                 beforeSend: function () {
+		                     $('.loading').show();
+		                 },
+		                 success: function (html) {
+		                     $('#subcribed').html(html);
+		                     $('.loading').fadeOut("slow");
+		                 }
+		             });
+		         }
+		</script>
 
 
 	

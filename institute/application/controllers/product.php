@@ -62,16 +62,11 @@ class product extends CI_Controller {
 		
 			$data = array
 			(
-				'p_name' => $this->input->post('p_name'),
-				'p_desc' => $this->input->post('p_desc'),
-				'p_adddesc' => $this->input->post('p_adddesc'),
-				'p_cp' => $this->input->post('p_cp'),
-				'p_sp' => $this->input->post('p_sp'),
-				'p_stock' => $this->input->post('p_stock'),
-				'p_category' => $this->input->post('p_category'),
-
-				'p_status' => $this->input->post('p_status'),
-				'p_image' => $picture
+				'r_name' => $this->input->post('r_name'),
+				'r_desc' => $this->input->post('r_desc'),
+				
+				'r_status' => $this->input->post('r_status'),
+				'r_image' => $picture
 			);
 			
 			if ($this->productmodal->add_product($data))
@@ -88,20 +83,16 @@ class product extends CI_Controller {
 		
 	}
 	public function product_id($p_id)
-	{   $details=$this->productmodal->productbyid($p_id);
-        	    	$data['p_id'] = $details[0]->p_id;
-        			$data['p_name'] = $details[0]->p_name;
-        			$data['p_desc'] = $details[0]->p_desc;
-        			$data['p_adddesc'] = $details[0]->p_adddesc;
-					$data['p_cp'] = $details[0]->p_cp;
-					$data['p_sp'] = $details[0]->p_sp;
-					$data['p_stock'] = $details[0]->p_stock;
-					$data['p_category'] = $details[0]->p_category;
-					$data['p_image'] = $details[0]->p_image;
+	{   $details=$this->productmodal->productbyid($r_id);
+        	    	$data['r_id'] = $details[0]->r_id;
+        			$data['r_name'] = $details[0]->r_name;
+        			$data['r_desc'] = $details[0]->r_desc;
+        			
+					$data['r_image'] = $details[0]->r_image;
      			$this->load->view('header');
 				$this->load->view('productbyid',$data);
 				$this->load->view('footer');}
-	public function update_product($p_id)
+	public function update_product($r_id)
 	{	if(!empty($_FILES['picture']['name'])){
                 $config['upload_path'] = '../uploads/product';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
@@ -132,8 +123,8 @@ class product extends CI_Controller {
             }else{
                 $picture = '';
             }
-            $p_id=$this->input->post('p_id');
-		 	$del_image=$this->input->post('p_image');
+            $p_id=$this->input->post('r_id');
+		 	$del_image=$this->input->post('r_image');
 		 	if(!empty($picture))
 		 	{
 		 		unlink("../uploads/product/".$del_image);
@@ -143,18 +134,18 @@ class product extends CI_Controller {
 
 			$data = array
 			(
-				'p_name' => $this->input->post('p_name'),
-				'p_desc' => $this->input->post('p_desc'),
+				'r_name' => $this->input->post('r_name'),
+				'r_desc' => $this->input->post('r_desc'),
 				'p_adddesc' => $this->input->post('p_adddesc'),
 				'p_cp' => $this->input->post('p_cp'),
 				'p_sp' => $this->input->post('p_sp'),
 				'p_stock' => $this->input->post('p_stock'),
 				'p_category' => $this->input->post('p_category'),
-				'p_status' => $this->input->post('p_status'),
-				'p_image' => $picture
+				'r_status' => $this->input->post('r_status'),
+				'r_image' => $picture
 			);
 			
-			if ($this->productmodal->update_product($p_id,$data))
+			if ($this->productmodal->update_product($r_id,$data))
 			{
 				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
 				redirect($_SERVER['HTTP_REFERER']);

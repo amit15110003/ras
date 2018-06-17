@@ -59,15 +59,15 @@ class productmodal extends CI_Model
         $query = $this->db->get('product');
 		return $query->result();
 	}
-	function productbyid($p_id)
+	function productbyid($r_id)
 	{
-		$this->db->where('p_id', $p_id);
+		$this->db->where('r_id', $r_id);
         $query = $this->db->get('product');
 		return $query->result();
 	}
-	function update_product($p_id,$data)
+	function update_product($r_id,$data)
 	{
-		$this->db->where('p_id', $p_id);
+		$this->db->where('r_id', $r_id);
 		return $this->db->update('product', $data);
 		
 	}

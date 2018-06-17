@@ -19,47 +19,18 @@
 
 			            <div class="m-form__section m-form__section--middle">
 							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label">Product Name:</label>
+								<label class="col-lg-2 col-form-label">Result Name:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="p_name" placeholder="">
+									<input type="text" class="form-control m-input" name="r_name" placeholder="">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label">Product Description:</label>
+								<label class="col-lg-2 col-form-label">Result Description:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="p_desc" placeholder="">
+									<input type="text" class="form-control m-input" name="r_desc" placeholder="">
 								</div>
 							</div>
-							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label">Additional Product Description:</label>
-								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="p_adddesc" placeholder="">
-								</div>
-							</div>
-							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label" for="exampleTextarea">Cost Price:</label>
-								<div class="col-lg-2">
-									<input type="number" class="form-control m-input" name="p_cp" placeholder="">
-								</div>
-								<label class="col-lg-2 col-form-label" for="exampleTextarea">Selling Price:</label>
-								<div class="col-lg-2">
-									<input type="number" class="form-control m-input" name="p_sp" placeholder="">
-								</div>
-							</div>
-							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label" for="exampleTextarea">Stock:</label>
-								<div class="col-lg-6">
-									<input type="number" class="form-control m-input" name="p_stock" placeholder="">
-								</div>
-							</div>
-							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label" for="exampleTextarea">Category:</label>
-								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="p_category" placeholder="">
-								</div>
-							</div>
-							
-														
+												
 							
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label" for="exampleTextarea">Image:</label>
@@ -68,12 +39,21 @@
 								  	<label class="custom-file-label" for="customFile">Choose file</label>
 								</div>
 							</div>
+							<div class="m-form__group form-group row">
+								<label for="exampleSelect1" class="col-lg-2 col-form-label">Testimonial:</label>
+								<div class="col-lg-6">
+									<select class="form-control m-input" name="r_testimon" id="exampleSelect1">
+										<option value="1">Active</option>
+										<option value="0">Disabled</option>
+									</select>
+								</div>
+							</div>
 						
 							
 							<div class="m-form__group form-group row">
 								<label for="exampleSelect1" class="col-lg-2 col-form-label">Status:</label>
 								<div class="col-lg-6">
-									<select class="form-control m-input" name="p_status" id="exampleSelect1">
+									<select class="form-control m-input" name="r_status" id="exampleSelect1">
 										<option value="1">Active</option>
 										<option value="0">Disabled</option>
 									</select>
