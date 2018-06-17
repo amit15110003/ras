@@ -166,13 +166,14 @@
 
 
 
-				<form class="" method="post" action="#">
-
+				<div class="" >
+				<?php $attributes = array("name" => "loginform");
+            echo form_open("login", $attributes);?>
 
 
 					<div class="form-group">
 
-						<label for="email" class="cols-sm-2 control-label">Your Email</label>
+						<label for="email" class="cols-sm-2 control-label">RAS Id</label>
 
 						<div class="cols-sm-10">
 
@@ -180,7 +181,7 @@
 
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
 
-								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+								<input type="text" class="form-control" name="u_card" id="email"  placeholder="Enter your Email"/>
 
 							</div>
 
@@ -200,7 +201,7 @@
 
 								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 
-								<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								<input type="password" class="form-control" name="u_pass" id="password"  placeholder="Enter your Password"/>
 
 							</div>
 
@@ -212,7 +213,7 @@
 
 					<div class="form-group ">
 
-						<a href="#" target="_blank" id="button" class="btn btn-primary btn-lg btn-block login-button">Signin</a>
+						<button type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Signin</a>
 
 					</div>
 
@@ -224,161 +225,9 @@
 
 					</div>
 
-					
+					<?php echo form_close(); ?>
 
-				</form>
-
-			</div>
-
-	      </div>
-
-	      
-
-	    </div>
-
-	  </div>
-
-	</div>
-
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-
-	  <div class="modal-dialog yellow" role="document">
-
-	    <div class="modal-content">
-
-	      <div class="modal-header">
-
-	        <button type="button" class="close yellow" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-	        <h4 class="modal-title form" id="myModalLabel2">signup</h4>
-
-	      </div>
-
-	      <div class="modal-body">
-
-	    	<div class="main-login main-center yellow">
-
-				<form class="" method="post" action="#">
-
-					
-
-					<div class="form-group">
-
-						<label for="name" class="cols-sm-2 control-label">Your Name</label>
-
-						<div class="cols-sm-10">
-
-							<div class="input-group">
-
-								<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-
-								<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						<label for="email2" class="cols-sm-2 control-label">Your Email</label>
-
-						<div class="cols-sm-10">
-
-							<div class="input-group">
-
-								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-
-								<input type="text" class="form-control" name="email" id="email2"  placeholder="Enter your Email"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						<label for="username" class="cols-sm-2 control-label">Username</label>
-
-						<div class="cols-sm-10">
-
-							<div class="input-group">
-
-								<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-
-								<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						<label for="password2" class="cols-sm-2 control-label">Password</label>
-
-						<div class="cols-sm-10">
-
-							<div class="input-group">
-
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-
-								<input type="password" class="form-control" name="password" id="password2"  placeholder="Enter your Password"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-
-
-					<div class="form-group">
-
-						<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-
-						<div class="cols-sm-10">
-
-							<div class="input-group">
-
-								<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-
-								<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-
-							</div>
-
-						</div>
-
-					</div>
-
-
-
-					<div class="form-group ">
-
-						<a href="#" target="_blank" id="button2" class="btn btn-primary btn-lg btn-block login-button">Signup</a>
-
-					</div>
-
-
-
-					<div class="form-group ">
-
-						<p>Dont have an account! <a href="#">Sign Up Here</a> </p>
-
-					</div>
-
-					
-
-				</form>
+				</div>
 
 			</div>
 

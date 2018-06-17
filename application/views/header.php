@@ -1,5 +1,3 @@
-	
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -56,11 +54,13 @@
 
 				<div class="right-panel">
 					<ul class="login-list">
+						<?php if ($this->session->userdata('u_card')){ ?>
+						<li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('u_name'), 0, 6); ?></a></li>
 
+						<li><a href="<?php echo base_url();?>index.php/ras/logout" ><i class="fa fa-sign-in" aria-hidden="true"></i>logout</a></li>
+           				 <?php } else{?>
 						<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i>login</a></li>
-
-						<li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user-plus" aria-hidden="true"></i>register</a></li>
-
+						<?php }?>
 					</ul>
 
 				</div>

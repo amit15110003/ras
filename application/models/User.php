@@ -14,10 +14,10 @@ class user extends CI_Model
     	$data['u_visit'] = date("Y-m-d H:i:s");
 		return $this->db->insert('user', $data);
 	}
-	function get_user($u_mail,$u_pass)
+	function get_user($u_card,$u_pass)
 	{
-		$this->db->where('u_mail', $u_mail);
-		$this->db->where('u_pass', md5($u_pass));
+		$this->db->where('u_card', $u_card);
+		$this->db->where('u_contact', $u_pass);
         $query = $this->db->get('user');
 		return $query->result();
 	}

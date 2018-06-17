@@ -74,7 +74,7 @@ class ras extends CI_Controller {
 	function logout()
 	{
 		// destroy session
-        $data = array('login' => '', 'uname' => '', 'uid' => '');
+        $data = array('login' => '', 'u_name' => '', 'u_id' => '');
         $this->session->unset_userdata($data);
         $this->session->sess_destroy();
 		redirect($_SERVER['HTTP_REFERER']);

@@ -7,11 +7,9 @@
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
                         <li><a href="#" class="pro-act">Profile</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Exams</a></li>
-                        <li><a href="#">Time Line</a></li>
-                        <li><a href="#">Entry</a></li>
-                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Attendance</a></li>
+                        <li><a href="#">Downloads</a></li>
                     </ul>
                 </div>
             </div>
@@ -25,12 +23,9 @@
                     <div class="pro-user-bio">
                         <ul>
                             <li style="color: #203245">
-                                <h4>Emily Jessica</h4>
+                                <h4><?php echo $result = $this->session->userdata('u_name'); ?></h4>
                             </li>
-                            <li style="color: #203245">Student Id: ST080618</li>
-                            <li><a href="#!"><i class="fa fa-facebook"></i> Facebook: my sample</a></li>
-                            <li><a href="#!"><i class="fa fa-google-plus"></i> Google: my sample</a></li>
-                            <li><a href="#!"><i class="fa fa-twitter"></i> Twitter: my sample</a></li>
+                            <li style="color: #203245">Student Id: <?php echo $result = $this->session->userdata('u_card'); ?></li>
                         </ul>
                     </div>
                 </div>
@@ -46,37 +41,32 @@
                                         <tr>
                                             <td>Student Name</td>
                                             <td>:</td>
-                                            <td>Ravi Ranjan</td>
+                                            <td><?php echo $result = $this->session->userdata('u_name'); ?></td>
                                         </tr>
                                         <tr>
                                             <td>Student Id</td>
                                             <td>:</td>
-                                            <td>ST080618</td>
+                                            <td><?php echo $result = $this->session->userdata('u_card'); ?></td>
                                         </tr>
                                         <tr>
                                             <td>Eamil</td>
                                             <td>:</td>
-                                            <td>ravi@gmail.com</td>
+                                            <td><?php echo $result = $this->session->userdata('u_mail'); ?></td>
                                         </tr>
                                         <tr>
                                             <td>Phone</td>
                                             <td>:</td>
-                                            <td>+0123456789</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Date of birth</td>
-                                            <td>:</td>
-                                            <td>03 Jun 1997</td>
+                                            <td><?php echo $result = $this->session->userdata('u_contact'); ?></td>
                                         </tr>
                                         <tr>
                                             <td>Address</td>
                                             <td>:</td>
-                                            <td>east colony jamalpur</td>
+                                            <td><?php echo $result = $this->session->userdata('u_add'); ?></td>
                                         </tr>
                                         <tr>
                                             <td>Status</td>
                                             <td>:</td>
-                                            <td><span class="db-done">Active</span> </td>
+                                            <td><span class="db-done"><?php $result = $this->session->userdata('u_status'); if($result=="1") {echo "Active";}else{echo "Disable";}?></span> </td>
                                         </tr>
                                     </tbody>
                                 </table>
