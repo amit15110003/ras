@@ -67,6 +67,16 @@
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
+								<label class="col-lg-2 col-form-label">Batch Name:</label>
+								<div class="col-lg-6">
+								<select class="form-control m-input" name="b_id" id="exampleSelect1">
+								<?php foreach ($query as $member) {?>
+										<option value="<?php echo $member->b_id;?>"><?php echo $member->b_name;?></option>
+									<?php }?>	
+								</select>
+								</div>
+							</div>
+							<div class="m-form__group form-group row">
 								<label for="exampleSelect1" class="col-lg-2 col-form-label">Status:</label>
 								<div class="col-lg-6">
 									<select class="form-control m-input" name="u_status" id="exampleSelect1">

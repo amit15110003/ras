@@ -232,7 +232,7 @@
 
 									<em class="two"></em>
 
-									<span class="count-4">Over 3000+ STUDENTS</span>
+									<span class="count-4">Over 1000+ STUDENTS</span>
 
 								</li>
 
@@ -1594,7 +1594,7 @@
 
 								<div class="col-sm-3 col-xs-6">
 
-									<strong>150</strong>
+									<strong>3</strong>
 
 									<div class="img-holder"><i class="icon-local_library"></i></div>
 
@@ -1604,7 +1604,7 @@
 
 								<div class="col-sm-3 col-xs-6">
 
-									<strong>2300<i>+</i></strong>
+									<strong>200<i>+</i></strong>
 
 									<div class="img-holder"><i class="icon-book"></i></div>
 
@@ -1614,7 +1614,7 @@
 
 								<div class="col-sm-3 col-xs-6">
 
-									<strong>40</strong>
+									<strong>4</strong>
 
 									<div class="img-holder"><i class="icon-tools"></i></div>
 
@@ -1628,7 +1628,7 @@
 
 									<div class="img-holder"><i class="icon-earth"></i></div>
 
-									<span>countries</span>
+									<span>Selection</span>
 
 								</div>
 
@@ -1656,7 +1656,7 @@
 
 						<div class="col-xs-12 heading-area">
 
-							<h1>WHAT OUR CLIENT SAYS</h1>
+							<h1>WHAT OUR STUDENTS / PARENTS SAYS</h1>
 
 							<p>The others comfortable these days are all happy and free listen to a story</p>
 

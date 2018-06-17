@@ -7,7 +7,7 @@
 		<div class="m-portlet__head-caption">
 			<div class="m-portlet__head-title">
 				<h3 class="m-portlet__head-text">
-					Student Details
+					Test Details
 				</h3>
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 order-1 order-xl-2 m--align-right">
-					<a href="<?php echo base_url();?>index.php/user/insertuser" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+					<a href="<?php echo base_url();?>index.php/test/inserttest" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							<i class="la la-cart-plus"></i>
 							<span>Add New</span>
@@ -84,25 +84,23 @@
 		<table class="m-datatable" id="html_table" width="100%">
 			<thead>
 			<tr>
-				<th title="Field #1">Student ID</th>
-				<th title="Field #2">Student Name</th>
-				<th title="Field #3">RAS No</th>
-				<th title="Field #4">Contact</th>
-				<th title="Field #4">Batch</th>
-				<th title="Field #6">Email</th>
-				<th title="Field #7">Edit</th>
+				<th title="Field #1">Test ID</th>
+				<th title="Field #2">Name</th>
+				<th title="Field #3">Full Marks</th>
+				<th title="Field #4">Subject</th>
+				<th title="Field #4">Date</th>
+				<th title="Field #5">Edit</th>
 			</tr>
 			</thead>
 			<tbody>
 			<?php foreach ($query as $row) {?>
 			<tr>
-				<td><?php echo $row->u_id;?></td>
-				<td><?php echo $row->u_name;?></td>
-				<td><?php echo $row->u_card;?></td>
-				<td><?php echo $row->u_contact;?></td>
-				<td><?php echo $row->u_class;?>-<?php echo $row->u_batch;?></td>
-				<td><?php echo $row->u_mail;?></td>
-				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+				<td><?php echo $row->t_id;?></td>
+				<td><?php echo $row->t_name;?></td>
+				<td><?php echo $row->t_fmarks;?></td>
+				<td><?php echo $row->t_sub;?></td>
+				<td><?php echo $row->t_date;?></td>
+				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							
 							<span>Update</span>

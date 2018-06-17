@@ -179,7 +179,37 @@ class home extends CI_Controller {
 			}
 
 	}
+	public function batchstu()
+	{
+		$data['query']=$this->admin->get_batch();
+		$data['query1']=$this->admin->get_user();
+		$this->load->view('header');
+		$this->load->view('batchstu', $data);
+		$this->load->view('footer');		
+	}
 
+	public function add_batchstu()
+	{
+			$data = array
+			(
+				'b_name' => $this->input->post('b_name'),
+				'b_desc' => $this->input->post('b_desc'),
+				'b_status' => $this->input->post('b_status')
+			);
+			
+			if ($this->admin->add_batch($data))
+			{
+				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				redirect($_SERVER['HTTP_REFERER']);
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
+				redirect($_SERVER['HTTP_REFERER']);
+			}
+
+	}
 
 	public function toggle_batch($b_id,$b_status)
 	{        

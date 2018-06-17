@@ -135,46 +135,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="m-dropdown__body">
 				<div class="m-dropdown__content">
 					<ul class="m-nav m-nav--skin-light">
-						<li class="m-nav__section m--hide">
-							<span class="m-nav__section-text">Section</span>
-						</li>
-						<li class="m-nav__item">
-							<a href="indexa80c.html?page=header/profile&amp;demo=default" class="m-nav__link">
-								<i class="m-nav__link-icon flaticon-profile-1"></i>
-								<span class="m-nav__link-title">  
-									<span class="m-nav__link-wrap">      
-										<span class="m-nav__link-text">My Profile</span>      
-										<span class="m-nav__link-badge"><span class="m-badge m-badge--success">2</span></span>  
-									</span>
-								</span>
-							</a>
-						</li>
-						<li class="m-nav__item">
-							<a href="indexa80c.html?page=header/profile&amp;demo=default" class="m-nav__link">
-								<i class="m-nav__link-icon flaticon-share"></i>
-								<span class="m-nav__link-text">Activity</span>
-							</a>
-						</li>
-						<li class="m-nav__item">
-							<a href="indexa80c.html?page=header/profile&amp;demo=default" class="m-nav__link">
-								<i class="m-nav__link-icon flaticon-chat-1"></i>
-								<span class="m-nav__link-text">Messages</span>
-							</a>
-						</li>
-						<li class="m-nav__separator m-nav__separator--fit">
-						</li>
-						<li class="m-nav__item">
-							<a href="indexa80c.html?page=header/profile&amp;demo=default" class="m-nav__link">
-								<i class="m-nav__link-icon flaticon-info"></i>
-								<span class="m-nav__link-text">FAQ</span>
-							</a>
-						</li>
-						<li class="m-nav__item">
-							<a href="indexa80c.html?page=header/profile&amp;demo=default" class="m-nav__link">
-								<i class="m-nav__link-icon flaticon-lifebuoy"></i>
-								<span class="m-nav__link-text">Support</span>
-							</a>
-						</li>
 						<li class="m-nav__separator m-nav__separator--fit">
 						</li>
 						<li class="m-nav__item">
@@ -244,6 +204,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             				<a  href="<?php echo base_url();?>index.php/home/batch" class="m-menu__link ">
             					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
             					<span class="m-menu__link-text">Batch</span>
+            				</a>
+            			</li>
+					</ul>
+				</div>
+			</li>
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+            	<a  href="#" class="m-menu__link m-menu__toggle">
+            		<i class="m-menu__link-icon fa fa-group"></i>
+            		<span class="m-menu__link-text">Test Details</span>
+            		<i class="m-menu__ver-arrow la la-angle-right"></i>
+            	</a>
+            	<div class="m-menu__submenu ">
+            		<span class="m-menu__arrow"></span>
+            		<ul class="m-menu__subnav">
+            			<li class="m-menu__item  m-menu__item--parent" aria-haspopup="true" >
+            				<span class="m-menu__link"><span class="m-menu__link-text">Student Details</span></span>
+            			</li>
+            			<li class="m-menu__item " aria-haspopup="true" >
+            				<a  href="<?php echo base_url();?>index.php/user" class="m-menu__link ">
+            					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+            					<span class="m-menu__link-text">View Students</span>
+            				</a>
+            			</li>
+            			<li class="m-menu__item " aria-haspopup="true" >
+            				<a  href="<?php echo base_url();?>index.php/user/insertuser" class="m-menu__link ">
+            					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+            					<span class="m-menu__link-text">Add Student</span>
+            				</a>
+            			</li>
+            			<li class="m-menu__item " aria-haspopup="true" >
+            				<a  href="<?php echo base_url();?>index.php/test" class="m-menu__link ">
+            					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+            					<span class="m-menu__link-text">Add Test</span>
             				</a>
             			</li>
 					</ul>

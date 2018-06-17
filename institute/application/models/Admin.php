@@ -99,6 +99,11 @@ class admin extends CI_Model
 		$data['b_status'] = $b_status;
 		return $this->db->update('batch', $data);
 	}
+	function get_user()
+	{
+        $query = $this->db->get('user');
+		return $query->result();
+	}
 	function get_category()
 	{
         $query = $this->db->get('category');

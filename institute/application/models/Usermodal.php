@@ -79,7 +79,11 @@ class usermodal extends CI_Model
 		$data['c_status'] = $c_status;
 		return $this->db->update('category', $data);
 	}
-
+	function get_batch()
+	{
+        $query = $this->db->get('batch');
+		return $query->result();
+	}
 
 
 }?>

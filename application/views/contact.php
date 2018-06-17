@@ -22,7 +22,7 @@
 							<span class="heading">new york</span>
 							<div class="address">
 								<span class="title">address</span>
-								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
+								<p>Nayagoan, Manaskunj Mandir,<br> Jamalpur-811214 </p>
 							</div>
 							<div class="tel">
 								<span class="title">phone number</span>
@@ -37,45 +37,24 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="location-holder">
-							<span class="heading">sydney</span>
-							<div class="address">
-								<span class="title">address</span>
-								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
-							</div>
-							<div class="tel">
-								<span class="title">phone number</span>
-								<a href="#">+01 123 456 7899</a>
-								<br>AZ
-								<a href="#">+01 123 456 7856</a>
-							</div>
-							<div class="email">
-								<span class="title">email address</span>
-								<a href="#">nfo@discipline.com</a>
-								<br>
-								<a href="#">support@discipline.com</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 col-xs-12">
-						<div class="location-holder">
-							<span class="heading">united kingdom</span>
-							<div class="address">
-								<span class="title">address</span>
-								<p>A07 Discipline Inc, st, <br> Victory, United States.</p>
-							</div>
-							<div class="tel">
-								<span class="title">phone number</span>
-								<a href="#">+01 123 456 7899</a>
-								<br>
-								<a href="#">+01 123 456 7856</a>
-							</div>
-							<div class="email">
-								<span class="title">email address</span>
-								<a href="#">nfo@discipline.com</a>
-								<a href="#">support@discipline.com</a>
-							</div>
+					<div class="col-sm-8 col-xs-12">
+						<div class="contactus-form yellow">
+							<h3>Feel free to contact us!</h3>
+							<form action="#">
+								<div class="form-row">
+									<div class="left-row">
+										<input type="text" placeholder="Name*">
+									</div>
+									<div class="right-row">
+										<input type="email" placeholder="Email*">
+									</div>
+								</div>
+								<div class="form-row">
+									<input type="text" placeholder="Subject">
+								</div>
+								<textarea placeholder="Message"></textarea>
+								<button type="submit">send</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -83,29 +62,6 @@
 		</div>
 	</div>
 
-	<div class="page-section white">
-		<div class="container">
-			<div class="row">
-				<div class="contactus-form yellow">
-					<form action="#">
-						<div class="form-row">
-							<div class="left-row">
-								<input type="text" placeholder="Name*">
-							</div>
-							<div class="right-row">
-								<input type="email" placeholder="Email*">
-							</div>
-						</div>
-						<div class="form-row">
-							<input type="text" placeholder="Subject">
-						</div>
-						<textarea placeholder="Message"></textarea>
-						<button type="submit">send</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div class="page-section">
 		<div class="map">

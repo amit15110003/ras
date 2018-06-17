@@ -22,22 +22,22 @@ class User extends CI_Controller {
 		$this->load->view('footer');
 	}
 	public function insertuser()
-	{
+	{   $data['query']=$this->usermodal->get_batch();
 		$this->load->view('header');
-		$this->load->view('user');
+		$this->load->view('user',$data);
 		$this->load->view('footer');
 	}
 	public function add_user()
 	{   
-		$this->form_validation->set_rules('u_mail', 'Email ID', 'trim|required|valid_email|is_unique[user.u_mail]');
-		$this->form_validation->set_rules('u_contact', 'contact', 'trim|required|is_unique[user.u_contact]');
-		$this->form_validation->set_rules('u_card', 'card', 'trim|required|is_unique[user.u_card]');
+		//$this->form_validation->set_rules('u_mail', 'Email ID', 'trim|required|valid_email|is_unique[user.u_mail]');
+		$this->form_validation->set_rules('u_contact', 'contact', 'trim|required');
+		$this->form_validation->set_rules('u_card', 'card', 'trim|required');
 		
 		// submit
 		if ($this->form_validation->run() == FALSE)
         {	
         	$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
-				redirect($_SERVER['HTTP_REFERER']);
+				//redirect($_SERVER['HTTP_REFERER']);
         }
 		else
 		{
@@ -50,6 +50,7 @@ class User extends CI_Controller {
 				'u_card' => $this->input->post('u_card'),
 				'u_mail' => $this->input->post('u_mail'),
 				'u_class' => $this->input->post('u_class'),
+				//'u_batch' => $this->input->post('u_batch'),
 				'u_status' => $this->input->post('u_status')
 			);
 			
@@ -68,7 +69,8 @@ class User extends CI_Controller {
 
 		}
 		public function user_id($u_id)
-	{   $details=$this->usermodal->userbyid($u_id);
+	{   $data['query']=$this->usermodal->get_batch();
+		$details=$this->usermodal->userbyid($u_id);
         	    	$data['u_id'] = $details[0]->u_id;
         			$data['u_name'] = $details[0]->u_name;
         			$data['u_contact'] = $details[0]->u_contact;
@@ -88,6 +90,8 @@ class User extends CI_Controller {
 				'u_name' => $this->input->post('u_name'),
 				'u_contact' => $this->input->post('u_contact'),
 				'u_add' => $this->input->post('u_add'),
+				'u_batch' => $this->input->post('u_batch'),
+				'u_class' => $this->input->post('u_class'),
 				'u_mail' => $this->input->post('u_mail')
 				
 			);
