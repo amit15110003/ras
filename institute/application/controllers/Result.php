@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class product extends CI_Controller {
+class result extends CI_Controller {
     public function __construct()
 	{	
 		
@@ -9,30 +9,30 @@ class product extends CI_Controller {
 		$this->load->helper(array('form','url'));
 		$this->load->library(array('session', 'form_validation','pagination','cart'));
 		$this->load->database();
-		$this->load->model('productmodal');
+		$this->load->model('resultmodal');
 			if(!$this->session->userdata('a_id')){
                 redirect('login', 'refresh');
          }
 
 	}
 	public function index()
-	{   $data['query']=$this->productmodal->get_product();
+	{   $data['query']=$this->resultmodal->get_result();
 		$this->load->view('header');
-		$this->load->view('viewproduct',$data);
+		$this->load->view('viewresult',$data);
 		$this->load->view('footer');
 	}
-	public function insertproduct()
+	public function insertresult()
 	{
 		$this->load->view('header');
-		$this->load->view('product');
+		$this->load->view('result');
 		$this->load->view('footer');
 	}
-	public function add_product()
+	public function add_result()
 	{   
 		if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/product';
+                $config['upload_path'] = '../uploads';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                $config['file_name'] = time()."product";
+                $config['file_name'] = time()."image";
                 
                 //Load upload library and initialize configuration
                 $this->load->library('upload',$config);
@@ -40,12 +40,12 @@ class product extends CI_Controller {
                 
                 if($this->upload->do_upload('picture')){
                     $uploadData = $this->upload->data();
-                     $this->gallery_path = realpath(APPPATH . '../../uploads/product');//fetching path
+                     $this->gallery_path = realpath(APPPATH . '../../uploads/');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
                           'maintain_ratio' => TRUE,
-                          'width' => 400
+                          'height' => 400
                            
                         );
                         $this->load->library('image_lib', $config1); //load library
@@ -64,12 +64,13 @@ class product extends CI_Controller {
 			(
 				'r_name' => $this->input->post('r_name'),
 				'r_desc' => $this->input->post('r_desc'),
-				
+				'r_year' => $this->input->post('r_year'),
+				'r_type' => $this->input->post('r_type'),
 				'r_status' => $this->input->post('r_status'),
 				'r_image' => $picture
 			);
 			
-			if ($this->productmodal->add_product($data))
+			if ($this->resultmodal->add_result($data))
 			{
 				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
 				redirect($_SERVER['HTTP_REFERER']);
@@ -82,21 +83,21 @@ class product extends CI_Controller {
 			}
 		
 	}
-	public function product_id($p_id)
-	{   $details=$this->productmodal->productbyid($r_id);
+	public function result_id($p_id)
+	{   $details=$this->productmodal->resultbyid($r_id);
         	    	$data['r_id'] = $details[0]->r_id;
         			$data['r_name'] = $details[0]->r_name;
         			$data['r_desc'] = $details[0]->r_desc;
         			
 					$data['r_image'] = $details[0]->r_image;
      			$this->load->view('header');
-				$this->load->view('productbyid',$data);
+				$this->load->view('resultbyid',$data);
 				$this->load->view('footer');}
-	public function update_product($r_id)
+	public function update_result($r_id)
 	{	if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/product';
+                $config['upload_path'] = '../uploads';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                $config['file_name'] = time()."product";
+                $config['file_name'] = time()."image";
                 
                 //Load upload library and initialize configuration
                 $this->load->library('upload',$config);
@@ -104,12 +105,12 @@ class product extends CI_Controller {
                 
                 if($this->upload->do_upload('picture')){
                     $uploadData = $this->upload->data();
-                     $this->gallery_path = realpath(APPPATH . '../../uploads/product');//fetching path
+                     $this->gallery_path = realpath(APPPATH . '../../uploads');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
                           'maintain_ratio' => TRUE,
-                          'width' => 400
+                          'height' => 400
                            
                         );
                         $this->load->library('image_lib', $config1); //load library
@@ -127,8 +128,8 @@ class product extends CI_Controller {
 		 	$del_image=$this->input->post('r_image');
 		 	if(!empty($picture))
 		 	{
-		 		unlink("../uploads/product/".$del_image);
-		 		unlink("../uploads/product/thumb/".$del_image);
+		 		unlink("../uploads/".$del_image);
+		 		unlink("../uploads/thumb/".$del_image);
 		 	}
 		 	else{$picture=$del_image;}
 
@@ -136,16 +137,12 @@ class product extends CI_Controller {
 			(
 				'r_name' => $this->input->post('r_name'),
 				'r_desc' => $this->input->post('r_desc'),
-				'p_adddesc' => $this->input->post('p_adddesc'),
-				'p_cp' => $this->input->post('p_cp'),
-				'p_sp' => $this->input->post('p_sp'),
-				'p_stock' => $this->input->post('p_stock'),
-				'p_category' => $this->input->post('p_category'),
+				'r_type' => $this->input->post('r_type'),
 				'r_status' => $this->input->post('r_status'),
 				'r_image' => $picture
 			);
 			
-			if ($this->productmodal->update_product($r_id,$data))
+			if ($this->productmodal->update_result($r_id,$data))
 			{
 				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
 				redirect($_SERVER['HTTP_REFERER']);
@@ -159,7 +156,7 @@ class product extends CI_Controller {
 		
 	}
 
-	public function toggle_product($w_id,$w_status)
+	public function toggle_result($w_id,$w_status)
 	{        
 	        $w_status1=1-$w_status;
 			if ($this->admin->toggle_product($w_id,$w_status1))
