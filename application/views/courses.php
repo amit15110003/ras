@@ -37,10 +37,7 @@
 										</li>
 									</ul>
 									<p>At RAS we help you to have a clear understanding of all topics in the JEE Main/Advance syllabus, since questions could be asked from any topic. Therefore, the students are advised and mentored to prepare the entire syllabus without skipping any topic.</p>
-									<div class="fee-holder yellow">
-										<span>COURSE FEE:  <em>$450</em></span>
-										<a class="join" href="#">join now</a>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -65,10 +62,7 @@
 										</li>
 									</ul>
 									<p>At RAS we help you to have a clear understanding of all topics in the JEE Main/Advance syllabus, since questions could be asked from any topic. Therefore, the students are advised and mentored to prepare the entire syllabus without skipping any topic.</p>
-									<div class="fee-holder yellow">
-										<span>COURSE FEE:  <em>$550</em></span>
-										<a class="join" href="#">join now</a>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -93,10 +87,7 @@
 										</li>
 									</ul>
 									<p>At RAS we help you to have a clear understanding of all topics in the NEET/AIIMS syllabus, since questions could be asked from any topic. Therefore, the students are advised and mentored to prepare the entire syllabus without skipping any topic.</p>
-									<div class="fee-holder yellow">
-										<span>COURSE FEE:  <em>$650</em></span>
-										<a class="join" href="#">join now</a>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -121,10 +112,7 @@
 										</li>
 									</ul>
 									<p>At RAS we help you to have a clear understanding of all topics in the NEET/AIIMS syllabus, since questions could be asked from any topic. Therefore, the students are advised and mentored to prepare the entire syllabus without skipping any topic.</p>
-									<div class="fee-holder yellow">
-										<span>COURSE FEE:  <em>$450</em></span>
-										<a class="join" href="#">join now</a>
-									</div>
+									
 								</div>
 							</div>
 						</div>

@@ -419,6 +419,7 @@
 
 							<div class="c_column">
 
+
 								<div class="img-box">
 
 									<img src="<?php echo base_url();?>media/images/icon-52.png" width="36" height="35" alt="image">
@@ -446,7 +447,7 @@
 
 								<span class="title">BIOLOGY</span>
 
-								<p>Our Syllabus is totally based on NEET,AIIMS and Other state Medical Entrance Examinations.<br></p>
+								<p>Our Syllabus is totally based on NEET/AIPMT,AIIMS and Other state Medical Entrance Examinations.<br></p>
 
 
 							</div>
