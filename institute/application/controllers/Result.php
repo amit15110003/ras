@@ -16,7 +16,8 @@ class result extends CI_Controller {
 
 	}
 	public function index()
-	{   $data['query']=$this->resultmodal->get_result();
+	{   
+		$data['query']=$this->resultmodal->get_result();
 		$this->load->view('header');
 		$this->load->view('viewresult',$data);
 		$this->load->view('footer');
@@ -83,15 +84,17 @@ class result extends CI_Controller {
 			}
 		
 	}
-	public function result_id($p_id)
-	{   $details=$this->productmodal->resultbyid($r_id);
+	public function result_id($r_id)
+	{   $details=$this->resultmodal->resultbyid($r_id);
         	    	$data['r_id'] = $details[0]->r_id;
         			$data['r_name'] = $details[0]->r_name;
         			$data['r_desc'] = $details[0]->r_desc;
+        			$data['r_year'] = $details[0]->r_year;
+        			$data['r_type'] = $details[0]->r_type;
         			
 					$data['r_image'] = $details[0]->r_image;
      			$this->load->view('header');
-				$this->load->view('resultbyid',$data);
+				$this->load->view('resultdisplay',$data);
 				$this->load->view('footer');}
 	public function update_result($r_id)
 	{	if(!empty($_FILES['picture']['name'])){
@@ -156,10 +159,10 @@ class result extends CI_Controller {
 		
 	}
 
-	public function toggle_result($w_id,$w_status)
+	public function toggle_result($r_id,$r_status)
 	{        
-	        $w_status1=1-$w_status;
-			if ($this->admin->toggle_product($w_id,$w_status1))
+	        $r_status1=1-$r_status;
+			if ($this->resultmodal->toggle_result($r_id,$r_status1))
 			{
 				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);

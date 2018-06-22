@@ -27,6 +27,11 @@ class resultmodal extends CI_Model
 	{
 		return $this->db->insert('result', $data);
 	}
-
+	function toggle_result($r_id,$r_status)
+	{
+		$this->db->where('r_id', $r_id);
+		$data['r_status'] = $r_status;
+		return $this->db->update('result', $data);
+	}
 	
 }?>
