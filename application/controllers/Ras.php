@@ -24,10 +24,11 @@ class ras extends CI_Controller {
 		$this->load->view('about');
 		$this->load->view('footer');
 	}
-	public function recharge()
+	public function results()
 	{
+		$data['query']=$this->user->showresult();
 		$this->load->view('header');
-		$this->load->view('recharge');
+		$this->load->view('results',$data);
 		$this->load->view('footer');
 	}
 	public function contact()

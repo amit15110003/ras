@@ -55,6 +55,11 @@ class user extends CI_Model
 		$query=$this->db->get('category');;
 		return $query->result();
 	}
+	public function showresult()
+	{
+		$query=$this->db->get('result');;
+		return $query->result();
+	}
 	function countproduct_category($category)
 	{	
 		$this->db->where('p_category', $category);
