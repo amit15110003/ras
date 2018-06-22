@@ -296,6 +296,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 	<!-- END: Aside Menu -->
 </div>
+<?php if(!empty($this->session->flashdata('msg'))){?>
+<div class="container-fluid" id="messagetop" style="background-color:#f4f4f4;height:120px;display:block;position:fixed;margin-top:50px;width:100%;z-index: 5000;">
+<div class="col-md-12 col-xs-12" style="padding-top:30px;">
+<h4 class="text-right"><a onclick="javascript:msghidetop();" style="color:#000;font-size:20px;"><span aria-hidden="true" style="padding-right:15px;font-size:36px;">×</span></a></h4>
+<h4 class="text-center">
+<?php echo $this->session->flashdata('msg'); ?></h4></div>
+</div>
+<?php }?>
 <!-- END: Left Aside -->							
 		   	<div class="m-grid__item m-grid__item--fluid m-wrapper">
 
