@@ -82,8 +82,8 @@ class User extends CI_Controller {
 				$this->load->view('userbyid',$data);
 				$this->load->view('footer');
 	}	
-	public function result_id($u_id)
-	{   $data['query']=$this->usermodal->get_sturesult($u_id);
+	public function result_id($u_card)
+	{   $data['query']=$this->usermodal->get_sturesult($u_card);
 					
      			$this->load->view('header');
 				$this->load->view('resultbyid',$data);
