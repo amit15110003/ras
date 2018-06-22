@@ -255,13 +255,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             				<span class="m-menu__link"><span class="m-menu__link-text">Result Details</span></span>
             			</li>
             			<li class="m-menu__item " aria-haspopup="true" >
-            				<a  href="<?php echo base_url();?>index.php/product" class="m-menu__link ">
+            				<a  href="<?php echo base_url();?>index.php/result" class="m-menu__link ">
             					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
             					<span class="m-menu__link-text">Product Details</span>
             				</a>
             			</li>
             			<li class="m-menu__item " aria-haspopup="true" >
-            				<a  href="<?php echo base_url();?>index.php/product/insertproduct" class="m-menu__link ">
+            				<a  href="<?php echo base_url();?>index.php/result/insertresult" class="m-menu__link ">
             					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
             					<span class="m-menu__link-text">Add Result</span>
             				</a>

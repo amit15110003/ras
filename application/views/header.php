@@ -110,7 +110,7 @@
 
 							<li><a href="<?php echo base_url();?>index.php/ras/courses">courses</a></li>
 
-							<li><a href="<?php echo base_url();?>index.php/ras/courses">Results</a></li>
+							<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li>
 
 							<li class="active"><a href="<?php echo base_url();?>index.php/ras/student">student zone</a></li> 
 

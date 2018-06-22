@@ -13,13 +13,13 @@
 	<div class="m-portlet__body">
 			<div class="tab-pane" id="m_widget4_tab3_content">
 				<!--begin::Form-->
-		        <?php $attributes = array("name" => "add_product"); echo form_open_multipart("product/add_Product", $attributes);?>
+		        <?php $attributes = array("name" => "add_product"); echo form_open_multipart("result/add_result", $attributes);?>
 				<div class="m-form m-form--label-align-right">
 					<div class="m-portlet__body">	
 
 			            <div class="m-form__section m-form__section--middle">
 							<div class="m-form__group form-group row">
-								<label class="col-lg-2 col-form-label">Result Name:</label>
+								<label class="col-lg-2 col-form-label">Name:</label>
 								<div class="col-lg-6">
 									<input type="text" class="form-control m-input" name="r_name" placeholder="">
 								</div>
@@ -40,11 +40,39 @@
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
-								<label for="exampleSelect1" class="col-lg-2 col-form-label">Testimonial:</label>
+								<label for="exampleSelect1" class="col-lg-2 col-form-label">Year:</label>
 								<div class="col-lg-6">
-									<select class="form-control m-input" name="r_testimon" id="exampleSelect1">
-										<option value="1">Active</option>
-										<option value="0">Disabled</option>
+									<select class="form-control m-input" name="r_year" id="exampleSelect1">
+										<option value="2005">2005</option>
+										<option value="2006">2006</option>
+										<option value="2007">2007</option>
+										<option value="2008">2008</option>
+										<option value="2009">2009</option>
+										<option value="2010">2010</option>
+										<option value="2011">2011</option>
+										<option value="2012">2012</option>
+										<option value="2013">2013</option>
+										<option value="2014">2014</option>
+										<option value="2015">2015</option>
+										<option value="2016">2016</option>
+										<option value="2017">2017</option>
+										<option value="2018">2018</option>
+										<option value="2019">2019</option>
+										<option value="2020">2020</option>
+										<option value="2021">2021</option>
+										<option value="2022">2022</option>
+										<option value="2023">2023</option>
+										<option value="2024">2024</option>
+										<option value="2025">2025</option>
+									</select>
+								</div>
+							</div>
+							<div class="m-form__group form-group row">
+								<label for="exampleSelect1" class="col-lg-2 col-form-label">Type:</label>
+								<div class="col-lg-6">
+									<select class="form-control m-input" name="r_type" id="exampleSelect1">
+										<option value="1">Result</option>
+										<option value="0">Testimonial</option>
 									</select>
 								</div>
 							</div>

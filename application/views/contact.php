@@ -19,7 +19,7 @@
 				<div class="location yellow">
 					<div class="col-sm-4 col-xs-12">
 						<div class="location-holder animate animated fadeUp">
-							<span class="heading">new york</span>
+							<span class="heading">Rajiv Academy of Sciences</span>
 							<div class="address">
 								<span class="title">address</span>
 								<p>Nayagoan, Manaskunj Mandir,<br> Jamalpur-811214 </p>
@@ -64,7 +64,5 @@
 
 
 	<div class="page-section">
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.153590044365!2d151.2283635148165!3d-33.88569802736661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae064d4035c7%3A0xafd8ab9b32253d24!2sUnderwood+St%2C+Paddington+NSW+2021%2C+Australia!5e0!3m2!1sen!2s!4v1489007994183"></iframe>
-		</div>
+		<div class="map"><iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=300&amp;hl=en&amp;q=nayagaon%20%20jamalpur+(RAJIV%20ACADEMY%20OF%20SCIENCES)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div>
 	</div>
