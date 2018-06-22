@@ -5,7 +5,7 @@
 		<div class="m-portlet__head-caption">
 			<div class="m-portlet__head-title">
 				<h3 class="m-portlet__head-text">
-					Add Annual Result
+					Update Annual Result
 				</h3>
 			</div>
 		</div>
@@ -13,7 +13,7 @@
 	<div class="m-portlet__body">
 			<div class="tab-pane" id="m_widget4_tab3_content">
 				<!--begin::Form-->
-		        <?php $attributes = array("name" => "add_product"); echo form_open_multipart("result/add_result", $attributes);?>
+		        <?php $attributes = array("name" => "add_product"); echo form_open_multipart("result/update_result/$r_id", $attributes);?>
 				<div class="m-form m-form--label-align-right">
 					<div class="m-portlet__body">	
 
@@ -21,13 +21,13 @@
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Name:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="r_name" placeholder="">
+									<input type="text" class="form-control m-input" name="r_name" placeholder="" value="<?php echo $r_name;?>">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Result Description:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="r_desc" placeholder="">
+									<input type="text" class="form-control m-input" name="r_desc" placeholder="" value="<?php echo $r_desc;?>">
 								</div>
 							</div>
 												
@@ -43,6 +43,7 @@
 								<label for="exampleSelect1" class="col-lg-2 col-form-label">Year:</label>
 								<div class="col-lg-6">
 									<select class="form-control m-input" name="r_year" id="exampleSelect1">
+										<option value="<?php echo $r_year;?>" selected><?php echo $r_year;?></option>
 										<option value="2005">2005</option>
 										<option value="2006">2006</option>
 										<option value="2007">2007</option>
@@ -71,8 +72,8 @@
 								<label for="exampleSelect1" class="col-lg-2 col-form-label">Type:</label>
 								<div class="col-lg-6">
 									<select class="form-control m-input" name="r_type" id="exampleSelect1">
-										<option value="1">Result</option>
-										<option value="0">Testimonial</option>
+										<option value="1" <?php if($r_type=="1"){echo "selected";}?>>Result</option>
+										<option value="0" <?php if($r_type=="0"){echo "selected";}?>>Testimonial</option>
 									</select>
 								</div>
 							</div>

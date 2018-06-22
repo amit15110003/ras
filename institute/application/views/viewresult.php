@@ -1,4 +1,5 @@
-<div class="m-grid__item m-grid__item--fluid m-wrapper">
+							
+		   	<div class="m-grid__item m-grid__item--fluid m-wrapper">
 			    			    
 <div class="m-content">
 	<div class="m-portlet m-portlet--mobile">
@@ -6,7 +7,7 @@
 		<div class="m-portlet__head-caption">
 			<div class="m-portlet__head-title">
 				<h3 class="m-portlet__head-text">
-					Results / Testimonials Details
+					Test Details
 				</h3>
 			</div>
 		</div>
@@ -19,6 +20,7 @@
 		</div>
 	</div>
 	<div class="m-portlet__body">
+		<!--begin: Search Form -->
 		<div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
 			<div class="row align-items-center">
 				<div class="col-xl-8 order-2 order-xl-1">
@@ -47,22 +49,25 @@
 		<table class="m-datatable" id="html_table" width="100%">
 			<thead>
 			<tr>
-				<th title="Field #1">ID</th>
+				<th title="Field #1">R ID</th>
 				<th title="Field #2">Name</th>
 				<th title="Field #3">Description</th>
-				<th title="Field #4">Type</th>
-				<th title="Field #5">Status</th>
-				<th title="Field #6">Edit</th>
+				<th title="Field #4">Result / Testimonials</th>
+				<th title="Field #4">Year</th>
+				<th title="Field #5">Result Status</th>
+				<th title="Field #5">Edit</th>
 			</tr>
 			</thead>
 			<tbody>
-			<?php foreach ($query as $row) { ?>
+			<?php foreach ($query as $row) {?>
 			<tr>
+				
 				<td><?php echo $row->r_id;?></td>
 				<td><?php echo $row->r_name;?></td>
 				<td><?php echo $row->r_desc;?></td>
-				<td><?php echo $row->r_type;?></td>
-				<td><?php echo $row->r_status;?></td>
+				<td><?php if($row->r_type=="1"){echo "Result";}else{echo "Testimonials";}?></td>
+				<td><?php echo $row->r_year;?></td>
+				<td><?php if($row->r_status=="1") {?><a class="btn btn-danger" href="<?php echo base_url();?>/index.php/result/toggle_result/<?php echo $row->r_id; ?>/<?php echo $row->r_status; ?>">Disable</a><?php }else{?> <a class="btn btn-success" href="<?php echo base_url();?>/index.php/result/toggle_result/<?php echo $row->r_id; ?>/<?php echo $row->r_status; ?>">Activate</a><?php }?></td>
 				<td><a href="<?php echo base_url();?>index.php/result/result_id/<?php echo $row->r_id;?>" class="btn btn-small m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							
@@ -81,3 +86,4 @@
 				
 		
 				<!-- end:: Body -->
+
