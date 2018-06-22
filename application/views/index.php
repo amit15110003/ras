@@ -377,7 +377,7 @@
 
 						</div>
 
-						<div class="col-sm-3 col-xs-12">
+						<div class="col-sm-3 col-xs-6">
 
 							<div class="c_column">
 
@@ -396,7 +396,7 @@
 
 						</div>
 
-						<div class="col-sm-3 col-xs-12">
+						<div class="col-sm-3 col-xs-6">
 
 							<div class="c_column">
 
@@ -415,7 +415,7 @@
 
 						</div>
 
-						<div class="col-sm-3 col-xs-12">
+						<div class="col-sm-3 col-xs-6">
 
 							<div class="c_column">
 
@@ -435,7 +435,7 @@
 
 						</div>
 
-						<div class="col-sm-3 col-xs-12">
+						<div class="col-sm-3 col-xs-6">
 
 							<div class="c_column">
 
@@ -479,7 +479,7 @@
 
 						<div class="col-xs-12 heading-holder">
 
-							<h1>our faculaties</h1>
+							<h1>our faculties</h1>
 
 							<p>The others comfortable these days are all happy and free</p>
 
@@ -771,15 +771,15 @@
 				<div class="row">
 
 					<div class="w-choose">
-						<!--
+						
 							<div class="col-md-4 col-sm-12 col-xs-12 pull-right w-choose-image">
 
 								<img src="<?php echo base_url();?>media/images/img-65.png" width="373" height="569" alt="image">
 
 							</div>
-						-->
+						
 
-						<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-8 col-sm-12 col-xs-12">
 							<center>
 								<div class="heading-area">
 
