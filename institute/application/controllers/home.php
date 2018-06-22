@@ -44,7 +44,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->update_admin_login($id,$logindata))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -87,7 +87,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->add_member($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -122,7 +122,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->update_user($a_id,$data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -139,7 +139,7 @@ class home extends CI_Controller {
 	        $status=1-$a_status;
 			if ($this->admin->toggle_member($a_id,$status))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -168,7 +168,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->add_batch($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -199,7 +199,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->add_batch($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -216,7 +216,7 @@ class home extends CI_Controller {
 	        $b_status1=1-$b_status;
 			if ($this->admin->toggle_batch($b_id,$b_status1))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -226,53 +226,7 @@ class home extends CI_Controller {
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 	}
-	public function category()
-	{
-		$data['query']=$this->admin->get_category();
-		$this->load->view('header');
-		$this->load->view('category', $data);
-		$this->load->view('footer');		
-	}
-
-	public function add_category()
-	{
-			$data = array
-			(
-				'c_name' => $this->input->post('c_name'),
-				'c_descr' => $this->input->post('c_descr'),
-				'c_status' => $this->input->post('c_status')
-			);
-			
-			if ($this->admin->add_category($data))
-			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
-				redirect($_SERVER['HTTP_REFERER']);
-			}
-			else
-			{
-				// error
-				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
-				redirect($_SERVER['HTTP_REFERER']);
-			}
-
-	}
-
-
-	public function toggle_category($c_id,$c_status)
-	{        
-	        $c_status1=1-$c_status;
-			if ($this->admin->toggle_warehouse($c_id,$c_status1))
-			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
-				redirect($_SERVER['HTTP_REFERER']);
-			}
-			else
-			{
-				// error
-				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
-				redirect($_SERVER['HTTP_REFERER']);
-			}
-	}
+	
 	public function update_pass()
 	{      
 		$this->form_validation->set_rules('a_pass', 'Password', 'trim|required|md5');
@@ -283,7 +237,7 @@ class home extends CI_Controller {
 			
 			if ($this->admin->update_admin_login($id,$logindata))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else

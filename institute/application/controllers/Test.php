@@ -43,7 +43,7 @@ class Test extends CI_Controller {
 			
 			if ($this->testmodal->add_test($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -71,7 +71,7 @@ class Test extends CI_Controller {
 			
 			if ($this->testmodal->sturesultinsert($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
