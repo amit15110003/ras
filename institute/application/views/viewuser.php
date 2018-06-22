@@ -84,12 +84,11 @@
 		<table class="m-datatable" id="html_table" width="100%">
 			<thead>
 			<tr>
-				<th title="Field #1">Student ID</th>
 				<th title="Field #2">Student Name</th>
 				<th title="Field #3">RAS No</th>
 				<th title="Field #4">Contact</th>
 				<th title="Field #4">Batch</th>
-				<th title="Field #6">Email</th>
+				<th title="Field #6">Result</th>
 				<th title="Field #7">Edit</th>
 			</tr>
 			</thead>
@@ -101,7 +100,13 @@
 				<td><?php echo $row->u_card;?></td>
 				<td><?php echo $row->u_contact;?></td>
 				<td><?php echo $row->u_class;?>-<?php echo $row->u_batch;?></td>
-				<td><?php echo $row->u_mail;?></td>
+				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+						<span>
+							
+							<span>Add</span>
+						</span>
+					</a></td>
+			</tr>
 				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							
