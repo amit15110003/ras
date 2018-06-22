@@ -389,7 +389,7 @@
 
 								<span class="title">PHYSICS</span>
 
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full of wonder under the clouds away.</p>
+								<p>Our Syllabus is totally based on JEE MAINS/ADVANCE and Other state entrance Examinations.</p>
 
 
 							</div>
@@ -408,9 +408,7 @@
 
 								<span class="title">CHEMISTRY</span>
 
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
-
-			of wonder under the clouds away.</p>
+								<p>Our Syllabus is totally based on JEE MAINS/ADVANCE and Other state entrance Examinations.</p>
 
 
 							</div>
@@ -429,9 +427,7 @@
 
 								<span class="title">MATHEMATICS</span>
 
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
-
-				of wonder under the clouds away.</p>
+								<p>Our Syllabus is totally based on JEE MAINS/ADVANCE and Other state entrance Examinations.</p>
 
 
 							</div>
@@ -450,9 +446,7 @@
 
 								<span class="title">BIOLOGY</span>
 
-								<p>The pie and we know flipper lives in a old full of wonder under the clouds away full 
-
-			of wonder under the clouds away.</p>
+								<p>Our Syllabus is totally based on NEET,AIIMS and Other state Medical Entrance Examinations.<br></p>
 
 
 							</div>
