@@ -13,25 +13,27 @@
 	<div class="m-portlet__body">
 			<div class="tab-pane" id="m_widget4_tab3_content">
 				<!--begin::Form-->
-		        <?php $attributes = array("name" => "add_product"); echo form_open_multipart("result/update_result/$r_id", $attributes);?>
+		        <?php $attributes = array("name" => "update"); echo form_open_multipart("result/update_result/", $attributes);?>
 				<div class="m-form m-form--label-align-right">
 					<div class="m-portlet__body">	
 
+						<input type="hidden" name="r_id" value="<?php echo $r_id;?>">
 			            <div class="m-form__section m-form__section--middle">
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Name:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="r_name" placeholder="" value="<?php echo $r_name;?>">
+									<input type="text" class="form-control m-input" name="r_name"  value="<?php echo $r_name;?>">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Result Description:</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="r_desc" placeholder="" value="<?php echo $r_desc;?>">
+									<input type="text" class="form-control m-input" name="r_desc"  value="<?php echo $r_desc;?>">
 								</div>
 							</div>
 												
 							
+									<input type="hidden" name="r_image" value="<?php echo $r_image;?>">
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label" for="exampleTextarea">Image:</label>
 								<div class="col-lg-6">
@@ -69,7 +71,7 @@
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
-								<label for="exampleSelect1" class="col-lg-2 col-form-label">Type:</label>
+								<label for="exampleSelect1" class="col-lg-2 col-form-label">Result/ Testimonial:</label>
 								<div class="col-lg-6">
 									<select class="form-control m-input" name="r_type" id="exampleSelect1">
 										<option value="1" <?php if($r_type=="1"){echo "selected";}?>>Result</option>

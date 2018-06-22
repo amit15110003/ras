@@ -19,7 +19,7 @@ class resultmodal extends CI_Model
 	}
 	function update_result($r_id,$data)
 	{
-		$this->db->where('r_id', $r_id);
+		$this->db->where('r_id',$r_id);
 		return $this->db->update('result', $data);
 		
 	}

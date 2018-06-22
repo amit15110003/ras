@@ -554,6 +554,12 @@
                 <!--end::Page Snippets -->   
         <!--begin::Page Resources --> 
                 <script src="<?php echo base_url();?>assets/demo/default/custom/components/datatables/base/html-table.js" type="text/javascript"></script>
+                <script type="text/javascript">
+      function msghidetop()
+      { 
+                         $("#messagetop").css({"display":"none"});
+                        }
+      </script>
                 <!--end::Page Resources -->          
             </body>
     <!-- end::Body -->

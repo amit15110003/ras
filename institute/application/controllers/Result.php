@@ -95,8 +95,10 @@ class result extends CI_Controller {
 					$data['r_image'] = $details[0]->r_image;
      			$this->load->view('header');
 				$this->load->view('resultdisplay',$data);
-				$this->load->view('footer');}
-	public function update_result($r_id)
+				$this->load->view('footer');
+	}
+
+	public function update_result()
 	{	if(!empty($_FILES['picture']['name'])){
                 $config['upload_path'] = '../uploads';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
@@ -127,7 +129,7 @@ class result extends CI_Controller {
             }else{
                 $picture = '';
             }
-            $p_id=$this->input->post('r_id');
+            $r_id=$this->input->post('r_id');
 		 	$del_image=$this->input->post('r_image');
 		 	if(!empty($picture))
 		 	{
@@ -145,16 +147,14 @@ class result extends CI_Controller {
 				'r_image' => $picture
 			);
 			
-			if ($this->productmodal->update_result($r_id,$data))
+			if ($this->resultmodal->update_result($r_id,$data))
 			{
 				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
 			{
-				// error
 				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
-				//redirect($_SERVER['HTTP_REFERER']);
 			}
 		
 	}

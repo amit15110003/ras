@@ -74,7 +74,7 @@
 					</a>
 				</td>
 				<td>
-					<a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+					<a href="<?php echo base_url();?>index.php/test/test_id/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>Update</span>
 					</a>
 				</td>
