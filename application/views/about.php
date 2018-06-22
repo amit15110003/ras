@@ -18,31 +18,11 @@
 						<img src="<?php echo base_url();?>media/images/img-2.png" alt="image">
 					</div>
 					<div class="col-sm-6 col-xs-12 pull-right">
-						<h1>ABOUT DISCIPLINE</h1>
-						<span class="sub">The others comfortable these days are all happy and free listen to a story </span>
-						<div class="about-holder">
-							<div class="box">
-								<div class="img"><img src="<?php echo base_url();?>media/images/img-43.png" width="70" height="70" alt="image"></div>
-								<div class="about-text">
-									<span>who we are</span>
-									<p>The pie and we know flipper lives in a world full of wonder flying there under under the sweeping the clouds away.</p>
-								</div>
-							</div>
-							<div class="box">
-								<div class="img"><img src="<?php echo base_url();?>media/images/img-43.png" width="70" height="70" alt="image"></div>
-								<div class="about-text">
-									<span>who we are</span>
-									<p>The pie and we know flipper lives in a world full of wonder flying there under under the sweeping the clouds away.</p>
-								</div>
-							</div>
-							<div class="box">
-								<div class="img"><img src="<?php echo base_url();?>media/images/img-43.png" width="70" height="70" alt="image"></div>
-								<div class="about-text">
-									<span>who we are</span>
-									<p>The pie and we know flipper lives in a world full of wonder flying there under under the sweeping the clouds away.</p>
-								</div>
-							</div>
-						</div>
+						<h1>ABOUT RAS</h1>
+						<span class="sub">RAS, A pioneer coaching institute for the preparation of JEE (Main+Advanced), JEE (Main), Pre-Medical (AIPMT (NEET-UG)/ AIIMS). The Institute is well regarded for the best results year after year in jamalpur.
+						At RAS, we focus on building a strong foundation of imaginations, knowledge and concepts in students for their success and provide an excellent platform for the preparation of competitive exams and board level education. The best academic support and individual care which we provide to the students helps them meet their career goals and objectives.
+						Our highly qualified and most experienced faculties are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to their social, cultural, academic and all-round development. </span>
+						
 					</div>
 				</section>
 			</div>
