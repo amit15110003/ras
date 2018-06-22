@@ -12,13 +12,7 @@
 
 						<ul class="footer-social">
 
-							<li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
-
-							<li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
-
-							<li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
-
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/RajivAcademyofSciences"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
 
 							<li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
 
