@@ -26,7 +26,14 @@ class ras extends CI_Controller {
 	}
 	public function results()
 	{
-		$data['query']=$this->user->showresult();
+		$data['query']=$this->user->showresultyear();
+		$this->load->view('header');
+		$this->load->view('resultyear',$data);
+		$this->load->view('footer');
+	}
+	public function resultsbyyear($year)
+	{
+		$data['query']=$this->user->showresult($year);
 		$this->load->view('header');
 		$this->load->view('results',$data);
 		$this->load->view('footer');

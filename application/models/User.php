@@ -52,12 +52,21 @@ class user extends CI_Model
 	//product
 	public function showcategory()
 	{
-		$query=$this->db->get('category');;
+		$query=$this->db->get('category');
 		return $query->result();
 	}
-	public function showresult()
-	{
-		$query=$this->db->get('result');;
+	public function showresult($year)
+	{	
+		$this->db->where('r_year', $year);
+		$query=$this->db->get('result');
+		return $query->result();
+	}
+	public function showresultyear()
+	{	
+		$this->db->distinct();
+		$this->db->select("r_year");
+		$this->db->order_by("r_year", "desc");
+		$query=$this->db->get('result');
 		return $query->result();
 	}
 	function countproduct_category($category)
