@@ -13,7 +13,7 @@
 	<div class="m-portlet__body">
 			<div class="tab-pane" id="m_widget4_tab3_content">
 				<!--begin::Form-->
-		        <?php $attributes = array("name" => "add_member"); echo form_open_multipart("user/add_user", $attributes);?>
+		        <?php $attributes = array("name" => "add_member"); echo form_open_multipart("test/inserttest", $attributes);?>
 				<div class="m-form m-form--label-align-right">
 					<div class="m-portlet__body">	
 
@@ -27,13 +27,13 @@
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Full Marks</label>
 								<div class="col-lg-6">
-									<input type="text" class="form-control m-input" name="u_fmarks" placeholder="">
+									<input type="text" class="form-control m-input" name="t_fmarks" placeholder="">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">
 								<label class="col-lg-2 col-form-label">Date</label>
 								<div class="col-lg-6">
-									<input type="date" class="form-control m-input" name="u_date" placeholder="">
+									<input type="date" class="form-control m-input" name="t_date" placeholder="">
 								</div>
 							</div>
 							<div class="m-form__group form-group row">

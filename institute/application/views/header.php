@@ -222,18 +222,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             				<span class="m-menu__link"><span class="m-menu__link-text">Student Details</span></span>
             			</li>
             			<li class="m-menu__item " aria-haspopup="true" >
-            				<a  href="<?php echo base_url();?>index.php/user" class="m-menu__link ">
-            					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
-            					<span class="m-menu__link-text">View Students</span>
-            				</a>
-            			</li>
-            			<li class="m-menu__item " aria-haspopup="true" >
-            				<a  href="<?php echo base_url();?>index.php/user/insertuser" class="m-menu__link ">
-            					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
-            					<span class="m-menu__link-text">Add Student</span>
-            				</a>
-            			</li>
-            			<li class="m-menu__item " aria-haspopup="true" >
             				<a  href="<?php echo base_url();?>index.php/test" class="m-menu__link ">
             					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
             					<span class="m-menu__link-text">Add Test</span>

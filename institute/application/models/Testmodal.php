@@ -19,4 +19,13 @@ class Testmodal extends CI_Model
 		return $query->result();
 	}
 
+	function add_test($data)
+	{
+        return $this->db->insert('test', $data);
+	}
+	function sturesultinsert($data)
+	{
+        return $this->db->insert('sturesults', $data);
+	}
+
 }?>

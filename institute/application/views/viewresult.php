@@ -1,4 +1,3 @@
-<!-- END: Left Aside -->							
 <div class="m-grid__item m-grid__item--fluid m-wrapper">
 			    			    
 <div class="m-content">
@@ -20,7 +19,6 @@
 		</div>
 	</div>
 	<div class="m-portlet__body">
-		<!--begin: Search Form -->
 		<div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
 			<div class="row align-items-center">
 				<div class="col-xl-8 order-2 order-xl-1">
@@ -58,7 +56,7 @@
 			</tr>
 			</thead>
 			<tbody>
-			<?php foreach ($query as $row){?>
+			<?php foreach ($query as $row) { ?>
 			<tr>
 				<td><?php echo $row->r_id;?></td>
 				<td><?php echo $row->r_name;?></td>

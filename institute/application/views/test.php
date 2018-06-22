@@ -68,7 +68,7 @@
 					</div>
 				</div>
 				<div class="col-xl-4 order-1 order-xl-2 m--align-right">
-					<a href="<?php echo base_url();?>index.php/test/inserttest" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+					<a href="<?php echo base_url();?>index.php/test/addtest" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
 						<span>
 							<i class="la la-cart-plus"></i>
 							<span>Add New</span>
@@ -89,6 +89,7 @@
 				<th title="Field #3">Full Marks</th>
 				<th title="Field #4">Subject</th>
 				<th title="Field #4">Date</th>
+				<th title="Field #5">Add Result</th>
 				<th title="Field #5">Edit</th>
 			</tr>
 			</thead>
@@ -100,12 +101,15 @@
 				<td><?php echo $row->t_fmarks;?></td>
 				<td><?php echo $row->t_sub;?></td>
 				<td><?php echo $row->t_date;?></td>
-				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
-						<span>
-							
-							<span>Update</span>
-						</span>
-					</a></td>
+				<td>
+					<a href="<?php echo base_url();?>index.php/test/result/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>Add</span>
+					</a>
+				</td>
+				<td>
+					<a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->t_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
+						<span>Update</span>
+					</a>
+				</td>
 			</tr>
 			<?php }?>
 			</tbody>
