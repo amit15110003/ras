@@ -82,7 +82,7 @@ class login extends CI_Controller
 		}
 	}
 
-	public function forget()
+	/*<public function forget()
 	{
 			$uresult = $this->admin->get_adminpass($email);
 			if (count($uresult) > 0)
@@ -162,6 +162,6 @@ class login extends CI_Controller
 				redirect('login');
 			}
 		
-    }
+    }*/
 	
 }

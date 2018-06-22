@@ -72,7 +72,7 @@ class result extends CI_Controller {
 			
 			if ($this->resultmodal->add_result($data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -144,7 +144,7 @@ class result extends CI_Controller {
 			
 			if ($this->productmodal->update_result($r_id,$data))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
@@ -161,7 +161,7 @@ class result extends CI_Controller {
 	        $w_status1=1-$w_status;
 			if ($this->admin->toggle_product($w_id,$w_status1))
 			{
-				$this->session->set_flashdata('msg','<div class="">Thanks for sending us your details! Our team will be in touch with you soon.</div>');
+				$this->session->set_flashdata('msg','<div class="">Updated Successfully</div>');
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 			else
