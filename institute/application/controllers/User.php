@@ -81,6 +81,13 @@ class User extends CI_Controller {
      			$this->load->view('header');
 				$this->load->view('userbyid',$data);
 				$this->load->view('footer');
+	}	
+	public function result_id($u_id)
+	{   $data['query']=$this->usermodal->get_sturesult($u_id);
+					
+     			$this->load->view('header');
+				$this->load->view('resultbyid',$data);
+				$this->load->view('footer');
 	}
 	public function update_user($u_id)
 	{	

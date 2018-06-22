@@ -95,23 +95,13 @@
 			<tbody>
 			<?php foreach ($query as $row) {?>
 			<tr>
-				<td><?php echo $row->u_id;?></td>
 				<td><?php echo $row->u_name;?></td>
 				<td><?php echo $row->u_card;?></td>
 				<td><?php echo $row->u_contact;?></td>
 				<td><?php echo $row->u_class;?>-<?php echo $row->u_batch;?></td>
-				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
-						<span>
-							
-							<span>Add</span>
-						</span>
+				<td><a href="<?php echo base_url();?>index.php/user/result_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>View/Edit</span>
 					</a></td>
-			</tr>
-				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill">
-						<span>
-							
-							<span>Update</span>
-						</span>
+				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>Update</span>
 					</a></td>
 			</tr>
 			<?php }?>
