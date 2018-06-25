@@ -114,6 +114,21 @@ CREATE TABLE IF NOT EXISTS `batchstu` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `c_name` varchar(200) NOT NULL,
+  `c_mail` varchar(200) NOT NULL,
+  `c_subject` varchar(200) NOT NULL,
+  `c_message` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+
+
+--
 -- Table structure for table `result`
 --
 

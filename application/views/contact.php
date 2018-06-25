@@ -40,21 +40,23 @@
 					<div class="col-sm-8 col-xs-12">
 						<div class="contactus-form yellow">
 							<h3>Feel free to contact us!</h3>
-							<form action="#">
+							<?php $attributes = array("name" => "contact"); echo form_open_multipart("contact", $attributes);?>
 								<div class="form-row">
 									<div class="left-row">
-										<input type="text" placeholder="Name*">
+										<input type="text" placeholder="Name*" name="c_name">
+										
 									</div>
 									<div class="right-row">
-										<input type="email" placeholder="Email*">
+										<input type="email" placeholder="Email*" name="c_mail">
+										
 									</div>
 								</div>
 								<div class="form-row">
-									<input type="text" placeholder="Subject">
+									<input type="text" placeholder="Subject" name="c_subject">
 								</div>
-								<textarea placeholder="Message"></textarea>
+								<textarea placeholder="Message" name="c_message"></textarea>
 								<button type="submit">send</button>
-							</form>
+							
 						</div>
 					</div>
 				</div>
