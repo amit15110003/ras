@@ -11,7 +11,7 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/math2.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/RAS.jpg" width="auto" height="100%" alt="image" class="img">
 
 							<div class="justics-text">
 
@@ -33,7 +33,7 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/chem2.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/chem3.jpg" width="auto" height="100%" alt="image" class="img">
 
 							<div class="justics-text">
 
@@ -55,7 +55,7 @@
 
 						<div class="justices-img">
 
-							<img src="<?php echo base_url();?>media/images/phy2.jpg" width="1920" height="1060" alt="image" class="img">
+							<img src="<?php echo base_url();?>media/images/ALL.jpg" width="auto" height="100%" alt="image" class="img">
 
 							<div class="justics-text">
 
@@ -73,28 +73,7 @@
 
 					</div>
 
-					<div class="item">
-
-						<div class="justices-img">
-
-							<img src="<?php echo base_url();?>media/images/bio2.jpg" width="1920" height="1060" alt="image" class="img">
-
-							<div class="justics-text">
-
-								<div class="txt">
-
-									<h1></h1>
-
-									<a class="more courses" href="#">view courses</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
+					
 				</div>
 
 				<!-- Controls -->
