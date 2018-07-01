@@ -156,7 +156,7 @@
 		</div>
 		
 		<header id="header2">
-			<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logonw.png" width="130" height="70" alt="descipline"></a></div>
+			<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logotext.png" width="184" height="20" alt=""></a></div>
 			
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
@@ -181,11 +181,36 @@
 
 								<li><a href="<?php echo base_url();?>index.php/ras/courses">courses</a></li>
 
-								<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li>
 
-								<li ><a href="<?php echo base_url();?>index.php/ras/student">student zone</a></li> 
+								<li><a href="#">student zone</a>
 
-								<li class="last"><a href="<?php echo base_url();?>index.php/ras/contact">contact</a>
+									<ul class="drop-down d-7">
+
+										<li><a href="<?php echo base_url();?>index.php/ras/student">student zone</a></li>
+
+										<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li>
+
+									</ul>
+
+								</li>
+								
+
+								<li class="last"><a href="<?php echo base_url();?>index.php/ras/blog">Blog</a></li>
+
+								<li class="last"><a href="<?php echo base_url();?>index.php/ras/contact">contact</a></li>
+
+
+								<li class="login-list">
+								
+									<?php if ($this->session->userdata('u_card')){ ?>
+									<li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><?php echo $result = substr($this->session->userdata('u_name'), 0, 6); ?></a></li>
+
+									<li><a href="<?php echo base_url();?>index.php/ras/logout" ><i class="fa fa-sign-in" aria-hidden="true"></i>logout</a></li>
+			           				 <?php } else{?>
+									<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i>login</a></li>
+									<?php }?>
+									
+
 
 								</li>
 

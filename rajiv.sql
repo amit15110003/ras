@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jun 22, 2018 at 02:46 PM
--- Server version: 5.7.19
--- PHP Version: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: Jun 30, 2018 at 07:03 PM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -28,13 +26,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE IF NOT EXISTS `admin` (
-  `id` int(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `admin` (
+  `id` int(20) NOT NULL,
   `username` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `password` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
@@ -51,29 +47,27 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 -- Table structure for table `admin_login`
 --
 
-DROP TABLE IF EXISTS `admin_login`;
-CREATE TABLE IF NOT EXISTS `admin_login` (
-  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `admin_login` (
+  `a_id` int(11) NOT NULL,
   `a_mail` varchar(200) NOT NULL,
   `a_username` varchar(200) NOT NULL,
   `a_pass` varchar(200) NOT NULL,
   `a_contact` bigint(200) NOT NULL,
   `a_design` varchar(50) NOT NULL,
   `a_lastseen` timestamp NOT NULL,
-  `status` int(10) NOT NULL,
-  PRIMARY KEY (`a_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  `status` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin_login`
 --
 
 INSERT INTO `admin_login` (`a_id`, `a_mail`, `a_username`, `a_pass`, `a_contact`, `a_design`, `a_lastseen`, `status`) VALUES
-(1, 'amitanand.kvj.2@gmail.com', 'Amit Anand', '202cb962ac59075b964b07152d234b70', 8979997072, 'Admin', '2018-06-22 07:05:07', 1),
-(2, 'amitanand.kvj.2@gmail.com', 'admin', '123', 0, 'Admin', '2018-06-22 07:05:07', 1),
-(3, '', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-22 07:05:07', 1),
-(4, 'amitanand.kvj.2@gmail.com', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-22 07:05:07', 1),
-(5, 'amitanand.kvj.2@gmail.com', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-22 07:05:07', 1);
+(1, 'amitanand.kvj.2@gmail.com', 'Amit Anand', '202cb962ac59075b964b07152d234b70', 8979997072, 'Admin', '2018-06-30 12:45:57', 1),
+(2, 'amitanand.kvj.2@gmail.com', 'admin', '123', 0, 'Admin', '2018-06-30 12:45:57', 1),
+(3, '', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-30 12:45:57', 1),
+(4, 'amitanand.kvj.2@gmail.com', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-30 12:45:57', 1),
+(5, 'amitanand.kvj.2@gmail.com', 'amitanand.kvj.2@gmail.com', '123', 0, 'Admin', '2018-06-30 12:45:57', 1);
 
 -- --------------------------------------------------------
 
@@ -81,8 +75,7 @@ INSERT INTO `admin_login` (`a_id`, `a_mail`, `a_username`, `a_pass`, `a_contact`
 -- Table structure for table `batch`
 --
 
-DROP TABLE IF EXISTS `batch`;
-CREATE TABLE IF NOT EXISTS `batch` (
+CREATE TABLE `batch` (
   `b_id` int(11) NOT NULL,
   `b_name` varchar(50) NOT NULL,
   `b_desc` text NOT NULL,
@@ -103,12 +96,25 @@ INSERT INTO `batch` (`b_id`, `b_name`, `b_desc`, `b_status`) VALUES
 -- Table structure for table `batchstu`
 --
 
-DROP TABLE IF EXISTS `batchstu`;
-CREATE TABLE IF NOT EXISTS `batchstu` (
-  `bstu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `batchstu` (
+  `bstu_id` int(11) NOT NULL,
   `b_id` int(11) NOT NULL,
-  `u_id` text NOT NULL,
-  PRIMARY KEY (`bstu_id`)
+  `u_id` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog`
+--
+
+CREATE TABLE `blog` (
+  `bl_id` int(11) NOT NULL,
+  `bl_title` varchar(200) NOT NULL,
+  `bl_desc` text NOT NULL,
+  `bl_image` varchar(200) NOT NULL,
+  `bl_date` date NOT NULL,
+  `bl_status` int(2) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -118,31 +124,35 @@ CREATE TABLE IF NOT EXISTS `batchstu` (
 --
 
 CREATE TABLE `contact` (
+  `c_id` int(11) NOT NULL,
   `c_name` varchar(200) NOT NULL,
   `c_mail` varchar(200) NOT NULL,
-  `c_subject` varchar(200) NOT NULL,
+  `c_subject` text NOT NULL,
   `c_message` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`c_id`, `c_name`, `c_mail`, `c_subject`, `c_message`) VALUES
+(1, 'dineshvar', 'dc@efvg.shxdjsh', 'dfvbgnh', 'ASDCFVGBNHM');
+
 -- --------------------------------------------------------
-
-
 
 --
 -- Table structure for table `result`
 --
 
-DROP TABLE IF EXISTS `result`;
-CREATE TABLE IF NOT EXISTS `result` (
-  `r_id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `result` (
+  `r_id` int(10) NOT NULL,
   `r_name` varchar(50) NOT NULL,
   `r_image` varchar(200) NOT NULL,
   `r_desc` text NOT NULL,
   `r_type` int(2) NOT NULL,
   `r_status` int(2) NOT NULL,
-  `r_year` int(4) NOT NULL,
-  PRIMARY KEY (`r_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `r_year` int(4) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `result`
@@ -157,17 +167,27 @@ INSERT INTO `result` (`r_id`, `r_name`, `r_image`, `r_desc`, `r_type`, `r_status
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `subscribe`
+--
+
+CREATE TABLE `subscribe` (
+  `s_name` text NOT NULL,
+  `s_mail` varchar(200) NOT NULL,
+  `s_status` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `test`
 --
 
-DROP TABLE IF EXISTS `test`;
-CREATE TABLE IF NOT EXISTS `test` (
-  `t_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `test` (
+  `t_id` int(11) NOT NULL,
   `t_name` varchar(50) NOT NULL,
   `t_fmarks` int(11) NOT NULL,
   `t_sub` varchar(50) NOT NULL,
-  `t_date` date NOT NULL,
-  PRIMARY KEY (`t_id`)
+  `t_date` date NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -176,9 +196,8 @@ CREATE TABLE IF NOT EXISTS `test` (
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
-  `u_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `u_id` int(11) NOT NULL,
   `u_name` varchar(200) NOT NULL,
   `u_lname` varchar(200) NOT NULL,
   `u_card` varchar(200) NOT NULL,
@@ -191,10 +210,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `u_pass` varchar(200) NOT NULL,
   `u_class` int(11) NOT NULL,
   `u_batch` text NOT NULL,
-  `u_status` int(11) NOT NULL,
-  PRIMARY KEY (`u_id`),
-  UNIQUE KEY `u_card` (`u_card`)
-) ENGINE=MyISAM AUTO_INCREMENT=76 DEFAULT CHARSET=latin1;
+  `u_status` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
@@ -272,8 +289,104 @@ INSERT INTO `user` (`u_id`, `u_name`, `u_lname`, `u_card`, `u_mail`, `u_contact`
 (73, 'KISHAN KUMAR', '', '1118014', '', 9234916015, 9234916015, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
 (74, 'PRAVEEN TIWARY', '', '1118015', '', 7765937831, 7765937831, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
 (75, 'SHEETAL KUMARI', '', '1218054', '', 7488404007, 7488404007, '', '0000-00-00 00:00:00', 0, '', 12, '', 1);
-COMMIT;
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `admin_login`
+--
+ALTER TABLE `admin_login`
+  ADD PRIMARY KEY (`a_id`);
+
+--
+-- Indexes for table `batchstu`
+--
+ALTER TABLE `batchstu`
+  ADD PRIMARY KEY (`bstu_id`);
+
+--
+-- Indexes for table `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`bl_id`);
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`c_id`);
+
+--
+-- Indexes for table `result`
+--
+ALTER TABLE `result`
+  ADD PRIMARY KEY (`r_id`);
+
+--
+-- Indexes for table `test`
+--
+ALTER TABLE `test`
+  ADD PRIMARY KEY (`t_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`u_id`),
+  ADD UNIQUE KEY `u_card` (`u_card`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `admin_login`
+--
+ALTER TABLE `admin_login`
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `batchstu`
+--
+ALTER TABLE `batchstu`
+  MODIFY `bstu_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `bl_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `result`
+--
+ALTER TABLE `result`
+  MODIFY `r_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `test`
+--
+ALTER TABLE `test`
+  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

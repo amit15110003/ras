@@ -178,6 +178,17 @@ class user extends CI_Model
 		return $this->db->insert('contact', $data);
 	}
 
+	public function showblog()
+	{	
+		$query=$this->db->get('blog');;
+		return $query->result();
+	}
+	public function showblog_name($title)
+	{	
+		$this->db->where('bl_title', $title);
+		$query=$this->db->get('blog');;
+		return $query->result();
+	}
 
 	
 }?>

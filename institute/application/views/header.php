@@ -245,7 +245,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             			<li class="m-menu__item " aria-haspopup="true" >
             				<a  href="<?php echo base_url();?>index.php/result" class="m-menu__link ">
             					<i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
-            					<span class="m-menu__link-text">Product Details</span>
+            					<span class="m-menu__link-text">Result Details</span>
             				</a>
             			</li>
             			<li class="m-menu__item " aria-haspopup="true" >
@@ -254,11 +254,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             					<span class="m-menu__link-text">Add Result</span>
             				</a>
             			</li>
-            			
-            			
 					</ul>
 				</div>
+
+
 			</li>
+
+
+            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+                <a  href="#" class="m-menu__link m-menu__toggle">
+                    <i class="m-menu__link-icon fa fa-image"></i>
+                    <span class="m-menu__link-text">Blog</span>
+                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                </a>
+                <div class="m-menu__submenu ">
+                    <span class="m-menu__arrow"></span>
+                    <ul class="m-menu__subnav">
+                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true" >
+                            <span class="m-menu__link"><span class="m-menu__link-text">Blog Details</span></span>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true" >
+                            <a  href="<?php echo base_url();?>index.php/blog" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+                                <span class="m-menu__link-text">Blog Details</span>
+                            </a>
+                        </li>
+                        <li class="m-menu__item " aria-haspopup="true" >
+                            <a  href="<?php echo base_url();?>index.php/blog/insertblog" class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+                                <span class="m-menu__link-text">Add Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </li>
+
+
+
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
             	<a  href="<?php echo base_url();?>index.php/home/members" class="m-menu__link m-menu__toggle">
             		<i class="m-menu__link-icon fa fa-group"></i>
