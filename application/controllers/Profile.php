@@ -10,7 +10,7 @@ class profile extends CI_Controller
 		$this->load->database();
 		$this->load->model('user');
 		if(!$this->session->userdata('u_id')){
-                redirect('login', 'refresh');
+                redirect('ras', 'refresh');
          }
 
 	}
