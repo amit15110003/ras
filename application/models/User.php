@@ -27,27 +27,11 @@ class user extends CI_Model
         $query = $this->db->get('user');
 		return $query->result();
 	}
-	//address
-	public function deliveryadd($u_id)
-	{	
-		$this->db->where('u_id',$u_id);
-		$query=$this->db->get('delivery');
-		return $query->result();
-	}
-	function insert_delivery($data,$u_id,$id)
-    {
-		 $this->db->where('u_id',$u_id);
-		 $this->db->where('id',$id);
-	   $q = $this->db->get('delivery');
-
-	   if ( $q->num_rows() > 0 ) 
-	   {
-	      $this->db->where('u_id',$u_id);
-	     return  $this->db->update('delivery',$data);
-	   } else {
-	      $this->db->set('u_id', $u_id);
-	      return $this->db->insert('delivery', $data);
-	   }
+	function update_img($id,$profileimg)
+        {	
+    	$data = array('profileimg'=>$profileimg);
+    	$this->db->where('u_id', $id);
+		return $this->db->update('user', $data);
 	}
 	//product
 	public function showcategory()
@@ -187,6 +171,174 @@ class user extends CI_Model
 	{	
 		$this->db->where('bl_title', $title);
 		$query=$this->db->get('blog');;
+		return $query->result();
+	}
+
+	//questions
+
+	public function showquestion($limit, $start)
+	{	
+		$this->db->limit($limit, $start);
+		$this->db->order_by("id","desc");
+		$this->db->order_by("posted","desc");
+		$query=$this->db->get('question');
+		
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
+	
+	}
+	 public function showquestionc()
+	{
+		$this->db->where('sub', 'chemistry');
+		$this->db->order_by("Upper(id)","desc");
+		$query=$this->db->get('question');
+		
+		return $query->result();
+	} 
+	public function showquestionm()
+	{ 
+		$this->db->where('sub', 'mathematics');
+		$this->db->order_by("Upper(id)","desc");
+		$query=$this->db->get('question');
+		
+		return $query->result();
+	} 
+	public function showquestionp()
+	{
+		$this->db->where('sub', 'physics');
+		$this->db->order_by("Upper(id)","desc");
+		$query=$this->db->get('question');
+		
+		return $query->result();
+	}
+	function insert_question($data)
+    { 	
+    	$data['posted'] = date("Y-m-d H:i:s");
+    	return $this->db->insert('question', $data);
+	}
+
+	public function showquestion1($id)
+	{
+		$this->db->where('id', $id);
+		$query=$this->db->get('question');
+		
+		return $query->result();
+	}
+        
+        public function showquestionbyid($limit, $start,$id)
+	{		
+		$this->db->limit($limit, $start);
+		$this->db->order_by("id","desc");
+		$this->db->order_by("posted","desc");
+		$this->db->where('u_id', $id);
+		$query=$this->db->get('question');
+		
+        if ($query->num_rows() > 0) {
+            foreach ($query->result() as $row) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+        return false;
+	}
+        
+        public function deletequestion($id)
+	{
+		$this->db->where('id', $id);
+                return ($this->db->delete('question'));
+	}
+        
+	function insert_rply($data)
+    {
+    	return $this->db->insert('rply', $data);
+	}
+	public function showrply($id)
+	{
+		$this->db->where('qid', $id);
+		$query=$this->db->get('rply');
+		
+		return $query->result();
+	}
+	
+	function insert_view($id, $view)
+	{
+		$data1 = array('view'=>$view);
+		$this->db->where('id', $id);
+        return $this->db->update('question', $data1);
+	}
+        
+
+	function countq()
+	{
+		$this->db->select_sum('id');
+	    $this->db->from('question');
+
+	    $total_q = $this->db->count_all_results();
+
+	    if ($total_q > 0)
+	    {
+	        return $total_q;
+	    }
+
+	    return NULL;
+
+	}
+	function countqbyid($id)
+	{
+		$this->db->select_sum('id');
+		$this->db->where('u_id', $id);
+	    $this->db->from('question');
+
+	    $total_q = $this->db->count_all_results();
+
+	    if ($total_q > 0)
+	    {
+	        return $total_q;
+	    }
+
+	    return NULL;
+
+	}
+
+	function counta()
+	{
+		$this->db->select_sum('id');
+	    $this->db->from('rply');
+
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+	function counta_id($id)
+	{
+		$this->db->select_sum('id');
+	    $this->db->from('rply');
+        $this->db->where('qid', $id);
+	    $total_a = $this->db->count_all_results();
+
+	    if ($total_a > 0)
+	    {
+	        return $total_a;
+	    }
+
+	    return NULL;
+
+	}
+	function get_profile($id)
+	{
+		$this->db->where('u_id', $id);
+        $query = $this->db->get('user');
 		return $query->result();
 	}
 

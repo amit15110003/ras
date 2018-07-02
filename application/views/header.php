@@ -22,6 +22,7 @@
 <!-- css style sheet -->
 
 <link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/style.css">
+<link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/style1.css">
 <link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/styledb.css">
 <link id="style" rel="stylesheet" href="<?php echo base_url();?>media/css/styledb-mob.css">
 
@@ -92,9 +93,11 @@
 
 									<ul class="drop-down d-7">
 
-										<li><a href="<?php echo base_url();?>index.php/ras/student">student zone</a></li>
+										<li><a href="<?php echo base_url();?>index.php/profile">student zone</a></li>
 
 										<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li>
+
+										<li><a href="<?php echo base_url();?>index.php/questions">Ask Questions</a></li>
 
 									</ul>
 
