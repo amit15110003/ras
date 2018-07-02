@@ -22,7 +22,7 @@ class login extends CI_Controller
 		if ($this->form_validation->run() == FALSE)
         {
 			
-			redirect($_SERVER['HTTP_REFERER']);
+			redirect('login/index');
 		}
 		else
 		{
