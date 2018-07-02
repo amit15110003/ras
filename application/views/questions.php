@@ -1,17 +1,41 @@
  <!--content-->
-    <div class="container-fluid" style="padding-top: 70px;">
+<div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+
+            <div class="justices-img">
+
+              <img src="<?php echo base_url();?>media/images/qa.jpg" width="1700px" height="500px" alt="image" class="img">
+
+              <div class="justics-text">
+
+                <div class="txt">
+
+                  <h1></h1>
+
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div> 
+    <div class="container-fluid" style="padding-top: 70px; background-color: #ededed;">
       <div class="row">
-        
-
-
         <div class="col-md-offset-2 col-md-8 ">
+          <center ><h2 style="color: #1b609c">ASK QUESTION</h2></center>
 
           <div class="content " style="padding-bottom: 10px;">
-            <div class="ask-question" style="box-shadow: 2px 2px 2px 2px #888888;background-color: #fff;border-radius: 3px;padding-bottom: 15px;">
+            <div class="ask-question" style="box-shadow: 2px 2px 2px 2px #888888;background-color: #1b609c;border-radius: 3px;padding-bottom: 15px;">
             <?php $attributes = array("name" => "ask");
             echo form_open_multipart("questions/question", $attributes);?>
               <div class="ask-question" style="padding-left: 30px;padding-right: 30px;padding-top: 5px;">
                 <div class="row ">
+
                     <label class="radio-inline">
                       <input type="radio" name="sub" id="inlineRadio1" value="Physics" required> Physics
                     </label>
@@ -54,8 +78,8 @@
 
           <?php foreach ($query as $row) {
           ?>
-          <div class="content " style="padding-bottom: 15px;">
-          <div class="question box">
+          <div class="content " style="padding-bottom: 15px; ">
+          <div class="question box" style="background-color: #d3ebff;">
               <div class="top-question">
               <div class="row" style="padding-left: 15px;">
               <?php $details=$this->user->get_profile($row->u_id);?>

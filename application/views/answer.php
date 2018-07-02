@@ -1,5 +1,5 @@
  <!--content-->
-    <div class="container-fluid" style="padding-top: 70px;">
+    <div class="container-fluid" style="padding-top: 70px;>
       <div class="row">
         <div class="col-md-8 col-md-offset-2" >
         <?php
@@ -11,7 +11,7 @@
           $data=0;
         }?>
         <div class="content " style="padding-bottom: 10px;">
-          <div class="question" style="box-shadow: 1px 1px 1px #888888;background-color: #FFFFFF;border-radius: 3px;">
+          <div class="question box" >
               <div class="top-question">
                 <div class="row" style="padding-left: 15px;">
               <?php $details=$this->user->get_profile($u_id);?>
