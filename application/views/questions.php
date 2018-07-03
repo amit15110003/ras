@@ -24,7 +24,7 @@
           </div>
 
         </div> 
-    <div class="container-fluid" style="padding-top: 70px; background-color: #ededed;">
+    <div class="container-fluid" style="padding-top: 70px; background-color: #fafafa;">
       <div class="row">
         <div class="col-md-offset-2 col-md-8 ">
           <center ><h2 style="color: #1b609c">ASK QUESTION</h2></center>
@@ -79,7 +79,7 @@
           <?php foreach ($query as $row) {
           ?>
           <div class="content " style="padding-bottom: 15px; ">
-          <div class="question box" style="background-color: #d3ebff;">
+          <div class="question box" style="background-color: #ffffff;">
               <div class="top-question">
               <div class="row" style="padding-left: 15px;">
               <?php $details=$this->user->get_profile($row->u_id);?>

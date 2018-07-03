@@ -75,7 +75,7 @@
                                       <p><span class="glyphicon glyphicon-folder-open" aria-hidden="true" ></span> <?php echo $row->sub;?></p>
                                   </div>
                                   <div class="col-md-6 col-xs-6" style="">
-                                    <a href="<?php echo base_url().'index.php/home/answer/'.$row->id; ?>"><p class="text-right"> Answer <?php $detail3=$this->user->counta_id($row->id); echo $detail3; ?></p></a>
+                                    <a href="<?php echo base_url().'index.php/questions/answer/'.$row->id; ?>"><p class="text-right"> Answer <?php $detail3=$this->user->counta_id($row->id); echo $detail3; ?></p></a>
                                   </div>
                                 </div>
                             </div>

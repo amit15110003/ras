@@ -15,14 +15,14 @@ class Questions extends CI_Controller {
 	public function index()
 	{	
 		 $config = array();
-        $config["base_url"] = base_url() . "questions/ask";
+        $config["base_url"] = base_url() . "index.php/questions/ask";
         $config["total_rows"] = $this->user->countq();
         $config["per_page"] = 10;
-        $config["uri_segment"] = 3;
+        $config["uri_segment"] = 2;
 
         $this->pagination->initialize($config);
 
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
         $details['query']=$this->user->showquestion($config["per_page"], $page);
         $details["links"] = $this->pagination->create_links(); 
                 $this->load->view('header');
@@ -32,14 +32,14 @@ class Questions extends CI_Controller {
 	public function ask()
 	{	
 		 $config = array();
-        $config["base_url"] = base_url() . "questions/ask";
+        $config["base_url"] = base_url() . "index.php/questions/ask";
         $config["total_rows"] = $this->user->countq();
         $config["per_page"] =10;
-        $config["uri_segment"] = 3;
+        $config["uri_segment"] = 2;
 
         $this->pagination->initialize($config);
 
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
         $details['query']=$this->user->showquestion($config["per_page"], $page);
         $details["links"] = $this->pagination->create_links();
 

@@ -1,5 +1,31 @@
  <!--content-->
-    <div class="container-fluid" style="padding-top: 70px;>
+
+ <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+
+            <div class="justices-img">
+
+              <img src="<?php echo base_url();?>media/images/qa.jpg" width="1700px" height="500px" alt="image" class="img">
+
+              <div class="justics-text">
+
+                <div class="txt">
+
+                  <h1></h1>
+
+                  
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+    <div class="container-fluid" style="padding-top: 70px; background-color: #fafafa;>
       <div class="row">
         <div class="col-md-8 col-md-offset-2" >
         <?php
@@ -11,16 +37,15 @@
           $data=0;
         }?>
         <div class="content " style="padding-bottom: 10px;">
-          <div class="question box" >
+          <div class="question box" style="background-color: #ffffff;" >
               <div class="top-question">
                 <div class="row" style="padding-left: 15px;">
               <?php $details=$this->user->get_profile($u_id);?>
                 <div class="col-md-1 col-xs-2" style="padding-top: 8px;">
-                 <!-- <div class="image-cropper" style="width: 35px;height:35px;">
-                    <img src="<?php echo base_url(); ?>media/img/avtar/<?php
-                              if($details[0]->profileimg) { echo $details[0]->profileimg;} else {echo "profile1.png";}?>" alt="..." class='profie-pic'>
-                  </div>
-                -->
+                    <div class="image-cropper" style="width: 35px;height:35px;">
+                      <img src="<?php echo base_url(); ?>media/img/avtar/<?php
+                              if(!empty($details[0]->profileimg)) { echo $details[0]->profileimg;} else {echo "profile1.png";}?>" alt="..." class='profie-pic'>
+                    </div>
                 </div>
                 <div class="col-md-8 col-xs-8">
                   <h5 style="text-decoration:none; text-transform: capitalize;margin-left: -10px;font-size: 16px;"><a href="" class=""><?php  if(!empty($details[0]->u_name)){ echo $details[0]->u_name;}else{echo "Unknown";}?> </a>
@@ -50,10 +75,9 @@
               <?php $details=$this->user->get_profile($row->u_id);?>
                 <div class="col-md-1 col-xs-2" style="padding-top: 8px;">
                   <div class="image-cropper" style="width: 35px;height:35px;">
-                    <!--<img src="<?php echo base_url(); ?>media/img/avtar/<?php
-                              if($details[0]->profileimg) { echo $details[0]->profileimg;} else {echo "profile1.png";}?>" alt="..." class='profie-pic'>
-                  </div>
-                -->
+                    <img src="<?php echo base_url(); ?>media/img/avtar/<?php
+                              if(!empty($details[0]->profileimg)) { echo $details[0]->profileimg;} else {echo "profile1.png";}?>" alt="..." class='profie-pic'>
+                  
                 </div>
                 </div>
                 <div class="col-md-8 col-xs-8">
