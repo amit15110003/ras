@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jul 03, 2018 at 01:50 PM
--- Server version: 5.7.19
--- PHP Version: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: Jul 04, 2018 at 11:45 AM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -28,13 +26,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
-DROP TABLE IF EXISTS `admin`;
-CREATE TABLE IF NOT EXISTS `admin` (
-  `id` int(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `admin` (
+  `id` int(20) NOT NULL,
   `username` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  `password` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin`
@@ -51,18 +47,16 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 -- Table structure for table `admin_login`
 --
 
-DROP TABLE IF EXISTS `admin_login`;
-CREATE TABLE IF NOT EXISTS `admin_login` (
-  `a_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `admin_login` (
+  `a_id` int(11) NOT NULL,
   `a_mail` varchar(200) NOT NULL,
   `a_username` varchar(200) NOT NULL,
   `a_pass` varchar(200) NOT NULL,
   `a_contact` bigint(200) NOT NULL,
   `a_design` varchar(50) NOT NULL,
   `a_lastseen` timestamp NOT NULL,
-  `status` int(10) NOT NULL,
-  PRIMARY KEY (`a_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  `status` int(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin_login`
@@ -78,11 +72,42 @@ INSERT INTO `admin_login` (`a_id`, `a_mail`, `a_username`, `a_pass`, `a_contact`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `attend`
+--
+
+CREATE TABLE `attend` (
+  `id` int(11) NOT NULL,
+  `us_id` int(11) NOT NULL,
+  `jan` varchar(200) NOT NULL,
+  `feb` varchar(200) NOT NULL,
+  `mar` varchar(200) NOT NULL,
+  `apr` varchar(200) NOT NULL,
+  `may` varchar(200) NOT NULL,
+  `jun` varchar(200) NOT NULL,
+  `jul` varchar(200) NOT NULL,
+  `aug` varchar(200) NOT NULL,
+  `sep` varchar(200) NOT NULL,
+  `oct` varchar(200) NOT NULL,
+  `nov` varchar(200) NOT NULL,
+  `dece` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `attend`
+--
+
+INSERT INTO `attend` (`id`, `us_id`, `jan`, `feb`, `mar`, `apr`, `may`, `jun`, `jul`, `aug`, `sep`, `oct`, `nov`, `dece`) VALUES
+(1, 9, '52', '242', '42041', '41', '41', '1', '1', '574', '5', '5', '7474', '7'),
+(2, 7, '412', '52', '52', '452', '', 'fgbnhm', '', '', '', '', '', ''),
+(3, 75, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0xfgh', '0', '0');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `batch`
 --
 
-DROP TABLE IF EXISTS `batch`;
-CREATE TABLE IF NOT EXISTS `batch` (
+CREATE TABLE `batch` (
   `b_id` int(11) NOT NULL,
   `b_name` varchar(50) NOT NULL,
   `b_desc` text NOT NULL,
@@ -105,12 +130,10 @@ INSERT INTO `batch` (`b_id`, `b_name`, `b_desc`, `b_status`) VALUES
 -- Table structure for table `batchstu`
 --
 
-DROP TABLE IF EXISTS `batchstu`;
-CREATE TABLE IF NOT EXISTS `batchstu` (
-  `bstu_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `batchstu` (
+  `bstu_id` int(11) NOT NULL,
   `b_id` int(11) NOT NULL,
-  `u_id` text NOT NULL,
-  PRIMARY KEY (`bstu_id`)
+  `u_id` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -119,16 +142,14 @@ CREATE TABLE IF NOT EXISTS `batchstu` (
 -- Table structure for table `blog`
 --
 
-DROP TABLE IF EXISTS `blog`;
-CREATE TABLE IF NOT EXISTS `blog` (
-  `bl_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `blog` (
+  `bl_id` int(11) NOT NULL,
   `bl_title` varchar(200) NOT NULL,
   `bl_desc` text NOT NULL,
   `bl_image` varchar(200) NOT NULL,
   `bl_date` timestamp NOT NULL,
-  `bl_status` int(2) NOT NULL,
-  PRIMARY KEY (`bl_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `bl_status` int(2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `blog`
@@ -143,15 +164,13 @@ INSERT INTO `blog` (`bl_id`, `bl_title`, `bl_desc`, `bl_image`, `bl_date`, `bl_s
 -- Table structure for table `contact`
 --
 
-DROP TABLE IF EXISTS `contact`;
-CREATE TABLE IF NOT EXISTS `contact` (
-  `c_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `contact` (
+  `c_id` int(11) NOT NULL,
   `c_name` varchar(200) NOT NULL,
   `c_mail` varchar(200) NOT NULL,
   `c_subject` text NOT NULL,
-  `c_message` text NOT NULL,
-  PRIMARY KEY (`c_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `c_message` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `contact`
@@ -166,9 +185,8 @@ INSERT INTO `contact` (`c_id`, `c_name`, `c_mail`, `c_subject`, `c_message`) VAL
 -- Table structure for table `question`
 --
 
-DROP TABLE IF EXISTS `question`;
-CREATE TABLE IF NOT EXISTS `question` (
-  `id` bigint(200) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `question` (
+  `id` bigint(200) NOT NULL,
   `u_id` bigint(200) NOT NULL,
   `sub` text NOT NULL,
   `quest` text NOT NULL,
@@ -176,9 +194,8 @@ CREATE TABLE IF NOT EXISTS `question` (
   `title` text NOT NULL,
   `view` bigint(200) NOT NULL,
   `status` varchar(200) NOT NULL DEFAULT 'pending',
-  `posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1591 DEFAULT CHARSET=latin1;
+  `posted` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `question`
@@ -249,7 +266,7 @@ INSERT INTO `question` (`id`, `u_id`, `sub`, `quest`, `picture`, `title`, `view`
 (1376, 92, 'Mathematics', 'if january is july   ;;;september is september;;;  february is august and march is may  then august is????', '', '', 83, 'verified', '2017-04-22 11:33:53'),
 (1377, 94, 'Physics', 'what is fifth colour in ranbow', '', '', 97, 'verified', '2017-04-22 11:33:53'),
 (1378, 27, 'Biology', 'What is the shape and diameter of RBCs ?', '', 'ADESH KUMAR PATRA', 97, 'verified', '2017-04-22 11:33:53'),
-(1489, 27, 'Biology', 'Is \"yawning\" important for a human being? If yes, why?', '', 'ADESH KUMAR PATRA', 97, 'verified', '2017-04-22 11:33:53'),
+(1489, 27, 'Biology', 'Is "yawning" important for a human being? If yes, why?', '', 'ADESH KUMAR PATRA', 97, 'verified', '2017-04-22 11:33:53'),
 (1488, 15, 'Physics', 'Suppose a person apply some force on a stable wall and there is no change of body of the system.Is there any method or device to measure that force applied by the person?', '', '', 110, 'verified', '2017-04-22 11:33:53'),
 (1520, 50, 'Physics', 'calculate the magnitude of the electrostatic force exerted by the proton on the electron in the hydrogen atom and compare it with the weight of the electron given the radius of hydrogen atom is 0.53 Armstrong', '', '', 144, 'verified', '2017-04-22 11:33:53'),
 (1519, 50, 'Physics', 'two point charges Q1 and Q2 are 3 metre apart and their combined charge is 20 microcoulomb if one replace the other with a force of. 075N what are the two charges', '', '', 112, 'verified', '2017-04-22 11:33:53'),
@@ -288,9 +305,9 @@ INSERT INTO `question` (`id`, `u_id`, `sub`, `quest`, `picture`, `title`, `view`
 (1534, 120, 'Chemistry', 'How do we get energy from Gulcose?', '', '', 104, 'pending', '2017-05-23 10:45:33'),
 (1535, 120, 'Physics', 'From were Earth gets energy to revolve or rotate around the sun??', '', '', 95, 'pending', '2017-05-23 10:54:03'),
 (1536, 120, 'Physics', 'Sir, one question related to your website that why you don\'t use https ???', '', '', 157, 'pending', '2017-05-23 10:55:57'),
-(1537, 121, 'Chemistry', 'What is thr difference between sub orbit and orbit', '', '', 129, 'pending', '2017-05-28 17:57:09'),
+(1537, 121, 'Chemistry', 'What is thr difference between sub orbit and orbit', '', '', 131, 'pending', '2017-05-28 17:57:09'),
 (1588, 140, 'Maths', 'dh', '', '', 52, 'pending', '2017-11-26 10:42:15'),
-(1589, 140, 'Physics', '\r\n1\r\n2\r\n3\r\n<script>\r\n  window.location.href = \"https://www.example.com\";\r\n</script>', '', '', 50, 'pending', '2018-02-14 09:25:06');
+(1589, 140, 'Physics', '\r\n1\r\n2\r\n3\r\n<script>\r\n  window.location.href = "https://www.example.com";\r\n</script>', '', '', 50, 'pending', '2018-02-14 09:25:06');
 
 -- --------------------------------------------------------
 
@@ -298,17 +315,15 @@ INSERT INTO `question` (`id`, `u_id`, `sub`, `quest`, `picture`, `title`, `view`
 -- Table structure for table `result`
 --
 
-DROP TABLE IF EXISTS `result`;
-CREATE TABLE IF NOT EXISTS `result` (
-  `r_id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `result` (
+  `r_id` int(10) NOT NULL,
   `r_name` varchar(50) NOT NULL,
   `r_image` varchar(200) NOT NULL,
   `r_desc` text NOT NULL,
   `r_type` int(2) NOT NULL,
   `r_status` int(2) NOT NULL,
-  `r_year` int(4) NOT NULL,
-  PRIMARY KEY (`r_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+  `r_year` int(4) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `result`
@@ -327,16 +342,14 @@ INSERT INTO `result` (`r_id`, `r_name`, `r_image`, `r_desc`, `r_type`, `r_status
 -- Table structure for table `rply`
 --
 
-DROP TABLE IF EXISTS `rply`;
-CREATE TABLE IF NOT EXISTS `rply` (
-  `id` bigint(200) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `rply` (
+  `id` bigint(200) NOT NULL,
   `u_id` bigint(200) NOT NULL,
   `qid` bigint(200) NOT NULL,
   `rply` varchar(2000) NOT NULL,
   `picture` varchar(200) NOT NULL,
-  `title` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1252 DEFAULT CHARSET=latin1;
+  `title` varchar(200) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `rply`
@@ -395,15 +408,13 @@ INSERT INTO `rply` (`id`, `u_id`, `qid`, `rply`, `picture`, `title`) VALUES
 -- Table structure for table `sturesults`
 --
 
-DROP TABLE IF EXISTS `sturesults`;
-CREATE TABLE IF NOT EXISTS `sturesults` (
-  `stu_id` bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `sturesults` (
+  `stu_id` bigint(20) NOT NULL,
   `stu_tid` int(11) NOT NULL,
   `stu_uid` int(11) NOT NULL,
   `stu_scored` int(11) NOT NULL,
-  `stu_remark` text NOT NULL,
-  PRIMARY KEY (`stu_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+  `stu_remark` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `sturesults`
@@ -419,8 +430,7 @@ INSERT INTO `sturesults` (`stu_id`, `stu_tid`, `stu_uid`, `stu_scored`, `stu_rem
 -- Table structure for table `subscribe`
 --
 
-DROP TABLE IF EXISTS `subscribe`;
-CREATE TABLE IF NOT EXISTS `subscribe` (
+CREATE TABLE `subscribe` (
   `s_name` text NOT NULL,
   `s_mail` varchar(200) NOT NULL,
   `s_status` int(10) NOT NULL
@@ -432,17 +442,15 @@ CREATE TABLE IF NOT EXISTS `subscribe` (
 -- Table structure for table `test`
 --
 
-DROP TABLE IF EXISTS `test`;
-CREATE TABLE IF NOT EXISTS `test` (
-  `t_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `test` (
+  `t_id` int(11) NOT NULL,
   `t_name` varchar(50) NOT NULL,
   `t_fmarks` int(11) NOT NULL,
   `t_batch` varchar(50) NOT NULL,
   `t_sub` varchar(50) NOT NULL,
   `t_class` int(11) NOT NULL,
-  `t_date` date NOT NULL,
-  PRIMARY KEY (`t_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+  `t_date` date NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `test`
@@ -450,7 +458,8 @@ CREATE TABLE IF NOT EXISTS `test` (
 
 INSERT INTO `test` (`t_id`, `t_name`, `t_fmarks`, `t_batch`, `t_sub`, `t_class`, `t_date`) VALUES
 (1, 'chem ', 120, '0', '8', 12, '2018-06-23'),
-(2, 'fdsg', 0, '0', '8', 8, '0000-00-00');
+(2, 'fdsg', 0, '0', '8', 8, '0000-00-00'),
+(3, 'chem ', 120, '0', '8', 12, '2018-06-23');
 
 -- --------------------------------------------------------
 
@@ -458,104 +467,241 @@ INSERT INTO `test` (`t_id`, `t_name`, `t_fmarks`, `t_batch`, `t_sub`, `t_class`,
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
-CREATE TABLE IF NOT EXISTS `user` (
-  `u_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user` (
+  `u_id` int(11) NOT NULL,
   `u_name` varchar(200) NOT NULL,
+  `profileimg` varchar(70) NOT NULL DEFAULT 'profile1.png',
   `u_lname` varchar(200) NOT NULL,
   `u_card` varchar(200) NOT NULL,
   `u_mail` varchar(250) NOT NULL,
   `u_contact` bigint(20) NOT NULL,
   `u_pcontact` bigint(200) NOT NULL,
   `u_add` text NOT NULL,
-  `u_visit` timestamp NOT NULL,
   `u_visitno` int(11) NOT NULL,
   `u_pass` varchar(200) NOT NULL,
   `u_class` int(11) NOT NULL,
   `u_batch` text NOT NULL,
-  `u_status` int(11) NOT NULL,
-  PRIMARY KEY (`u_id`),
-  UNIQUE KEY `u_card` (`u_card`)
-) ENGINE=MyISAM AUTO_INCREMENT=77 DEFAULT CHARSET=latin1;
+  `u_status` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`u_id`, `u_name`, `u_lname`, `u_card`, `u_mail`, `u_contact`, `u_pcontact`, `u_add`, `u_visit`, `u_visitno`, `u_pass`, `u_class`, `u_batch`, `u_status`) VALUES
-(5, '', '', '12233', '', 0, 8979997072, '', '2018-06-19 18:30:00', 0, '', 8, '0', 1),
-(6, 'amit anand', '', '8161949574', '', 8979997072, 8979997072, '', '2018-06-18 18:30:00', 0, '', 8, '', 1),
-(7, 'SNEHA ', '', '1218001', '', 7870718992, 7870718992, '', '2018-06-19 18:30:00', 0, '', 12, '', 1),
-(8, 'MANISHA ', '', '1218002', '', 9771447584, 9771447584, '', '2018-06-12 18:30:00', 0, '', 12, '', 1),
-(9, 'SONALI ', '', '1218003', '', 7903529232, 7903529232, '', '2018-06-18 18:30:00', 0, '', 12, '', 1),
-(10, 'ANJALI BHARTI', '', '1218004', 'babyanjali012@gmail.com', 7488775815, 7488775815, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(11, 'ANSHU KUMARI', '', '1218005', 'smileanshu5s@gmail.com', 9934749003, 9934749003, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(12, 'KANAK LATA ', '', '1218006', 'kanaklata8809@gmail.com', 8809850157, 8809850157, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(13, 'ADYA STUDI', '', '1218007', '', 9934223242, 9934223242, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(14, 'SAKSHI GUPTA', '', '1218008', '', 7319961947, 7319961947, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(15, 'KUSHAL SUMAN', '', '1218009', 'kushalsuman123@gmail.com', 9122767601, 9122767601, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(16, 'PRAKHAR PRAKASH', '', '1218010', 'prakharprakash894@gmail.com', 8434609004, 8434609004, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(17, 'VIKAS TUDU', '', '1218011', 'vikastudu1@gmail.com', 8210355550, 8210355550, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(18, 'SOURAV SENROY', '', '1218012', 'souravsenroy17@gmail.com', 8789105437, 8789105437, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(19, 'SAMARTH RAJ ', '', '1218013', 'samarthraj081201@gmail.com', 7782963676, 7782963676, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(20, 'AKASH UMANG', '', '1218014', 'akashumang5555@gmail.com', 9708989746, 9708989746, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(21, 'KUNDAN KUMAR', '', '1218015', 'niketraj00035k@gmail.com', 7870487171, 7870487171, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(22, 'SAMIR MANDAL', '', '1218016', 'samirjmp25@gmail.com', 8340453223, 8340453223, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(23, 'NIKHIL KUMAR SINGH', '', '1218017', 'n12nikhilkumar@gmail.com', 7739168024, 7739168024, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(24, 'PRINCE KUMAR', '', '1218018', 'princekumar6200327239@gmail.com', 6200327239, 6200327239, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(25, 'DEEPAM KUAMR', '', '1218019', 'deepamkumar17@gmail.com', 8210632077, 8210632077, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(26, 'ANKESH KUMAR', '', '1218020', 'ankesh751@gmail.com', 9006069120, 9006069120, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(27, 'PRIYANSH KUAMR', '', '1218021', 'pk717@gmail.com', 7463042268, 7463042268, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(28, 'ABHIJEET KUMAR', '', '1218022', '', 8864085539, 8864085539, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(29, 'SHIVAM SNEHI', '', '1218023', 'shivamstark129@gmail.com', 9113709513, 9113709513, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(30, 'HARSH KUMAR', '', '1218024', '', 9470817772, 9470817772, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(31, 'ABHISHEK KUMAR', '', '1218025', '', 7643088805, 7643088805, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(32, 'NIRANJAN KUMAR', '', '1218026', '', 8541968168, 8541968168, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(33, 'ANKIT KUAMR', '', '1218027', '', 9801448813, 9801448813, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(34, 'RAVI KUMAR', '', '1218028', 'mahimitthu05111@gmail.com', 9931169591, 9931169591, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(35, 'ANURAG KUAMR ', '', '1218029', 'anurag2209s@gmail.com', 9123267592, 9123267592, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(36, 'TEJESHWA ANAND', '', '1218030', 'tejeshwanov25@gmail.com', 8651669398, 8651669398, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(37, 'RAHUL KUMAR RANJAN', '', '1218031', 'kjrahul21@gmail.com', 7759952394, 7759952394, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(38, 'VAISHNAVI ', '', '1218032', '', 7301711304, 7301711304, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(39, 'PRIYANKA SINHA', '', '1218033', '', 6200588960, 6200588960, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(40, 'RAJNANDANI  KUMARI', '', '1218034', '', 9304189490, 9304189490, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(41, 'SHREYA ', '', '1218035', '', 6280130097, 6280130097, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(42, 'VIJAY SHANKAR KUMAR', '', '1218036', '', 7654394063, 7654394063, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(43, 'AASHISH KUMAR', '', '1218037', '', 7050454170, 7050454170, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(44, 'ANIKET RAJ', '', '1218038', '', 9097980208, 9097980208, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(45, 'GOURAV GULZAR', '', '1218039', '', 8434946775, 8434946775, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(46, 'PRABHASH KUMAR', '', '1218040', '', 9113378964, 9113378964, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(47, 'ADITYA KUMAR', '', '1218041', '', 7361863599, 7361863599, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(48, 'OM KUMAR', '', '1218042', '', 7564845488, 7564845488, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(49, 'PRATHAM PANKAJ ', '', '1218043', '', 9065284899, 9065284899, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(50, 'RISHAV KUMAR', '', '1218044', '', 9801700712, 9801700712, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(51, 'NISHANT KUMAR', '', '1218045', '', 9006162893, 9006162893, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(52, 'PRASHANT KUMAR', '', '1218046', '', 8207598138, 8207598138, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(53, 'AMIT CHOURASIA', '', '1218047', '', 8789991320, 8789991320, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(54, 'RAKESH KUMAR', '', '1218048', '', 7808980436, 7808980436, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(55, 'ANAND KUMAR', '', '1218049', '', 8083429216, 8083429216, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(56, 'ASHOK KUMAR', '', '1218050', '', 7479454834, 7479454834, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(57, 'KUNDAN KUMAR', '', '1218051', '', 8709695676, 8709695676, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(58, 'SUMIT KUMAR', '', '1218052', '', 8540908061, 8540908061, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(59, 'MOHIT KUMAR', '', '1218053', '', 9123226265, 9123226265, '', '0000-00-00 00:00:00', 0, '', 12, '', 1),
-(60, '', '', '1118001', '', 9801569617, 9801569617, '', '0000-00-00 00:00:00', 0, '', 11, '0', 1),
-(61, 'ANJALI KUMARI', '', '1118002', '', 8809133010, 8809133010, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(62, 'ANITA KUMARI', '', '1118003', '', 9801180776, 9801180776, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(63, 'TULIKA ', '', '1118004', '', 8873287899, 8873287899, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(64, 'AKANKSHA KIRAN', '', '1118005', '', 9507032884, 9507032884, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(65, 'ANUPAMA ', '', '1118006', '', 8709978331, 8709978331, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(66, 'RAHUL KUMAR', '', '1118007', '', 8406826822, 8406826822, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(67, 'BHUPENDRA KUMAR', '', '1118008', '', 9534782366, 9534782366, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(68, 'AKASH RANJAN', '', '1118009', '', 6202940672, 6202940672, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(69, 'PRIYANSHU DEEP', '', '1118010', '', 8789037305, 8789037305, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(70, 'ANIKET KUMAR TUDU', '', '1118011', '', 7634924942, 7634924942, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(71, 'ABHILASH KUMAR RANJAN', '', '1118012', '', 8651632266, 8651632266, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(72, 'ADITYA AKASH ', '', '1118013', '', 8709571584, 8709571584, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(73, 'KISHAN KUMAR', '', '1118014', '', 9234916015, 9234916015, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(74, 'PRAVEEN TIWARY', '', '1118015', '', 7765937831, 7765937831, '', '0000-00-00 00:00:00', 0, '', 11, '', 1),
-(75, 'SHEETAL KUMARI', '', '1218054', '', 7488404007, 7488404007, '', '0000-00-00 00:00:00', 0, '', 12, '', 1);
-COMMIT;
+INSERT INTO `user` (`u_id`, `u_name`, `profileimg`, `u_lname`, `u_card`, `u_mail`, `u_contact`, `u_pcontact`, `u_add`, `u_visitno`, `u_pass`, `u_class`, `u_batch`, `u_status`) VALUES
+(5, '', 'profile1.png', '', '12233', '', 0, 8979997072, '', 0, '', 8, '0', 1),
+(6, 'amit anand', 'profile1.png', '', '8161949574', '', 8979997072, 8979997072, '', 0, '', 8, '', 1),
+(7, 'SNEHA ', 'profile4.png', '', '1218001', 'sneha@gmail.com', 7870718992, 7870718992, 'jamalpur', 0, '', 12, 'PCM', 1),
+(8, 'MANISHA ', 'profile1.png', '', '1218002', '', 9771447584, 9771447584, '', 0, '', 12, '', 1),
+(9, '', 'profile1.png', '', '1218003', '7', 242, 7903529232, '', 0, '', 0, '', 1),
+(10, 'ANJALI BHARTI', 'profile1.png', '', '1218004', 'babyanjali012@gmail.com', 7488775815, 7488775815, '', 0, '', 12, '', 1),
+(11, 'ANSHU KUMARI', 'profile1.png', '', '1218005', 'smileanshu5s@gmail.com', 9934749003, 9934749003, '', 0, '', 12, '', 1),
+(12, 'KANAK LATA ', 'profile1.png', '', '1218006', 'kanaklata8809@gmail.com', 8809850157, 8809850157, '', 0, '', 12, '', 1),
+(13, 'ADYA STUDI', 'profile1.png', '', '1218007', '', 9934223242, 9934223242, '', 0, '', 12, '', 1),
+(14, 'SAKSHI GUPTA', 'profile1.png', '', '1218008', '', 7319961947, 7319961947, '', 0, '', 12, '', 1),
+(15, 'KUSHAL SUMAN', 'profile1.png', '', '1218009', 'kushalsuman123@gmail.com', 9122767601, 9122767601, '', 0, '', 12, '', 1),
+(16, 'PRAKHAR PRAKASH', 'profile1.png', '', '1218010', 'prakharprakash894@gmail.com', 8434609004, 8434609004, '', 0, '', 12, '', 1),
+(17, 'VIKAS TUDU', 'profile1.png', '', '1218011', 'vikastudu1@gmail.com', 8210355550, 8210355550, '', 0, '', 12, '', 1),
+(18, 'SOURAV SENROY', 'profile1.png', '', '1218012', 'souravsenroy17@gmail.com', 8789105437, 8789105437, '', 0, '', 12, '', 1),
+(19, 'SAMARTH RAJ ', 'profile1.png', '', '1218013', 'samarthraj081201@gmail.com', 7782963676, 7782963676, '', 0, '', 12, '', 1),
+(20, 'AKASH UMANG', 'profile1.png', '', '1218014', 'akashumang5555@gmail.com', 9708989746, 9708989746, '', 0, '', 12, '', 1),
+(21, 'KUNDAN KUMAR', 'profile1.png', '', '1218015', 'niketraj00035k@gmail.com', 7870487171, 7870487171, '', 0, '', 12, '', 1),
+(22, 'SAMIR MANDAL', 'profile1.png', '', '1218016', 'samirjmp25@gmail.com', 8340453223, 8340453223, '', 0, '', 12, '', 1),
+(23, 'NIKHIL KUMAR SINGH', 'profile1.png', '', '1218017', 'n12nikhilkumar@gmail.com', 7739168024, 7739168024, '', 0, '', 12, '', 1),
+(24, 'PRINCE KUMAR', 'profile1.png', '', '1218018', 'princekumar6200327239@gmail.com', 6200327239, 6200327239, '', 0, '', 12, '', 1),
+(25, 'DEEPAM KUAMR', 'profile1.png', '', '1218019', 'deepamkumar17@gmail.com', 8210632077, 8210632077, '', 0, '', 12, '', 1),
+(26, 'ANKESH KUMAR', 'profile1.png', '', '1218020', 'ankesh751@gmail.com', 9006069120, 9006069120, '', 0, '', 12, '', 1),
+(27, 'PRIYANSH KUAMR', 'profile1.png', '', '1218021', 'pk717@gmail.com', 7463042268, 7463042268, '', 0, '', 12, '', 1),
+(28, 'ABHIJEET KUMAR', 'profile1.png', '', '1218022', '', 8864085539, 8864085539, '', 0, '', 12, '', 1),
+(29, 'SHIVAM SNEHI', 'profile1.png', '', '1218023', 'shivamstark129@gmail.com', 9113709513, 9113709513, '', 0, '', 12, '', 1),
+(30, 'HARSH KUMAR', 'profile1.png', '', '1218024', '', 9470817772, 9470817772, '', 0, '', 12, '', 1),
+(31, 'ABHISHEK KUMAR', 'profile1.png', '', '1218025', '', 7643088805, 7643088805, '', 0, '', 12, '', 1),
+(32, 'NIRANJAN KUMAR', 'profile1.png', '', '1218026', '', 8541968168, 8541968168, '', 0, '', 12, '', 1),
+(33, 'ANKIT KUAMR', 'profile1.png', '', '1218027', '', 9801448813, 9801448813, '', 0, '', 12, '', 1),
+(34, 'RAVI KUMAR', 'profile1.png', '', '1218028', 'mahimitthu05111@gmail.com', 9931169591, 9931169591, '', 0, '', 12, '', 1),
+(35, 'ANURAG KUAMR ', 'profile1.png', '', '1218029', 'anurag2209s@gmail.com', 9123267592, 9123267592, '', 0, '', 12, '', 1),
+(36, 'TEJESHWA ANAND', 'profile1.png', '', '1218030', 'tejeshwanov25@gmail.com', 8651669398, 8651669398, '', 0, '', 12, '', 1),
+(37, 'RAHUL KUMAR RANJAN', 'profile1.png', '', '1218031', 'kjrahul21@gmail.com', 7759952394, 7759952394, '', 0, '', 12, '', 1),
+(38, 'VAISHNAVI ', 'profile1.png', '', '1218032', '', 7301711304, 7301711304, '', 0, '', 12, '', 1),
+(39, 'PRIYANKA SINHA', 'profile1.png', '', '1218033', '', 6200588960, 6200588960, '', 0, '', 12, '', 1),
+(40, 'RAJNANDANI  KUMARI', 'profile1.png', '', '1218034', '', 9304189490, 9304189490, '', 0, '', 12, '', 1),
+(41, 'SHREYA ', 'profile1.png', '', '1218035', '', 6280130097, 6280130097, '', 0, '', 12, '', 1),
+(42, 'VIJAY SHANKAR KUMAR', 'profile1.png', '', '1218036', '', 7654394063, 7654394063, '', 0, '', 12, '', 1),
+(43, 'AASHISH KUMAR', 'profile1.png', '', '1218037', '', 7050454170, 7050454170, '', 0, '', 12, '', 1),
+(44, 'ANIKET RAJ', 'profile1.png', '', '1218038', '', 9097980208, 9097980208, '', 0, '', 12, '', 1),
+(45, 'GOURAV GULZAR', 'profile1.png', '', '1218039', '', 8434946775, 8434946775, '', 0, '', 12, '', 1),
+(46, 'PRABHASH KUMAR', 'profile1.png', '', '1218040', '', 9113378964, 9113378964, '', 0, '', 12, '', 1),
+(47, 'ADITYA KUMAR', 'profile1.png', '', '1218041', '', 7361863599, 7361863599, '', 0, '', 12, '', 1),
+(48, 'OM KUMAR', 'profile1.png', '', '1218042', '', 7564845488, 7564845488, '', 0, '', 12, '', 1),
+(49, 'PRATHAM PANKAJ ', 'profile1.png', '', '1218043', '', 9065284899, 9065284899, '', 0, '', 12, '', 1),
+(50, 'RISHAV KUMAR', 'profile1.png', '', '1218044', '', 9801700712, 9801700712, '', 0, '', 12, '', 1),
+(51, 'NISHANT KUMAR', 'profile1.png', '', '1218045', '', 9006162893, 9006162893, '', 0, '', 12, '', 1),
+(52, 'PRASHANT KUMAR', 'profile1.png', '', '1218046', '', 8207598138, 8207598138, '', 0, '', 12, '', 1),
+(53, 'AMIT CHOURASIA', 'profile1.png', '', '1218047', '', 8789991320, 8789991320, '', 0, '', 12, '', 1),
+(54, 'RAKESH KUMAR', 'profile1.png', '', '1218048', '', 7808980436, 7808980436, '', 0, '', 12, '', 1),
+(55, 'ANAND KUMAR', 'profile1.png', '', '1218049', '', 8083429216, 8083429216, '', 0, '', 12, '', 1),
+(56, 'ASHOK KUMAR', 'profile1.png', '', '1218050', '', 7479454834, 7479454834, '', 0, '', 12, '', 1),
+(57, 'KUNDAN KUMAR', 'profile1.png', '', '1218051', '', 8709695676, 8709695676, '', 0, '', 12, '', 1),
+(58, 'SUMIT KUMAR', 'profile1.png', '', '1218052', '', 8540908061, 8540908061, '', 0, '', 12, '', 1),
+(59, 'MOHIT KUMAR', 'profile1.png', '', '1218053', '', 9123226265, 9123226265, '', 0, '', 12, '', 1),
+(60, '', 'profile1.png', '', '1118001', '', 9801569617, 9801569617, '', 0, '', 11, '0', 1),
+(61, 'ANJALI KUMARI', 'profile1.png', '', '1118002', '', 8809133010, 8809133010, '', 0, '', 11, '', 1),
+(62, 'ANITA KUMARI', 'profile1.png', '', '1118003', '', 9801180776, 9801180776, '', 0, '', 11, '', 1),
+(63, 'TULIKA ', 'profile1.png', '', '1118004', '', 8873287899, 8873287899, '', 0, '', 11, '', 1),
+(64, 'AKANKSHA KIRAN', 'profile1.png', '', '1118005', '', 9507032884, 9507032884, '', 0, '', 11, '', 1),
+(65, 'ANUPAMA ', 'profile1.png', '', '1118006', '', 8709978331, 8709978331, '', 0, '', 11, '', 1),
+(66, 'RAHUL KUMAR', 'profile1.png', '', '1118007', '', 8406826822, 8406826822, '', 0, '', 11, '', 1),
+(67, 'BHUPENDRA KUMAR', 'profile1.png', '', '1118008', '', 9534782366, 9534782366, '', 0, '', 11, '', 1),
+(68, 'AKASH RANJAN', 'profile1.png', '', '1118009', '', 6202940672, 6202940672, '', 0, '', 11, '', 1),
+(69, 'PRIYANSHU DEEP', 'profile1.png', '', '1118010', '', 8789037305, 8789037305, '', 0, '', 11, '', 1),
+(70, 'ANIKET KUMAR TUDU', 'profile1.png', '', '1118011', '', 7634924942, 7634924942, '', 0, '', 11, '', 1),
+(71, 'ABHILASH KUMAR RANJAN', 'profile1.png', '', '1118012', '', 8651632266, 8651632266, '', 0, '', 11, '', 1),
+(72, 'ADITYA AKASH ', 'profile1.png', '', '1118013', '', 8709571584, 8709571584, '', 0, '', 11, '', 1),
+(73, 'KISHAN KUMAR', 'profile1.png', '', '1118014', '', 9234916015, 9234916015, '', 0, '', 11, '', 1),
+(74, 'PRAVEEN TIWARY', 'profile1.png', '', '1118015', '', 7765937831, 7765937831, '', 0, '', 11, '', 1),
+(75, 'SHEETAL KUMARI', 'profile1.png', '', '1218054', '', 7488404007, 7488404007, '', 0, '', 12, '', 1);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `admin_login`
+--
+ALTER TABLE `admin_login`
+  ADD PRIMARY KEY (`a_id`);
+
+--
+-- Indexes for table `attend`
+--
+ALTER TABLE `attend`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `batchstu`
+--
+ALTER TABLE `batchstu`
+  ADD PRIMARY KEY (`bstu_id`);
+
+--
+-- Indexes for table `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`bl_id`);
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`c_id`);
+
+--
+-- Indexes for table `question`
+--
+ALTER TABLE `question`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `result`
+--
+ALTER TABLE `result`
+  ADD PRIMARY KEY (`r_id`);
+
+--
+-- Indexes for table `rply`
+--
+ALTER TABLE `rply`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sturesults`
+--
+ALTER TABLE `sturesults`
+  ADD PRIMARY KEY (`stu_id`);
+
+--
+-- Indexes for table `test`
+--
+ALTER TABLE `test`
+  ADD PRIMARY KEY (`t_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`u_id`),
+  ADD UNIQUE KEY `u_card` (`u_card`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `admin_login`
+--
+ALTER TABLE `admin_login`
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `attend`
+--
+ALTER TABLE `attend`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `batchstu`
+--
+ALTER TABLE `batchstu`
+  MODIFY `bstu_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `bl_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `question`
+--
+ALTER TABLE `question`
+  MODIFY `id` bigint(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1591;
+--
+-- AUTO_INCREMENT for table `result`
+--
+ALTER TABLE `result`
+  MODIFY `r_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `rply`
+--
+ALTER TABLE `rply`
+  MODIFY `id` bigint(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1252;
+--
+-- AUTO_INCREMENT for table `sturesults`
+--
+ALTER TABLE `sturesults`
+  MODIFY `stu_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `test`
+--
+ALTER TABLE `test`
+  MODIFY `t_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
