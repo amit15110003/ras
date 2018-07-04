@@ -51,30 +51,89 @@
 							<tr>
 								<th title="Field #1">Test Name</th>
 								<th title="Field #2">Date</th>
-								<th title="Field #3">Batch-Sub</th>
 								<th title="Field #4">Full Marks</th>
 								<th title="Field #5">Obtained</th>
 							</tr>
 							</thead>
 							<tbody>
-							<?php foreach ($query as $row) {?>
+							<?php $fmarks=0; $scored=0; foreach ($query as $row) {?>
 							<tr>
 								<td><?php echo $row->t_name;?></td>
 								<td><?php echo $row->t_date;?></td>
-								<td><?php echo $row->t_batch;?>-<?php echo $row->t_sub;?></td>
 								<td><?php echo $row->t_fmarks;?></td>
 								<td><?php echo $row->stu_scored;?></td>
 							</tr>
-							<?php }?>
+							<?php $fmarks=$fmarks+$row->t_fmarks; $scored=$scored+$row->stu_scored; }?>
 							</tbody>
 						</table>
 					</div>
 				</div>
+			</div>	        
+			<div class="col-md-12">
+				<h3>Overall Performance</h3>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="<?php echo $scored; ?>" aria-valuemin="0" aria-valuemax="<?php echo $fmarks;?>" style="width: 60%">
+				    <span class="sr-only">60% Complete (warning)</span>
+				  </div>
+				</div>
 			</div>
-		</div>	</div>	        </div>
+			<div class="col-md-12">
+                <h3>My Test Strengths</h3>
+            </div>
+        	<div class="col-sm-12 col-md-12">
+            <div class="bar-chart">
+                <div class="legend">
+                    <div class="item">
+                        <h4>Poor</h4>
+                    </div>
+                    <!-- //.item -->
+                    
+                    <div class="item">
+                        <h4>Average</h4>
+                    </div>
+                    <!-- //.item -->
+                    
+                    <div class="item text-right">
+                        <h4>Good</h4>
+                    </div>
+                    <!-- //.item -->
+            
+                    <div class="item text-right">
+                        <h4>Excellent</h4>
+                    </div>
+                    <!-- //.item -->
+                </div>
+                <!-- //.legend -->
+                
+                <div class="chart clearfix">
+					<?php $fmarks=0; $scored=0; foreach ($query as $row) {?>
+                    <div class="item">
+                        <div class="bar">
+                            <span class="percent"><?php echo (round($row->stu_scored*100/$row->t_fmarks));?></span>
+            
+                            <div class="item-progress" data-percent="<?php echo (round($row->stu_scored*100/$row->t_fmarks));?>">
+                                <span class="title"><?php echo $row->t_name;?></span>
+                            </div>
+                            <!-- //.item-progress -->
+                        </div>
+                        <!-- //.bar -->
+                    </div>
+                <?php }?>
+                </div>
+                <!-- //.chart -->
+            </div>
+            <!-- //.bar-chart -->
+        </div>
+        <div class="col-md-12"><br><br><br>
+        </div>
+        </div>
+
+		</div>
+		</div>
+		
 					    		    </div>
 					    		</div>
 
 						
-				
+			
 				<!-- end:: Body -->
