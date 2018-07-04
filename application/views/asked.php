@@ -6,10 +6,9 @@
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
                     <ul>
-                        <li><a href="#" class="pro-act">Profile</a></li>
-                        <li><a href="#">Results</a></li>
-                        <li><a href="#">Attendance</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/profile/index" class="">Profile</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/profile/sturesult">Results</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/profile/attend">Attendance</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/profile/asked">Asked Questions</a></li>
                     </ul>
                 </div>
@@ -17,9 +16,9 @@
         </div>
         <div class="stu-db">
             <div class="container pg-inn">
-                <div class="col-md-3">
+                <div class="col-md-3" style="display: block;z-index: 5000">
                     <div class="pro-user" style="background-color: #fff;">
-                        <img src="<?php echo base_url(); ?>media/img/avtar/<?php echo $result = $this->session->userdata('profileimg'); ?>" alt="user">
+                        <img src="<?php echo base_url(); ?>media/img/avtar/<?php echo $result = $this->session->userdata('profileimg'); ?>" alt="user" class="center-block" style="height: 100px; width: 100px;" >
                     </div>
                     <div class="pro-user-bio">
                         <ul>

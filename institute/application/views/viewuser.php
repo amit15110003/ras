@@ -87,7 +87,7 @@
 				<th title="Field #2">Student Name</th>
 				<th title="Field #3">RAS No</th>
 				<th title="Field #4">Contact</th>
-				<th title="Field #4">Batch</th>
+				<th title="Field #4">Attendance</th>
 				<th title="Field #6">Result</th>
 				<th title="Field #7">Edit</th>
 			</tr>
@@ -98,7 +98,8 @@
 				<td><?php echo $row->u_name;?></td>
 				<td><?php echo $row->u_card;?></td>
 				<td><?php echo $row->u_contact;?></td>
-				<td><?php echo $row->u_class;?>-<?php echo $row->u_batch;?></td>
+				<td><a href="<?php echo base_url();?>index.php/user/attend_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>View/Edit</span>
+					</a></td>
 				<td><a href="<?php echo base_url();?>index.php/user/result_id/<?php echo $row->u_card;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>View/Edit</span>
 					</a></td>
 				<td><a href="<?php echo base_url();?>index.php/user/user_id/<?php echo $row->u_id;?>" class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air m-btn--pill"><span>Update</span>

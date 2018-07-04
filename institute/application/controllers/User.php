@@ -134,6 +134,78 @@ class User extends CI_Controller {
 				redirect($_SERVER['HTTP_REFERER']);
 			}
 	}
+//attendance
 
+	public function attend_id($u_id)
+	{   
+		
+		$checkcart = $this->db->query('select * from attend 
+			                            where us_id="'.$u_id.'"');
+		$resultcheckcart = $checkcart->num_rows();
+
+
+		if($resultcheckcart == '0' ){
+		$data=array('us_id'=>$u_id,'jan'=>'0','feb'=>'0','mar'=>'0','apr'=>'0','may'=>'0','jun'=>'0','jul'=>'0','aug'=>'0','sep'=>'0','oct'=>'0','nov'=>'0','dece'=>'0');
+
+		$this->db->insert('attend',$data);
+
+		}
+
+		$details=$this->usermodal->get_attend($u_id);
+        	    	$data['u_id'] = $details[0]->u_id;
+        			$data['u_name'] = $details[0]->u_name;
+        			$data['jan'] = $details[0]->jan;
+        			$data['feb'] = $details[0]->feb;
+        			$data['mar'] = $details[0]->mar;
+					$data['apr'] = $details[0]->apr;
+					$data['may'] = $details[0]->may;
+					$data['jun'] = $details[0]->jun;
+					$data['jul'] = $details[0]->jul;
+					$data['aug'] = $details[0]->aug;
+					$data['sep'] = $details[0]->sep;
+					$data['oct'] = $details[0]->oct;
+					$data['nov'] = $details[0]->nov;
+					$data['dece'] = $details[0]->dece;
+					
+     			$this->load->view('header');
+				$this->load->view('attend',$data);
+				$this->load->view('footer');
+		
+	
+	}	
+	public function update_attend($u_id)
+	{	
+
+			$data = array
+			(
+				'jan' => $this->input->post('jan'),
+				'feb' => $this->input->post('feb'),
+				'mar' => $this->input->post('mar'),
+				'apr' => $this->input->post('apr'),
+				'may' => $this->input->post('may'),
+				'jun' => $this->input->post('jun'),
+				'jul' => $this->input->post('jul'),
+				'aug' => $this->input->post('aug'),
+				'sep' => $this->input->post('sep'),
+				'oct' => $this->input->post('oct'),
+				'nov' => $this->input->post('nov'),
+				'dece' => $this->input->post('dece'),
+
+				
+			);
+			
+			if ($this->usermodal->update_attend($u_id,$data))
+			{
+				$this->session->set_flashdata('msg','<div class="">Sucessfully Updated!!! </div>');
+				redirect($_SERVER['HTTP_REFERER']);
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="">Oops! Error.  Please try again later!!!</div>');
+				//redirect($_SERVER['HTTP_REFERER']);
+			}
+		
+	}
 		
 	}

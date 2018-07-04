@@ -93,5 +93,18 @@ class usermodal extends CI_Model
 		return $query->result();
 	}
 
+	function get_attend($u_id)
+	{
 
+		$this->db->where('us_id', $u_id);
+		$this->db->join('user', 'user.u_id = attend.us_id');
+        $query = $this->db->get('attend');
+		return $query->result();
+	}
+	function update_attend($u_id,$data)
+	{
+		$this->db->where('us_id', $u_id);
+		return $this->db->update('attend', $data);
+		
+	}
 }?>

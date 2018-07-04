@@ -341,6 +341,20 @@ class user extends CI_Model
         $query = $this->db->get('user');
 		return $query->result();
 	}
+    function get_sturesult($u_card)
+	{
 
+		$this->db->where('stu_uid', $u_card);
+		$this->db->join('test', 'test.t_id = sturesults.stu_tid');
+        $query = $this->db->get('sturesults');
+		return $query->result();
+	}
+	function get_attend($u_id)
+	{
+
+		$this->db->where('us_id', $u_id);
+        $query = $this->db->get('attend');
+		return $query->result();
+	}
 	
 }?>

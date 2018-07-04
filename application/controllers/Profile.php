@@ -141,5 +141,52 @@ class profile extends CI_Controller
 		$this->db->delete('rply', array('qid'=>$id));
     }
 	
+    // result
+	public function sturesult()
+	{	$u_card=$this->session->userdata('u_card');
+		$data['query']=$this->user->get_sturesult($u_card);
+                $this->load->view('header');
+				$this->load->view('sturesult',$data);
+				$this->load->view('footer');
+       
+	}
+
+	// attendance
+	public function attend()
+	{	$u_id=$this->session->userdata('u_id');
+		$details=$this->user->get_attend($u_id);
+		if (!empty($details)) {
+        			$data['jan'] = $details[0]->jan;
+        			$data['feb'] = $details[0]->feb;
+        			$data['mar'] = $details[0]->mar;
+					$data['apr'] = $details[0]->apr;
+					$data['may'] = $details[0]->may;
+					$data['jun'] = $details[0]->jun;
+					$data['jul'] = $details[0]->jul;
+					$data['aug'] = $details[0]->aug;
+					$data['sep'] = $details[0]->sep;
+					$data['oct'] = $details[0]->oct;
+					$data['nov'] = $details[0]->nov;
+					$data['dece'] = $details[0]->dece;}
+					else{
+						$data['jan'] = 0;
+        			$data['feb'] = 0;
+        			$data['mar'] = 0;
+					$data['apr'] = 0;
+					$data['may'] = 0;
+					$data['jun'] = 0;
+					$data['jul'] = 0;
+					$data['aug'] = 0;
+					$data['sep'] = 0;
+					$data['oct'] = 0;
+					$data['nov'] = 0;
+					$data['dece'] = 0;
+					}
+                $this->load->view('header');
+				$this->load->view('attend',$data);
+				$this->load->view('footer');
+       
+	}
+
 		
 }
