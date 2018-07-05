@@ -44,31 +44,17 @@
 
 <body>
     <div id="wrapper ">
-		<div class="top-bar2 ">
-			<div class="container hidden-xs">
-				<ul class="social-icons">
-					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-				</ul>
-				
-
-				
-				<div class="right-panel">
-					<a class="mail" href="mailto:info@discipline.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@discipline.com</a>
-					<a class="tel" href="tel:+011234567896"><i class="fa fa-phone" aria-hidden="true"></i>(+01) 123 456 7896</a>
-					
-				</div>
-				
-			</div>
-		</div>
 		
-		<header id="header2" class="">
-			<div class="logo"><a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>media/images/logotext.png" width="184" height="20" alt=""></a></div>
-			
-			<nav class="navbar navbar-default">
+
+			<header id="header" style="display: block;z-index: 10000; background-color: #efefef;">
+			<div class="logo" ><a href="<?php echo base_url();?>" ><img src="<?php echo base_url();?>media/images/logg.png"  style="padding-bottom: 40px; width: 150px; height:75px;" ></a></div>
+			<nav id="nav">
+				<div class="containerr">
+					<div class="row nav-holder">
+						<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+					<div class="navbar-header" style="display: block;z-index: 10000;">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
@@ -89,7 +75,7 @@
 								<li><a href="<?php echo base_url();?>index.php/ras/courses">courses</a></li>
 
 
-								<li><a href="#">student zone</a>
+								<li><a href="">student zone</a>
 
 									<ul class="drop-down d-7">
 
@@ -127,9 +113,9 @@
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
 			</nav>
-			
-			
-			
+					</div>
+				</div>
+			</nav>
 		</header>
 
 

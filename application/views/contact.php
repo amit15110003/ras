@@ -22,18 +22,16 @@
 							<span class="heading">Rajiv Academy of Sciences</span>
 							<div class="address">
 								<span class="title">address</span>
-								<p>Nayagoan, Manaskunj Mandir,<br> Jamalpur-811214 </p>
+								<p><i class="fa fa-home" aria-hidden="true"></i> Nayagoan, Manaskunj Mandir,<br> Jamalpur-811214 </p>
 							</div>
 							<div class="tel">
 								<span class="title">phone number</span>
-								<a href="#">+01 123 456 7899</a>
-								<br>
-								<a href="#">+01 123 456 7856</a>
+								<a class="tel" href="tel:+917903135200"><i class="fa fa-phone" aria-hidden="true"></i> (+91) 79031 35200</a>
+								
 							</div>
 							<div class="email">
 								<span class="title">email address</span>
-								<a href="#">nfo@discipline.com</a>
-								<a href="#">support@discipline.com</a>
+								<a class="mail" href="mailto:rajiv24all@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> rajiv24all@gmail.com</a>
 							</div>
 						</div>
 					</div>

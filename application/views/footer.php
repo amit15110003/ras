@@ -12,9 +12,9 @@
 
 						<ul class="footer-social">
 
-							<li><a href="https://www.facebook.com/RajivAcademyofSciences"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/RajivAcademyofSciences" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
 
-							<li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
+							<li><a href="https://plus.google.com/117636029565566468026" target="_blank"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
 
 						</ul>
 
@@ -24,11 +24,11 @@
 
 						<span class="heading">Useful Links</span>
 
-						<li><a href="#">About Us</a></li><br>
-						<li><a href="#">Courses</a></li><br>
-						<li><a href="#">Results</a></li><br>
-						<li><a href="#">Contact Us</a></li><br>
-						<li><a href="#">Student Zone</a></li><br>
+						<li><a href="<?php echo base_url();?>index.php/ras/about">About Us</a></li><br>
+						<li><a href="<?php echo base_url();?>index.php/ras/courses">Courses</a></li><br>
+						<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li><br>
+						<li><a href="<?php echo base_url();?>index.php/ras/contact">Contact Us</a></li><br>
+						<li><a href="<?php echo base_url();?>index.php/ras/profile">Student Zone</a></li><br>
 
 						
 					</div>
@@ -49,9 +49,9 @@
 
 							<i class="fa fa-phone" aria-hidden="true"></i>
 
-							<a href="#">+01 123 456 7899</a>
+							<a href="#">79031 35200</a>
 
-							<a href="#">+01 123 456 7856</a>
+							
 
 						</span>
 
@@ -59,9 +59,9 @@
 
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 
-							<a href="#">info@gmail.com</a>
+							<a href="#">rajiv24all@gmail.com</a>
 
-							<a href="#">support@gmail.com</a>
+							
 
 						</span>
 

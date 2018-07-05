@@ -1,4 +1,4 @@
-<div class="justics-holder">
+
 
 			<div id="carousel-example-generic102" class="carousel slide" data-ride="carousel">
 
@@ -9,7 +9,7 @@
 
 					<div class="item active">
 
-						<div class="justices-img">
+						<a href="<?php echo base_url();?>index.php/ras/about"><div class="justices-img">
 
 							<img src="<?php echo base_url();?>media/images/RAS.jpg" width="auto" height="100%" alt="image" class="img">
 
@@ -25,7 +25,7 @@
 
 							</div>
 
-						</div>
+						</div></a>
 
 					</div>
 
@@ -53,7 +53,7 @@
 
 					<div class="item">
 
-						<div class="justices-img">
+						<a href="<?php echo base_url();?>index.php/ras/courses"><div class="justices-img">
 
 							<img src="<?php echo base_url();?>media/images/ALL.jpg" width="auto" height="100%" alt="image" class="img">
 
@@ -69,7 +69,7 @@
 
 							</div>
 
-						</div>
+						</div></a>
 
 					</div>
 
@@ -177,7 +177,7 @@
 							Our highly qualified and most experienced faculties are dedicated and committed to student’s complete success and provide assistive surroundings to contribute to their social, cultural, academic and all-round development.
 							</p>
 
-							<a class="more" href="#">read more</a>
+							<a class="more" href="<?php echo base_url();?>index.php/ras/about">read more</a>
 
 						</div>
 
@@ -885,7 +885,7 @@
 
 			</div>
 
-		</div>
+		
 
 			
 

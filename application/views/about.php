@@ -1,10 +1,10 @@
 <div class="banner-2 yellow">
 		
 		<div class="banner-text">
-			<h2>aboutus</h2>
+			<h2>about us</h2>
 			<ul class="breadcrumb yellow">
 				<li><a href="#">home</a></li>
-				<li>aboutus</li>
+				<li>about us</li>
 			</ul>
 		</div>
 		
