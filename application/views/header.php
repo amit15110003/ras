@@ -47,11 +47,11 @@
 		
 
 			<header id="header" style="display: block;z-index: 10000; background-color: #efefef;">
-			<div class="logo" ><a href="<?php echo base_url();?>" ><img src="<?php echo base_url();?>media/images/logg.png"  style="padding-bottom: 40px; width: 150px; height:75px;" ></a></div>
+			<div class="logo" ><a href="<?php echo base_url();?>" ><img src="<?php echo base_url();?>media/images/logg.png"  style="padding-bottom: 40px; width: 160px; height:83px;" ></a></div>
 			<nav id="nav">
 				<div class="containerr">
 					<div class="row nav-holder">
-						<nav class="navbar navbar-default">
+						<nav class="navbar navbar-default" >
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header" style="display: block;z-index: 10000;">
@@ -67,32 +67,32 @@
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
 
-								<li><a href="<?php echo base_url();?>">home</a>
+								<li><a href="<?php echo base_url();?>" style="color: #000;" >home</a>
 								</li>
 
-								<li><a href="<?php echo base_url();?>index.php/ras/about">About Us</a></li>
+								<li><a href="<?php echo base_url();?>index.php/ras/about" style="color: #000;">About Us</a></li>
 
-								<li><a href="<?php echo base_url();?>index.php/ras/courses">courses</a></li>
+								<li><a href="<?php echo base_url();?>index.php/ras/courses" style="color: #000;">courses</a></li>
 
 
-								<li><a href="">student zone</a>
+								<li><a href="" style="color: #000;">student zone</a>
 
 									<ul class="drop-down d-7">
 
-										<li><a href="<?php echo base_url();?>index.php/profile">student zone</a></li>
+										<li><a href="<?php echo base_url();?>index.php/profile" style="color: #000;">student zone</a></li>
 
-										<li><a href="<?php echo base_url();?>index.php/ras/results">Results</a></li>
+										<li><a href="<?php echo base_url();?>index.php/ras/results" style="color: #000;">Results</a></li>
 
-										<li><a href="<?php echo base_url();?>index.php/questions">Ask Questions</a></li>
+										<li><a href="<?php echo base_url();?>index.php/questions" style="color: #000;">Ask Questions</a></li>
 
 									</ul>
 
 								</li>
 								
 
-								<li class="last"><a href="<?php echo base_url();?>index.php/ras/blog">Blog</a></li>
+								<li class="last"><a href="<?php echo base_url();?>index.php/ras/blog" style="color: #000;">Blog</a></li>
 
-								<li class="last"><a href="<?php echo base_url();?>index.php/ras/contact">contact</a></li>
+								<li class="last"><a href="<?php echo base_url();?>index.php/ras/contact" style="color: #000;">contact</a></li>
 
 
 								<li class="login-list">
@@ -102,7 +102,7 @@
 
 									<li><a href="<?php echo base_url();?>index.php/ras/logout" ><i class="fa fa-sign-in" aria-hidden="true"></i>logout</a></li>
 			           				 <?php } else{?>
-									<li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i>login</a></li>
+									<li><a href="#" data-toggle="modal" data-target="#myModal" style="color: #000;"><i class="fa fa-sign-in" aria-hidden="true" style="color: #000;"></i>login</a></li>
 									<?php }?>
 									
 

@@ -134,15 +134,15 @@
 
 					<div class="form-group">
 
-						<label for="email" class="cols-sm-2 control-label">RAS Id</label>
+						<label for="email" class="cols-sm-2 control-label">RAS ID</label>
 
 						<div class="cols-sm-10">
 
 							<div class="input-group">
 
-								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+								<span class="input-group-addon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
 
-								<input type="text" class="form-control" name="u_card" id="email"  placeholder="Enter your Email"/>
+								<input type="text" class="form-control" name="u_card" id=""  placeholder="Enter your RAS Id"/>
 
 							</div>
 
@@ -154,7 +154,7 @@
 
 					<div class="form-group">
 
-						<label for="password" class="cols-sm-2 control-label">Password</label>
+						<label for="password" class="cols-sm-2 control-label">PASSWORD</label>
 
 						<div class="cols-sm-10">
 
@@ -176,17 +176,7 @@
 
 						<button type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button">Signin</a>
 
-					</div>
-
-
-
-					<div class="form-group ">
-
-						<p>Already have an account! <a href="#">Sign In Here</a> </p>
-
-					</div>
-
-					<?php echo form_close(); ?>
+					</div><?php echo form_close(); ?>
 
 				</div>
 

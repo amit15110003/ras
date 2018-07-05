@@ -100,7 +100,7 @@
 
 		
 
-		<div class="page-section white yellow">
+		<div class="page-section white yellow" style="padding-top: 5%;">
 
 			<div class="container">
 
